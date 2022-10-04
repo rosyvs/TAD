@@ -1,4 +1,72 @@
+import glob
+import os
+import wave
+import csv
+from tqdm import tqdm
+from prep_utils import split_to_chunks
+import numpy as np
 # TODO: reduce/rename cols in METADATA csv if needed
+
+CORPORA_PATH = '/mnt/shared/CORPORA/'
+CORPUS_DIR = 'ISAT-SI/' 
+SRATE = 16000
+CHUNK_SEC = 30 # segment duration in seconds (3.0 used in speechbrain recipe) 
+    # None: untrimmed, variable-duration inputs / float: split into segments
+splits = ['DEV','TEST','TRAIN']
+
+
+os.makedirs(os.path.join(CORPORA_PATH,'data_manifests'), exist_ok=True)
+
+for split in splits:
+    csv_file = os.path.join(CORPORA_PATH,'data_manifests',f'ISAT-SI_{split}.csv')
+
+# TODO: just read the metadata.csv and work from that
+    metadatafile = #TODO
+    for row in metadatafile: #TODO
+        if duration_sec>CHUNK_SEC:
+            #print(f'Long file: splitting into {math.ceil(duration_sec/CHUNK_SEC)} segments of <={CHUNK_SEC} seconds')
+            chunks = split_to_chunks(CHUNK_SEC, duration_sec, SRATE)
+            csv_line = [[
+                ID,
+                c[0],
+                c[1],
+                c[2],
+                speaker,
+                wav_file
+            ] for c in chunks]
+            entry.extend(csv_line)
+
+        else:
+            start=0
+            end=duration
+            # append to csv rows
+            csv_line = [
+                ID,
+                start,
+                end,
+                duration,
+                speaker,
+                wav_file
+            ]
+            entry.append(csv_line)
+        csv_output = csv_output+entry
+
+    # Writing the csv lines
+    with open(csv_file, mode="w") as csv_f:
+        csv_writer = csv.writer(
+            csv_f, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL
+        )
+        for line in csv_output:
+            csv_writer.writerow(line)
+
+    # give some stats
+    durs = [row[3] for row in csv_output]
+    spkrs = [row[4] for row in csv_output]
+    durs=durs[1:]
+    spkrs = spkrs[1:]
+    print(f'{len(csv_output)-1} utterances, mean duration {np.mean(durs)/SRATE:.2f} sec, {len(set(spkrs))} speakers')
+
+
 
 
 # TODO: make verifiaction pairs file from TEST set
