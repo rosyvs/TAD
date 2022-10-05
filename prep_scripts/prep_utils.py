@@ -4,7 +4,7 @@ import math
 
 def split_to_chunks(chunk_sec, total_sec, srate):
     """
-    Returns list of chunks where each chunk is a list [start_sample, end_sample, duration]
+    Returns list of chunks where each chunk is a list [start_sample, end_sample, duration_sample]
     """
     num_chunks = math.ceil(total_sec / chunk_sec)  
     chunk_list = []
