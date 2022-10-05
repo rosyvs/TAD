@@ -25,13 +25,12 @@ CHUNK_SEC = 30 # segment duration in seconds (3.0 used in speechbrain recipe)
 subdir_patterns = {
    'train-part1-cu' : r"CC-\d{2}-\d{2}-\d{5}\/(?P<recordingID>CC-\d{2}-\d{2})-(?P<speaker>\d{5})-(?P<uttID>\d{5}-\d*-\d*).wav",
    'train-part2-cu-sentences': r"(?P<speaker>spk-\d{2}-\d{3})-sent\/(?P<uttID>\d*).wav",
-   'train-part3-cu-stories': r"(?P<speaker>spk-\d{2}-\d{3})?\w\/(?P<uttID>[-\w\d]*-\d{3}).wav",
+   'train-part3-cu-stories': r"(?P<speaker>spk-\d{2}-\d{3})\w?\/(?P<uttID>[-\w\d]*-\d{3}).wav",
    'train-part4-cu-summaries': r"(?P<speaker>spk-\d{2}-\d{3})\/(?P<uttID>[-\w\d]*-\d*).wav",
    'train-part5-ogi-1-5': r"ks\w{3}-\d{2}-\d{1}\/(?P<speaker>ks\w{3})(?P<uttID>\w{3}).wav"
 }
 
 
-SEG_DUR = None # segment duration in seconds (3.0 used in speechbrain recipe) None = untrimmed,variable-duration inputs
 os.makedirs(os.path.join(CORPORA_PATH,'data_manifests'), exist_ok=True)
 
 #######################
@@ -60,11 +59,10 @@ if CONVERT_FILES:
         tuple(r)
         print('done')
 ########################
-
+wav_error_files=[]
 for split, pattern in subdir_patterns.items():
     csv_file = os.path.join(CORPORA_PATH,'data_manifests',f'cukids_{split}.csv')
 
-    # No split is required, will use all of dev to train the recogniser, tuning and testing will be done with ISAT-SI TEST
     wav_lst = glob.glob(os.path.join(CORPORA_PATH,CORPUS_DIR,split,'**/*.wav'), recursive=True)
     print(f'detected {len(wav_lst)} .wav files in split "{split}". Collecting metadata for csv...')
 
@@ -81,11 +79,16 @@ for split, pattern in subdir_patterns.items():
             continue
         ID = '_'.join([split, speaker, uttID])
 
-        with contextlib.closing(wave.open(wav_file,'r')) as f:
-            srate = f.getframerate()
-            duration = f.getnframes()
-            duration_sec = f.getnframes()/srate
-        
+        try:
+            with contextlib.closing(wave.open(wav_file,'r')) as f:
+                srate = f.getframerate()
+                duration = f.getnframes()
+                duration_sec = f.getnframes()/srate
+        except EOFError:
+            #print(f'invalid .wav file: {wav_file}')
+            wav_error_files +=wav_file
+            continue
+            
         if srate != SRATE:
             raise ValueError(f'sampling rate is {srate}, but {SRATE} is required. Go back and reformat this corpus.')
         if duration_sec>CHUNK_SEC:
