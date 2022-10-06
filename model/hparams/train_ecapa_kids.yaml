@@ -15,11 +15,7 @@ data_folder: /mnt/shared/CORPORA/  # e.g. /path/to/Voxceleb
 train_annotation: !ref <data_folder>/data_manifests/ALL_TRAIN.csv
 valid_annotation: !ref <data_folder>/data_manifests/ISAT-SI_DEV.csv
 
-# Folder to extract data augmentation files
-rir_folder: !ref <data_folder>/augment/ # TODO: unsure if this is created or read from?? 
-
-
-verification_file: #TODO: make verification pairs from TEST split 
+# verification_file: #TODO: make verification pairs from TEST split 
 
 skip_prep: True
 ckpt_interval_minutes: 15 # save checkpoint every N min
@@ -33,7 +29,7 @@ max_lr: !ref <lr>
 step_size: 65000 # TODO: check this isn't something that should be constrained by input length
 sample_rate: 16000
 sentence_len: 3.0 # seconds TODO: how to make it take variable length inputs, check where this param is used 
-shuffle: True # TODO: rather sort by duration than shuffle for batches? 
+shuffle: False # TODO: rather sort by duration than shuffle for batches? 
 random_chunk: True
 
 # Feature parameters
@@ -43,7 +39,7 @@ right_frames: 0
 deltas: False
 
 # Number of speakers
-out_n_neurons: 4591 # this is the n speakers in the training data 
+out_n_neurons: 4590 # this is the n speakers in the training data 
 
 dataloader_options:
     batch_size: !ref <batch_size>
@@ -83,9 +79,8 @@ augment_speed: !new:speechbrain.lobes.augment.TimeDomainSpecAugment
     speeds: [95, 100, 105]
 
 add_rev: !new:speechbrain.lobes.augment.EnvCorrupt
-    noise_csv: TODO: path to noise csv here
-    reverb_csv: TODO: path to reverb csv here
-    # openrir_folder: !ref <rir_folder>
+    noise_csv: !ref <data_folder>/data_manifests/musan_noise.csv #path to noise csv here
+    reverb_csv: !ref <data_folder>/data_manifests/reverb.csv # path to reverb csv here
     # openrir_max_noise_len: 3.0  # seconds
     reverb_prob: 1.0
     noise_prob: 0.0
@@ -94,9 +89,8 @@ add_rev: !new:speechbrain.lobes.augment.EnvCorrupt
     rir_scale_factor: 1.0
 
 add_noise: !new:speechbrain.lobes.augment.EnvCorrupt #TODO: add speechbrain noise data to this 
-    noise_csv: TODO: path to noise csv here
-    reverb_csv: TODO: path to reverb csv here
-    # openrir_folder: !ref <rir_folder> THIS IS REPLACED BY NOISE_CSV
+    noise_csv: !ref <data_folder>/data_manifests/musan_noise.csv #path to noise csv here
+    reverb_csv: !ref <data_folder>/data_manifests/reverb.csv # path to reverb csv here
     # openrir_max_noise_len: 3.0  # seconds
     reverb_prob: 0.0
     noise_prob: 1.0
@@ -105,9 +99,8 @@ add_noise: !new:speechbrain.lobes.augment.EnvCorrupt #TODO: add speechbrain nois
     rir_scale_factor: 1.0
 
 add_rev_noise: !new:speechbrain.lobes.augment.EnvCorrupt
-    noise_csv: TODO: path to noise csv here
-    reverb_csv: TODO: path to reverb csv here
-    # openrir_folder: !ref <rir_folder>
+    noise_csv: !ref <data_folder>/data_manifests/musan_noise.csv #path to noise csv here
+    reverb_csv: !ref <data_folder>/data_manifests/reverb.csv # path to reverb csv here
     # openrir_max_noise_len: 3.0  # seconds
     reverb_prob: 1.0
     noise_prob: 1.0
@@ -115,7 +108,15 @@ add_rev_noise: !new:speechbrain.lobes.augment.EnvCorrupt
     noise_snr_high: 15
     rir_scale_factor: 1.0
 
-
+add_isat_noise: !new:speechbrain.lobes.augment.EnvCorrupt # add speechbrain noise data to this 
+    noise_csv: !ref <data_folder>/data_manifests/isat_noise.csv
+    reverb_csv: !ref <data_folder>/data_manifests/reverb.csv
+    # openrir_max_noise_len: 3.0  # seconds
+    reverb_prob: 0.0
+    noise_prob: 1.0
+    noise_snr_low: 0
+    noise_snr_high: 15
+    rir_scale_factor: 1.0
 # Definition of the augmentation pipeline.
 # If concat_augment = False, the augmentation techniques are applied
 # in sequence. If concat_augment = True, all the augmented signals
@@ -128,6 +129,7 @@ augment_pipeline: [
     !ref <add_rev>,
     !ref <add_noise>,
     !ref <add_rev_noise>
+    !ref <add_isat_noise>
 ]
 concat_augment: True
 
@@ -171,7 +173,7 @@ error_stats: !name:speechbrain.utils.metric_stats.MetricStats
         reduction: batch
 
 checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
-    checkpoints_dir: !ref <save_folder> #TODO: put in gitignore
+    checkpoints_dir: !ref <save_folder> 
     recoverables:
         embedding_model: !ref <embedding_model>
         classifier: !ref <classifier>

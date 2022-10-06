@@ -41,7 +41,7 @@ class SpeakerBrain(sb.core.Brain):
 
         if stage == sb.Stage.TRAIN:
 
-            # Applying the augmentation pipeline #TODO: i think this is the part I need to edit for adding in ISAT noise
+            # Applying the augmentation pipeline 
             wavs_aug_tot = []
             wavs_aug_tot.append(wavs)
             for count, augment in enumerate(self.hparams.augment_pipeline):
@@ -138,32 +138,32 @@ def dataio_prep(hparams):
     # 1. Declarations:
     train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
         csv_path=hparams["train_annotation"],
-        replacements={"data_root": data_folder},
+        replacements={"data_root": data_folder},# TODO: do we need these data_folder replacements? 
     )
 
     valid_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
         csv_path=hparams["valid_annotation"],
-        replacements={"data_root": data_folder},
+        replacements={"data_root": data_folder},# TODO: do we need these data_folder replacements? 
     )
 
     datasets = [train_data, valid_data]
     label_encoder = sb.dataio.encoder.CategoricalEncoder()
 
-    snt_len_sample = int(hparams["sample_rate"] * hparams["sentence_len"]) #TODO: remove this
+    # snt_len_sample = int(hparams["sample_rate"] * hparams["sentence_len"]) #TODO: remove this? 
 
     # 2. Define audio pipeline:
     @sb.utils.data_pipeline.takes("wav_path", "start", "end", "duration")
     @sb.utils.data_pipeline.provides("sig")
-    def audio_pipeline(wav, start, stop, duration):
-        if hparams["random_chunk"]: # TODO: we don't want this
-            start = random.randint(0, duration - snt_len_sample)
-            stop = start + snt_len_sample
-        else:
-            start = int(start)
-            stop = int(stop)
-        num_frames = stop - start
+    def audio_pipeline(wav, start, end, duration):
+        # if hparams["random_chunk"]: # TODO: we don't want this
+        #     start = random.randint(0, duration - snt_len_sample)
+        #     stop = start + snt_len_sample
+        # else:
+        start = int(start)
+        end = int(end)
+        # num_frames = stop - start
         sig, fs = torchaudio.load(
-            wav, num_frames=num_frames, frame_offset=start
+            wav, num_frames=duration, frame_offset=start
         )
         sig = sig.transpose(0, 1).squeeze(1)
         return sig
@@ -200,7 +200,9 @@ if __name__ == "__main__":
 
     # CLI:
     hparams_file, run_opts, overrides = sb.parse_arguments(sys.argv[1:])
-
+    print(f'hparams_file: {hparams_file}')
+    print(f'run_opts: {run_opts}')
+    
     # Initialize ddp (useful only for multi-GPU DDP training)
     sb.utils.distributed.ddp_init_group(run_opts)
 
@@ -208,30 +210,12 @@ if __name__ == "__main__":
     with open(hparams_file) as fin:
         hparams = load_hyperpyyaml(fin, overrides)
 
-    # Download verification list (to exlude verification sentences from train)
-    veri_file_path = os.path.join(
-        hparams["save_folder"], os.path.basename(hparams["verification_file"])
-    )
-    download_file(hparams["verification_file"], veri_file_path)
 
-    # Dataset prep (parsing VoxCeleb and annotation into csv files)
-    from voxceleb_prepare import prepare_voxceleb  # noqa
-
-    run_on_main(
-        prepare_voxceleb,
-        kwargs={
-            "data_folder": hparams["data_folder"],
-            "save_folder": hparams["save_folder"],
-            "verification_pairs_file": veri_file_path,
-            "splits": ["train", "dev"],
-            "split_ratio": [90, 10],
-            "seg_dur": hparams["sentence_len"], #TODO: replace w duration
-            "skip_prep": hparams["skip_prep"],
-        },
-    )
+    # Initialize ddp (useful only for multi-GPU DDP training)
+    sb.utils.distributed.ddp_init_group(run_opts)
 
     # Dataset IO prep: creating Dataset objects and proper encodings for phones
-    train_data, valid_data, label_encoder = dataio_prep(hparams)
+    train_data, valid_data, label_encoder = dataio_prep(hparams) #TODO: is this necessary? Phones!??
 
     # Create experiment directory
     sb.core.create_experiment_directory(

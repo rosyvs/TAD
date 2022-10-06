@@ -12,7 +12,7 @@ import wave
 CORPORA_PATH = '/mnt/shared/CORPORA/'
 CORPUS_DIR = 'ISAT-NOISE/NOISE_wav'
 SRATE = 16000
-append_MUSAN = True # apend the existing csv for MUSAN
+append_MUSAN = False # apend the existing csv for MUSAN
 MUSAN_csv = os.path.join(CORPORA_PATH,'data_manifests', 'musan_noise.csv')
 
 
@@ -29,7 +29,7 @@ wav_lst = glob.glob(os.path.join(CORPORA_PATH,CORPUS_DIR,'*.wav'), recursive=Tru
 print(f'detected {len(wav_lst)} .wav files. Collecting metadata for csv...')
 
 csv_output = [['ID','duration','wav','wav_format','wav_opts' ]]
-csv_file = os.path.join(CORPORA_PATH,'data_manifests',f'NOISE_ISAT-SI+MUSAN.csv')
+csv_file = os.path.join(CORPORA_PATH,'data_manifests',f'isat{ "+musan" if append_MUSAN else ""}_noise.csv')
 
 for wav_file in tqdm(wav_lst):
     # Getting sentence and speaker ids
