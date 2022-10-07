@@ -29,18 +29,18 @@ for split in splits:
         duration = row['duration']
         ID = row['ID']
         speaker = row['speaker']
-        wav_file = row['filepath']
+        wav_file = os.path.join(CORPORA_PATH, CORPUS_DIR ,row['filepath'])
         if row['duration_sec']>CHUNK_SEC:
             print(f'Long file: splitting into {math.ceil(duration_sec/CHUNK_SEC)} segments of <={CHUNK_SEC} seconds')
             chunks = split_to_chunks(CHUNK_SEC, duration_sec, SRATE)
             csv_line = [[
-                ID,
+                f'{ID}_chunk{i:03}',
                 c[0],
                 c[1],
                 c[2],
                 speaker,
                 wav_file
-            ] for c in chunks]
+            ] for i,c in enumerate(chunks)]
             csv_output.extend(csv_line)
 
         else:

@@ -64,7 +64,7 @@ for split in splits:
         except ValueError:
             print(f"Malformed path: {wav_file}")
             continue
-        ID = '_'.join([speaker, recordingID, segmentID.split(".")[0]])
+        ID = '_'.join([speaker, recordingID, segmentID.replace(".wav","")])
         # get duration 
         with contextlib.closing(wave.open(wav_file,'r')) as f:
             srate = f.getframerate()
@@ -77,13 +77,13 @@ for split in splits:
             #print(f'Long file: splitting into {math.ceil(duration_sec/CHUNK_SEC)} segments of <={CHUNK_SEC} seconds')
             chunks = split_to_chunks(CHUNK_SEC, duration_sec, SRATE)
             csv_line = [[
-                ID,
+                f'{ID}_chunk{i:03}',
                 c[0],
                 c[1],
                 c[2],
                 speaker,
                 wav_file
-            ] for c in chunks]
+            ] for i,c in enumerate(chunks)]
             csv_output.extend(csv_line)
 
         else:

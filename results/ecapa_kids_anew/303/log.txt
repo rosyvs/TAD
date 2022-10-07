@@ -1,0 +1,416 @@
+2022-10-07 00:04:29,452 - speechbrain.core - INFO - Beginning experiment!
+2022-10-07 00:04:29,452 - speechbrain.core - INFO - Experiment folder: results/ecapa_kids_anew/303
+2022-10-07 00:04:30,110 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+attrs==22.1.0
+autopep8==1.7.0
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+black==19.10b0
+Bottleneck @ file:///opt/conda/conda-bld/bottleneck_1657175564434/work
+brotlipy==0.7.0
+certifi @ file:///opt/conda/conda-bld/certifi_1663615672595/work/certifi
+cffi @ file:///tmp/abs_98z5h56wf8/croots/recipe/cffi_1659598650955/work
+cfgv==3.3.1
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.0.4
+cryptography @ file:///tmp/build/80754af9/cryptography_1652101588893/work
+ctc-segmentation==1.7.3
+Cython @ file:///opt/conda/conda-bld/cython_1656941947712/work
+debugpy @ file:///tmp/build/80754af9/debugpy_1637091799509/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+distlib==0.3.6
+entrypoints @ file:///tmp/build/80754af9/entrypoints_1649926439650/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+filelock==3.8.0
+flake8==3.7.9
+huggingface-hub==0.9.1
+HyperPyYAML==1.0.1
+identify==2.5.5
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+ipykernel @ file:///opt/conda/conda-bld/ipykernel_1662361798230/work
+ipython @ file:///opt/conda/conda-bld/ipython_1657652213665/work
+jedi @ file:///tmp/build/80754af9/jedi_1644297102865/work
+joblib==1.2.0
+jupyter-core @ file:///opt/conda/conda-bld/jupyter_core_1651671229925/work
+jupyter_client @ file:///opt/conda/conda-bld/jupyter_client_1662504365333/work
+matplotlib-inline @ file:///opt/conda/conda-bld/matplotlib-inline_1662014470464/work
+mccabe==0.6.1
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626186066731/work
+mkl-service==2.4.0
+more-itertools==8.14.0
+nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1649847906199/work
+nodeenv==1.7.0
+numexpr @ file:///opt/conda/conda-bld/numexpr_1656940300424/work
+numpy==1.23.3
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.4.4
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pathspec==0.10.1
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.2.0
+platformdirs==2.5.2
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+psutil @ file:///opt/conda/conda-bld/psutil_1656431268089/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+py==1.11.0
+pycodestyle==2.9.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydub==0.25.1
+pyflakes==2.1.1
+Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
+pytest==5.4.1
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///opt/conda/conda-bld/pytz_1654762638606/work
+PyYAML==6.0
+pyzmq @ file:///opt/conda/conda-bld/pyzmq_1657724186960/work
+regex==2022.9.13
+requests @ file:///opt/conda/conda-bld/requests_1657734628632/work
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scipy==1.8.1
+sentencepiece==0.1.97
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+-e git+https://github.com/speechbrain/speechbrain.git@d78c00eca113c9f013f2eee4d05947adc1b32ccb#egg=speechbrain
+sphfile==1.0.3
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+toml==0.10.2
+torch==1.12.1
+torchaudio==0.12.1
+torchvision==0.13.1
+tornado @ file:///opt/conda/conda-bld/tornado_1662061693373/work
+tqdm==4.64.1
+traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+typed-ast==1.5.4
+typing_extensions @ file:///tmp/abs_ben9emwtky/croots/recipe/typing_extensions_1659638822008/work
+urllib3==1.26.12
+virtualenv==20.16.5
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+yamllint==1.23.0
+
+
+2022-10-07 00:04:30,145 - speechbrain.utils.superpowers - DEBUG - ef1b14d
+
+
+2022-10-07 00:04:30,352 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2022-10-07 00:04:33,775 - speechbrain.core - INFO - 21.6M trainable parameters in SpeakerBrain
+2022-10-07 00:04:33,777 - speechbrain.utils.checkpoints - INFO - Would load a checkpoint here, but none found yet.
+2022-10-07 00:04:33,777 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2022-10-07 00:04:33,852 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 237, in <module>
+    speaker_brain.fit(
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1153, in fit
+    self._fit_train(train_set=train_set, epoch=epoch, enable=enable)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1004, in _fit_train
+    for batch in t:
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/tqdm/std.py", line 1195, in __iter__
+    for obj in iterable:
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1376, in _next_data
+    return self._process_data(data)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1402, in _process_data
+    data.reraise()
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/_utils.py", line 461, in reraise
+    raise exception
+RuntimeError: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/_utils/worker.py", line 302, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/mnt/shared/speechbrain/speechbrain/dataio/dataset.py", line 165, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "/mnt/shared/speechbrain/speechbrain/utils/data_pipeline.py", line 464, in compute_outputs
+    return self._compute(data, self._exec_order, self.output_mapping)
+  File "/mnt/shared/speechbrain/speechbrain/utils/data_pipeline.py", line 496, in _compute
+    values = item(*args)  # Call the DynamicItem to produce output
+  File "/mnt/shared/speechbrain/speechbrain/utils/data_pipeline.py", line 72, in __call__
+    return self.func(*args)
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 165, in audio_pipeline
+    sig, fs = torchaudio.load(
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torchaudio/backend/sox_io_backend.py", line 222, in load
+    ret = torch.ops.torchaudio.sox_io_load_audio_file(
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/_ops.py", line 143, in __call__
+    return self._op(*args, **kwargs or {})
+RuntimeError: torchaudio::sox_io_load_audio_file() Expected a value of type 'Optional[int]' for argument '_2' but instead found type 'float'.
+Position: 2
+Value: 25759.0
+Declaration: torchaudio::sox_io_load_audio_file(str _0, int? _1, int? _2, bool? _3, bool? _4, str? _5) -> ((Tensor, int)? _0)
+Cast error details: Unable to cast Python instance to C++ type (compile in debug mode for details)
+
+2022-10-07 00:07:08,586 - speechbrain.core - INFO - Beginning experiment!
+2022-10-07 00:07:08,586 - speechbrain.core - INFO - Experiment folder: results/ecapa_kids_anew/303
+2022-10-07 00:07:09,072 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+attrs==22.1.0
+autopep8==1.7.0
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+black==19.10b0
+Bottleneck @ file:///opt/conda/conda-bld/bottleneck_1657175564434/work
+brotlipy==0.7.0
+certifi @ file:///opt/conda/conda-bld/certifi_1663615672595/work/certifi
+cffi @ file:///tmp/abs_98z5h56wf8/croots/recipe/cffi_1659598650955/work
+cfgv==3.3.1
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.0.4
+cryptography @ file:///tmp/build/80754af9/cryptography_1652101588893/work
+ctc-segmentation==1.7.3
+Cython @ file:///opt/conda/conda-bld/cython_1656941947712/work
+debugpy @ file:///tmp/build/80754af9/debugpy_1637091799509/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+distlib==0.3.6
+entrypoints @ file:///tmp/build/80754af9/entrypoints_1649926439650/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+filelock==3.8.0
+flake8==3.7.9
+huggingface-hub==0.9.1
+HyperPyYAML==1.0.1
+identify==2.5.5
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+ipykernel @ file:///opt/conda/conda-bld/ipykernel_1662361798230/work
+ipython @ file:///opt/conda/conda-bld/ipython_1657652213665/work
+jedi @ file:///tmp/build/80754af9/jedi_1644297102865/work
+joblib==1.2.0
+jupyter-core @ file:///opt/conda/conda-bld/jupyter_core_1651671229925/work
+jupyter_client @ file:///opt/conda/conda-bld/jupyter_client_1662504365333/work
+matplotlib-inline @ file:///opt/conda/conda-bld/matplotlib-inline_1662014470464/work
+mccabe==0.6.1
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626186066731/work
+mkl-service==2.4.0
+more-itertools==8.14.0
+nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1649847906199/work
+nodeenv==1.7.0
+numexpr @ file:///opt/conda/conda-bld/numexpr_1656940300424/work
+numpy==1.23.3
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.4.4
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pathspec==0.10.1
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.2.0
+platformdirs==2.5.2
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+psutil @ file:///opt/conda/conda-bld/psutil_1656431268089/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+py==1.11.0
+pycodestyle==2.9.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydub==0.25.1
+pyflakes==2.1.1
+Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
+pytest==5.4.1
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///opt/conda/conda-bld/pytz_1654762638606/work
+PyYAML==6.0
+pyzmq @ file:///opt/conda/conda-bld/pyzmq_1657724186960/work
+regex==2022.9.13
+requests @ file:///opt/conda/conda-bld/requests_1657734628632/work
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scipy==1.8.1
+sentencepiece==0.1.97
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+-e git+https://github.com/speechbrain/speechbrain.git@d78c00eca113c9f013f2eee4d05947adc1b32ccb#egg=speechbrain
+sphfile==1.0.3
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+toml==0.10.2
+torch==1.12.1
+torchaudio==0.12.1
+torchvision==0.13.1
+tornado @ file:///opt/conda/conda-bld/tornado_1662061693373/work
+tqdm==4.64.1
+traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+typed-ast==1.5.4
+typing_extensions @ file:///tmp/abs_ben9emwtky/croots/recipe/typing_extensions_1659638822008/work
+urllib3==1.26.12
+virtualenv==20.16.5
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+yamllint==1.23.0
+
+
+2022-10-07 00:07:09,104 - speechbrain.utils.superpowers - DEBUG - ef1b14d
+
+
+2022-10-07 00:07:09,269 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2022-10-07 00:07:10,696 - speechbrain.core - INFO - 21.6M trainable parameters in SpeakerBrain
+2022-10-07 00:07:10,697 - speechbrain.utils.checkpoints - INFO - Would load a checkpoint here, but none found yet.
+2022-10-07 00:07:10,698 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2022-10-07 00:07:10,760 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 238, in <module>
+    speaker_brain.fit(
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1153, in fit
+    self._fit_train(train_set=train_set, epoch=epoch, enable=enable)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1004, in _fit_train
+    for batch in t:
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/tqdm/std.py", line 1195, in __iter__
+    for obj in iterable:
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1376, in _next_data
+    return self._process_data(data)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1402, in _process_data
+    data.reraise()
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/_utils.py", line 461, in reraise
+    raise exception
+RuntimeError: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/_utils/worker.py", line 302, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/mnt/shared/speechbrain/speechbrain/dataio/dataset.py", line 165, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "/mnt/shared/speechbrain/speechbrain/utils/data_pipeline.py", line 464, in compute_outputs
+    return self._compute(data, self._exec_order, self.output_mapping)
+  File "/mnt/shared/speechbrain/speechbrain/utils/data_pipeline.py", line 496, in _compute
+    values = item(*args)  # Call the DynamicItem to produce output
+  File "/mnt/shared/speechbrain/speechbrain/utils/data_pipeline.py", line 72, in __call__
+    return self.func(*args)
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 166, in audio_pipeline
+    sig, fs = torchaudio.load(
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torchaudio/backend/sox_io_backend.py", line 227, in load
+    return _fallback_load(filepath, frame_offset, num_frames, normalize, channels_first, format)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torchaudio/io/_compat.py", line 97, in load_audio
+    s = torch.classes.torchaudio.ffmpeg_StreamReader(src, format, None)
+RuntimeError: Failed to open the input "TRAIN/utterances/WAVs/DS2_Crystal_14_2.wav" (No such file or directory).
+
+2022-10-07 00:10:41,461 - speechbrain.core - INFO - Beginning experiment!
+2022-10-07 00:10:41,461 - speechbrain.core - INFO - Experiment folder: results/ecapa_kids_anew/303
+2022-10-07 00:10:41,974 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+attrs==22.1.0
+autopep8==1.7.0
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+black==19.10b0
+Bottleneck @ file:///opt/conda/conda-bld/bottleneck_1657175564434/work
+brotlipy==0.7.0
+certifi @ file:///opt/conda/conda-bld/certifi_1663615672595/work/certifi
+cffi @ file:///tmp/abs_98z5h56wf8/croots/recipe/cffi_1659598650955/work
+cfgv==3.3.1
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.0.4
+cryptography @ file:///tmp/build/80754af9/cryptography_1652101588893/work
+ctc-segmentation==1.7.3
+Cython @ file:///opt/conda/conda-bld/cython_1656941947712/work
+debugpy @ file:///tmp/build/80754af9/debugpy_1637091799509/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+distlib==0.3.6
+entrypoints @ file:///tmp/build/80754af9/entrypoints_1649926439650/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+filelock==3.8.0
+flake8==3.7.9
+huggingface-hub==0.9.1
+HyperPyYAML==1.0.1
+identify==2.5.5
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+ipykernel @ file:///opt/conda/conda-bld/ipykernel_1662361798230/work
+ipython @ file:///opt/conda/conda-bld/ipython_1657652213665/work
+jedi @ file:///tmp/build/80754af9/jedi_1644297102865/work
+joblib==1.2.0
+jupyter-core @ file:///opt/conda/conda-bld/jupyter_core_1651671229925/work
+jupyter_client @ file:///opt/conda/conda-bld/jupyter_client_1662504365333/work
+matplotlib-inline @ file:///opt/conda/conda-bld/matplotlib-inline_1662014470464/work
+mccabe==0.6.1
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626186066731/work
+mkl-service==2.4.0
+more-itertools==8.14.0
+nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1649847906199/work
+nodeenv==1.7.0
+numexpr @ file:///opt/conda/conda-bld/numexpr_1656940300424/work
+numpy==1.23.3
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.4.4
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pathspec==0.10.1
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.2.0
+platformdirs==2.5.2
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+psutil @ file:///opt/conda/conda-bld/psutil_1656431268089/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+py==1.11.0
+pycodestyle==2.9.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydub==0.25.1
+pyflakes==2.1.1
+Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
+pytest==5.4.1
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///opt/conda/conda-bld/pytz_1654762638606/work
+PyYAML==6.0
+pyzmq @ file:///opt/conda/conda-bld/pyzmq_1657724186960/work
+regex==2022.9.13
+requests @ file:///opt/conda/conda-bld/requests_1657734628632/work
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scipy==1.8.1
+sentencepiece==0.1.97
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+-e git+https://github.com/speechbrain/speechbrain.git@d78c00eca113c9f013f2eee4d05947adc1b32ccb#egg=speechbrain
+sphfile==1.0.3
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+toml==0.10.2
+torch==1.12.1
+torchaudio==0.12.1
+torchvision==0.13.1
+tornado @ file:///opt/conda/conda-bld/tornado_1662061693373/work
+tqdm==4.64.1
+traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+typed-ast==1.5.4
+typing_extensions @ file:///tmp/abs_ben9emwtky/croots/recipe/typing_extensions_1659638822008/work
+urllib3==1.26.12
+virtualenv==20.16.5
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+yamllint==1.23.0
+
+
+2022-10-07 00:10:42,007 - speechbrain.utils.superpowers - DEBUG - ef1b14d
+
+
+2022-10-07 00:10:42,173 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2022-10-07 00:10:43,612 - speechbrain.core - INFO - 21.6M trainable parameters in SpeakerBrain
+2022-10-07 00:10:43,613 - speechbrain.utils.checkpoints - INFO - Would load a checkpoint here, but none found yet.
+2022-10-07 00:10:43,613 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2022-10-07 00:10:49,223 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 238, in <module>
+    speaker_brain.fit(
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1153, in fit
+    self._fit_train(train_set=train_set, epoch=epoch, enable=enable)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1009, in _fit_train
+    loss = self.fit_batch(batch)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 881, in fit_batch
+    outputs = self.compute_forward(batch, Stage.TRAIN)
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 50, in compute_forward
+    wavs_aug = augment(wavs, lens)
+TypeError: 'str' object is not callable

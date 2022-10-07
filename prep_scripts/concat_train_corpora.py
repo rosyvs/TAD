@@ -24,8 +24,26 @@ concat_list = [
     'cslu_spontaneous.csv']
 
 
+
+
+
 combined_csv = pd.concat(
-    [pd.read_csv(os.path.join(manifest_dir, f)) for f in concat_list])
+    [pd.read_csv(os.path.join(manifest_dir, f)) for f in concat_list]).reset_index(drop=True)
+
+# check for duplicate IDs and add an appendix if so
+duplicates =combined_csv[combined_csv['ID'].duplicated()]
+if len(duplicates)>0:
+    print(f'duplicated IDs: {len(duplicates)}')
+    IDcount=combined_csv.groupby('ID', as_index=False).cumcount()
+    m = combined_csv['ID'].duplicated(keep=False) # Mask for all duplicated values
+
+    # append duplicate count to ID to make unique
+    combined_csv.loc[m, 'ID'] +=( "_" + IDcount[m].astype(str))
+
+    duplicates =combined_csv[combined_csv['ID'].duplicated()]
+    if len(duplicates)>0:
+        print(f'STILL duplicated IDs: {len(duplicates)} WTF')
+
 combined_csv.to_csv(csv_out,index=False)
 
 # csv_file = ''

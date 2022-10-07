@@ -56,13 +56,13 @@ for split in splits:
             #print(f'Long file: splitting into {math.ceil(duration_sec/CHUNK_SEC)} segments of <={CHUNK_SEC} seconds')
             chunks = split_to_chunks(CHUNK_SEC, duration_sec, SRATE)
             csv_line = [[
-                ID,
+                f'{ID}_chunk{i:03}',
                 c[0],
                 c[1],
                 c[2],
                 speaker,
                 wav_file
-            ] for c in chunks]
+            ] for i,c in enumerate(chunks)]
             csv_output.extend(csv_line)
 
         else:
