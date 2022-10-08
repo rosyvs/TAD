@@ -12,18 +12,18 @@ train_log: !ref <output_folder>/train_log.txt
 
 # Data files
 data_folder: /mnt/shared/CORPORA/  # e.g. /path/to/Voxceleb
-train_annotation: !ref <data_folder>/data_manifests/ALL_TRAIN.csv
+train_annotation: !ref <data_folder>/data_manifests/ALL_TRAIN_mindur1.csv
 valid_annotation: !ref <data_folder>/data_manifests/ISAT-SI_DEV.csv
 
 # verification_file: #TODO: make verification pairs from TEST split 
 
 skip_prep: True
-ckpt_interval_minutes: 5 # save checkpoint every N min
+ckpt_interval_minutes: 3 # save checkpoint every N min
 
 # Training parameters
 number_of_epochs: 10
-batch_size: 4 # TODO: changed from 32
-lr: 0.001
+batch_size: 2  # TODO: changed from 32
+lr: 0.0001 # 0.001 orig
 base_lr: 0.00000001
 max_lr: !ref <lr>
 step_size: 65000 # TODO: check this isn't something that should be constrained by input length
@@ -40,13 +40,14 @@ right_frames: 0
 deltas: False
 
 # Number of speakers
-out_n_neurons: 4590 # this is the n speakers in the training data 
+out_n_neurons: 4589 # this is the n speakers in the training data 
 
 dataloader_options:
     batch_size: !ref <batch_size>
     shuffle: !ref <shuffle>
     num_workers: 2
-
+    sorting: descending
+    avoid_if_longer_than: !ref <sample_rate> * 30
 # Functions
 compute_features: !new:speechbrain.lobes.features.Fbank
     n_mels: !ref <n_mels>

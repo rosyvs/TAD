@@ -26,7 +26,11 @@ from speechbrain.utils.data_utils import download_file
 from hyperpyyaml import load_hyperpyyaml
 from speechbrain.utils.distributed import run_on_main
 
+# attempts to squeeze out more training before OOM errors...
 torch.cuda.empty_cache() # added to prevent CUDA OOM
+# type the below into terminal
+# export 'PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512'
+# export 'PYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.8'
 
 class SpeakerBrain(sb.core.Brain):
     """Class for speaker embedding training"
@@ -67,7 +71,7 @@ class SpeakerBrain(sb.core.Brain):
             self.n_augment = len(wavs_aug_tot)
             lens = torch.cat([lens] * self.n_augment)
 
-        # Feature extraction and normalization
+        # Feature extraction and normalization 
         feats = self.modules.compute_features(wavs)
         feats = self.modules.mean_var_norm(feats, lens)
 
@@ -141,6 +145,33 @@ def dataio_prep(hparams):
         replacements={"data_root": data_folder},# TODO: do we need these data_folder replacements? 
     )
 
+    if hparams["sorting"] == "ascending":
+            # we sort training data to speed up training and get better results.
+            train_data = train_data.filtered_sorted(
+                sort_key="duration",
+                key_max_value={"duration": hparams["avoid_if_longer_than"]},
+            )
+            # when sorting do not shuffle in dataloader ! otherwise is pointless
+            hparams["dataloader_options"]["shuffle"] = False
+
+    elif hparams["sorting"] == "descending":
+        train_data = train_data.filtered_sorted(
+            sort_key="duration",
+            reverse=True,
+            key_max_value={"duration": hparams["avoid_if_longer_than"]},
+        )
+        # when sorting do not shuffle in dataloader ! otherwise is pointless
+        hparams["dataloader_options"]["shuffle"] = False
+
+    elif hparams["sorting"] == "random":
+        pass
+
+    else:
+        raise NotImplementedError(
+            "sorting must be random, ascending or descending"
+        )
+
+
     valid_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
         csv_path=hparams["valid_annotation"],
         replacements={"data_root": data_folder},# TODO: do we need these data_folder replacements? 
@@ -154,7 +185,6 @@ def dataio_prep(hparams):
     @sb.utils.data_pipeline.takes("filepath", "start", "end", "duration")
     @sb.utils.data_pipeline.provides("sig")
     def audio_pipeline(wav, start, end, duration):
-        print(f'duration {duration}')
         if hparams["random_chunk"]: # 
             snt_len_sample = int(hparams["sample_rate"] * hparams["sentence_len"]) # Used only if hparams['random_chunk"]
             start = random.randint(0, duration - snt_len_sample)
@@ -205,9 +235,6 @@ if __name__ == "__main__":
     print(f'hparams_file: {hparams_file}')
     print(f'run_opts: {run_opts}')
 
-    # # Initialize ddp (useful only for multi-GPU DDP training)
-    # sb.utils.distributed.ddp_init_group(run_opts)
-
     # Load hyperparameters file with command-line overrides
     with open(hparams_file) as fin:
         hparams = load_hyperpyyaml(fin, overrides)
@@ -236,10 +263,24 @@ if __name__ == "__main__":
     )
 
     # Training
-    speaker_brain.fit(
+   # with torch.autograd.detect_anomaly(): # suggested debug wrap
+    oom = False
+    try:
+        speaker_brain.fit(
         speaker_brain.hparams.epoch_counter,
         train_data,
         valid_data,
         train_loader_kwargs=hparams["dataloader_options"],
         valid_loader_kwargs=hparams["dataloader_options"],
     )
+    except RuntimeError: # Out of memory
+        oom = True
+
+    if oom:
+        speaker_brain.fit(
+            speaker_brain.hparams.epoch_counter,
+            train_data,
+            valid_data,
+            train_loader_kwargs=hparams["dataloader_options"],
+            valid_loader_kwargs=hparams["dataloader_options"],
+        )
