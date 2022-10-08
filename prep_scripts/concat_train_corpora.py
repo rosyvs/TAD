@@ -4,9 +4,11 @@ import numpy as np
 import csv
 
 SRATE = 16000
+MIN_DUR_S = 1 # filter to apply to corpora
+APPLY_FILTER = True
 
 CORPORA_PATH = '/mnt/shared/CORPORA/'
-csv_out = os.path.join(CORPORA_PATH, 'data_manifests', f'ALL_TRAIN.csv')
+csv_out = os.path.join(CORPORA_PATH, 'data_manifests', f'ALL_TRAIN{f"_mindur{MIN_DUR_S}" if APPLY_FILTER else ""}.csv')
 
 manifest_dir = os.path.join(CORPORA_PATH, 'data_manifests')
 concat_list = [
@@ -29,6 +31,13 @@ concat_list = [
 
 combined_csv = pd.concat(
     [pd.read_csv(os.path.join(manifest_dir, f)) for f in concat_list]).reset_index(drop=True)
+
+# apply filter conditions
+if APPLY_FILTER:
+    b4=len(combined_csv)
+    combined_csv = combined_csv[combined_csv['duration']>=SRATE*MIN_DUR_S]
+    after=len(combined_csv)
+    print(f'removed {b4-after} files not meeting minimum duration {MIN_DUR_S} sec')
 
 # check for duplicate IDs and add an appendix if so
 duplicates =combined_csv[combined_csv['ID'].duplicated()]
