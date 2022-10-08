@@ -25,7 +25,7 @@ import numpy as np
 CORPORA_PATH = '/mnt/shared/CORPORA/'
 CORPUS_DIR = 'VoxCeleb/vox1_dev_wav/' 
 SRATE = 16000
-CHUNK_SEC = 30 # segment duration in seconds (3.0 used in speechbrain recipe) 
+CHUNK_SEC = 10 # segment duration in seconds (3.0 used in speechbrain recipe) 
     # None: untrimmed, variable-duration inputs / float: split into segments
 
 

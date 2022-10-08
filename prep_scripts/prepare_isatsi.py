@@ -9,7 +9,7 @@ import math
 CORPORA_PATH = '/mnt/shared/CORPORA/'
 CORPUS_DIR = 'ISAT-SI/' 
 SRATE = 16000
-CHUNK_SEC = 30 # segment duration in seconds (3.0 used in speechbrain recipe) 
+CHUNK_SEC = 10 # segment duration in seconds (3.0 used in speechbrain recipe) 
     # None: untrimmed, variable-duration inputs / float: split into segments
 splits = ['DEV','TEST','TRAIN']
 
@@ -27,6 +27,7 @@ for split in splits:
 
     for i,row in metadata.iterrows(): #TODO
         duration = row['duration']
+        duration_sec = row['duration_sec']
         ID = row['ID']
         speaker = row['speaker']
         wav_file = os.path.join(CORPORA_PATH, CORPUS_DIR ,row['filepath'])

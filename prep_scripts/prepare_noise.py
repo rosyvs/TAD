@@ -28,14 +28,16 @@ MUSAN_csv = os.path.join(CORPORA_PATH,'data_manifests', 'musan_noise.csv')
 wav_lst = glob.glob(os.path.join(CORPORA_PATH,CORPUS_DIR,'*.wav'), recursive=True)
 print(f'detected {len(wav_lst)} .wav files. Collecting metadata for csv...')
 
+#TODO: what should wav_opts be? musan has this as blank
 csv_output = [['ID','duration','wav','wav_format','wav_opts' ]]
 csv_file = os.path.join(CORPORA_PATH,'data_manifests',f'isat{ "+musan" if append_MUSAN else ""}_noise.csv')
 
 for wav_file in tqdm(wav_lst):
     # Getting sentence and speaker ids
     try:
-        recordingID = wav_file.split(".")[0]
-        ID = 'ISAT-SI_noise_' + recordingID
+        recordingID = wav_file.split("/")[-1]
+        ID = 'ISAT-SI_noise_' + recordingID.replace('.wav','')
+        print(ID)
     except:
         print(f"Malformed path: {wav_file}")
         continue
@@ -51,22 +53,32 @@ for wav_file in tqdm(wav_lst):
         ID,
         duration_sec,
         wav_file,
-        ''
+        'wav',# dummy entry
+        ' '# dummy entry
     ]
     csv_output.append(csv_line)
 
 
 
+musan_csv_output = [['ID','duration','wav','wav_format','wav_opts' ]]
+with open(MUSAN_csv) as f:
+    csv_reader = csv.reader(f, delimiter=',')
+    next(csv_reader)
+    next(csv_reader)
+    for row in csv_reader:
+        [ID,duration,wav,wav_format,wav_opts]= row
+        row_fixed = [ID,duration,wav,wav_format,' ' if not wav_opts.strip() else wav_opts]
+        musan_csv_output.append(row_fixed)
+        if append_MUSAN:
+            csv_output.append(row_fixed)
 
-
-if append_MUSAN:
-    with open(MUSAN_csv) as f:
-        csv_reader = csv.reader(f, delimiter=',')
-        next(csv_reader)
-        next(csv_reader)
-        for row in csv_reader:
-            csv_output.append(row)
-
+# Writing the csv lines
+with open(MUSAN_csv, mode="w") as csv_f:
+    csv_writer = csv.writer(
+        csv_f, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL
+    )
+    for line in musan_csv_output:
+        csv_writer.writerow(line)
 
 # Writing the csv lines
 with open(csv_file, mode="w") as csv_f:

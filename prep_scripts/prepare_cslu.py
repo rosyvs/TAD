@@ -24,7 +24,7 @@ import contextlib
 CORPORA_PATH = '/mnt/shared/CORPORA/'
 CORPUS_DIR = 'cslu_kids/speech/' 
 SRATE = 16000
-CHUNK_SEC = 30 # segment duration in seconds (3.0 used in speechbrain recipe) 
+CHUNK_SEC = 10 # segment duration in seconds (3.0 used in speechbrain recipe) 
     # None: untrimmed, variable-duration inputs / float: split into segments
 splits = ['scripted','spontaneous']
 
