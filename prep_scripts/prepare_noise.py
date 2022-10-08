@@ -1,7 +1,7 @@
 import os
 import csv
 from tqdm import tqdm
-from prep_utils import split_to_chunks
+from prep_utils import check_valid_wav, split_to_chunks
 import numpy as np
 import pandas as pd
 import math
@@ -14,6 +14,7 @@ CORPUS_DIR = 'ISAT-NOISE/NOISE_wav'
 SRATE = 16000
 append_MUSAN = False # apend the existing csv for MUSAN
 MUSAN_csv = os.path.join(CORPORA_PATH,'data_manifests', 'musan_noise.csv')
+CHECK_WAV_VALID = True
 
 
 # prepare noise: ISAT noise + concatenate its csv to MUSAN noise
@@ -37,7 +38,6 @@ for wav_file in tqdm(wav_lst):
     try:
         recordingID = wav_file.split("/")[-1]
         ID = 'ISAT-SI_noise_' + recordingID.replace('.wav','')
-        print(ID)
     except:
         print(f"Malformed path: {wav_file}")
         continue
@@ -45,7 +45,9 @@ for wav_file in tqdm(wav_lst):
         srate = f.getframerate()
         duration = f.getnframes()
         duration_sec = f.getnframes()/srate
-    
+    if CHECK_WAV_VALID:
+        if not check_valid_wav(wav_file):
+            continue
     if srate != SRATE:
         raise ValueError(f'sampling rate is {srate}, but {SRATE} is required. Go back and reformat this corpus.')
     # append to csv rows
@@ -67,6 +69,9 @@ with open(MUSAN_csv) as f:
     next(csv_reader)
     for row in csv_reader:
         [ID,duration,wav,wav_format,wav_opts]= row
+        if CHECK_WAV_VALID:
+            if not check_valid_wav(wav):
+                continue
         row_fixed = [ID,duration,wav,wav_format,' ' if not wav_opts.strip() else wav_opts]
         musan_csv_output.append(row_fixed)
         if append_MUSAN:

@@ -3,13 +3,15 @@ import os
 import wave
 import csv
 from tqdm import tqdm
-from pydub import AudioSegment
+# from pydub import AudioSegment
 import contextlib
 import re
 import numpy as np
-from prep_utils import split_to_chunks
-from sphfile import SPHFile
+from prep_utils import check_valid_wav, split_to_chunks
+# from sphfile import SPHFile
 from multiprocessing import Pool
+from scipy.io import wavfile
+
 
 # TODO: these are not actual wav files! They are NIST SPHERE which also uses the .wav ext...
 # An easy way to run this over all files under the current directory recursively is find . -name '*.WAV' -exec sph2pipe -f wav {} {}.wav \;. The only drawback is that you end up with files ending with .WAV.wav
@@ -19,7 +21,7 @@ CORPUS_DIR = 'CuKidsSpeech/train/'
 SRATE = 16000
 CHUNK_SEC = 10 # segment duration in seconds (3.0 used in speechbrain recipe) 
     # None: untrimmed, variable-duration inputs / float: split into segments
-
+CHECK_WAV_VALID = True
 # CUKIDS is futher split into subdirs of different kinds of audio, with different file/dir naming structure 
 # represented by the regexp  in the dict below
 subdir_patterns = {
@@ -38,27 +40,28 @@ os.makedirs(os.path.join(CORPORA_PATH,'data_manifests'), exist_ok=True)
 # http://www.cs.columbia.edu/~ecooper/tts/raw.html
 
 
-CONVERT_FILES = False # convert files from sph to wav, only needs to be done once
-# note that this is particularly problematic because the original files are
-# saved as '.wav' whereas sphere files should be saved as upeprvase ".WAV"
-# so you can't tell whether htis is done just by listing filenames
-# instead, run file <wavfilename> in linux terminal to see file type details
+# CONVERT_FILES = False # convert files from sph to wav, only needs to be done once
+# # note that this is particularly problematic because the original files are
+# # saved as '.wav' whereas sphere files should be saved as upeprvase ".WAV"
+# # so you can't tell whether htis is done just by listing filenames
+# # instead, run file <wavfilename> in linux terminal to see file type details
 
-def sph2wav(filename):
-    sph = SPHFile(filename)  
-    sph.write_wav(filename)
+# def sph2wav(filename):
+#     sph = SPHFile(filename)  
+#     sph.write_wav(filename)
 
-if CONVERT_FILES:
-    sph_files = glob.glob(os.path.join(CORPORA_PATH,CORPUS_DIR,'**/*.wav'), recursive=True)
-    print(f'detected {len(sph_files)} .wav files. Converting...')
+# if CONVERT_FILES:
+#     sph_files = glob.glob(os.path.join(CORPORA_PATH,CORPUS_DIR,'**/*.wav'), recursive=True)
+#     print(f'detected {len(sph_files)} .wav files. Converting...')
 
-    convert_count =len(sph_files)
-    with Pool(processes=min(convert_count, os.cpu_count())) as p:
-        progress_bar = tqdm(total=convert_count)
-        r = tqdm(p.imap(sph2wav, sph_files),total=convert_count)
-        tuple(r)
-        print('done')
-########################
+#     convert_count =len(sph_files)
+#     with Pool(processes=min(convert_count, os.cpu_count())) as p:
+#         progress_bar = tqdm(total=convert_count)
+#         r = tqdm(p.imap(sph2wav, sph_files),total=convert_count)
+#         tuple(r)
+#         print('done')
+# ########################
+
 wav_error_files=[]
 for split, pattern in subdir_patterns.items():
     csv_file = os.path.join(CORPORA_PATH,'data_manifests',f'cukids_{split}.csv')
@@ -85,6 +88,13 @@ for split, pattern in subdir_patterns.items():
                 srate = f.getframerate()
                 duration = f.getnframes()
                 duration_sec = f.getnframes()/srate
+
+            # check for invalid values
+            if CHECK_WAV_VALID:
+                samplerate, data = wavfile.read(wav_file)
+                if not check_valid_wav(wav_file):
+                    continue
+
         except EOFError:
             #print(f'invalid .wav file: {wav_file}')
             wav_error_files +=wav_file

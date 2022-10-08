@@ -5,7 +5,7 @@ import csv
 from tqdm import tqdm
 from multiprocessing import Pool
 from pydub import AudioSegment
-from prep_utils import split_to_chunks
+from prep_utils import check_valid_wav, split_to_chunks
 import math
 import numpy as np
 import contextlib
@@ -27,6 +27,8 @@ CORPUS_DIR = 'myst-v0.4.2/data/'
 SRATE = 16000
 CHUNK_SEC = 10 # segment duration in seconds (3.0 used in speechbrain recipe) 
     # None: untrimmed, variable-duration inputs / float: split into segments
+CHECK_WAV_VALID = True
+
 splits = ['train','development','test']
 
 os.makedirs(os.path.join(CORPORA_PATH,'data_manifests'), exist_ok=True)
@@ -70,7 +72,9 @@ for split in splits:
             srate = f.getframerate()
             duration = f.getnframes()
             duration_sec = f.getnframes()/srate
-        
+        if CHECK_WAV_VALID:
+            if not check_valid_wav(wav_file):
+                continue
         if srate != SRATE:
             raise ValueError(f'sampling rate is {srate}, but {SRATE} is required. Go back and reformat this corpus.')
         if duration_sec>CHUNK_SEC:

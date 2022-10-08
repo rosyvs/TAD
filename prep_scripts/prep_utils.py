@@ -1,5 +1,6 @@
 import math
-
+from scipy.io import wavfile
+import numpy as np
 # misc utils for data prep
 
 def split_to_chunks(chunk_sec, total_sec, srate):
@@ -17,3 +18,16 @@ def split_to_chunks(chunk_sec, total_sec, srate):
         chunk_list.append(chunk)
     # print(chunk_list)
     return chunk_list
+
+def check_valid_wav(wav_file):
+    samplerate, data = wavfile.read(wav_file)
+    OK = True
+    if data.dtype != np.dtype('int16'):
+        print(f'Invalid wav file: dtype {data.dtype}  ({wav_file})')
+        OK = False
+    if any(np.isnan(data)):
+        print(f'Invalid wav file : nan values  ({wav_file})')
+        OK = False
+    if min(data) < -32768 or max(data)> 32767:
+        print(f'Invalid wav file: values exceed [-32768, 32767]  ({wav_file})')
+    return OK

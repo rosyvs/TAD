@@ -1,7 +1,7 @@
 import os
 import csv
 from tqdm import tqdm
-from prep_utils import split_to_chunks
+from prep_utils import check_valid_wav, split_to_chunks
 import numpy as np
 import pandas as pd
 import math
@@ -11,6 +11,8 @@ CORPUS_DIR = 'ISAT-SI/'
 SRATE = 16000
 CHUNK_SEC = 10 # segment duration in seconds (3.0 used in speechbrain recipe) 
     # None: untrimmed, variable-duration inputs / float: split into segments
+CHECK_WAV_VALID = True
+
 splits = ['DEV','TEST','TRAIN']
 
 
@@ -31,6 +33,10 @@ for split in splits:
         ID = row['ID']
         speaker = row['speaker']
         wav_file = os.path.join(CORPORA_PATH, CORPUS_DIR ,row['filepath'])
+
+        if CHECK_WAV_VALID:
+            if not check_valid_wav(wav_file):
+                continue
         if row['duration_sec']>CHUNK_SEC:
             print(f'Long file: splitting into {math.ceil(duration_sec/CHUNK_SEC)} segments of <={CHUNK_SEC} seconds')
             chunks = split_to_chunks(CHUNK_SEC, duration_sec, SRATE)
