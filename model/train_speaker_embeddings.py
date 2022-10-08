@@ -11,10 +11,10 @@ Using your own hyperparameter file or one of the following:
 
 Author
     * Rosy Southwell 2022
-    -- based heavily on speechbrain recipe train_speaker_embeddings.py by:
-        * Mirco Ravanelli 2020
-        * Hwidong Na 2020
-        * Nauman Dawalatabad 2020
+    based heavily on speechbrain recipe train_speaker_embeddings.py by:
+    * Mirco Ravanelli 2020
+    * Hwidong Na 2020
+    * Nauman Dawalatabad 2020
 """
 import os
 import sys
@@ -26,6 +26,7 @@ from speechbrain.utils.data_utils import download_file
 from hyperpyyaml import load_hyperpyyaml
 from speechbrain.utils.distributed import run_on_main
 
+torch.cuda.empty_cache() # added to prevent CUDA OOM
 
 class SpeakerBrain(sb.core.Brain):
     """Class for speaker embedding training"
@@ -45,7 +46,6 @@ class SpeakerBrain(sb.core.Brain):
             wavs_aug_tot = []
             wavs_aug_tot.append(wavs)
             for count, augment in enumerate(self.hparams.augment_pipeline):
-
                 # Apply augment
                 wavs_aug = augment(wavs, lens)
 
@@ -149,20 +149,21 @@ def dataio_prep(hparams):
     datasets = [train_data, valid_data]
     label_encoder = sb.dataio.encoder.CategoricalEncoder()
 
-    # snt_len_sample = int(hparams["sample_rate"] * hparams["sentence_len"]) #TODO: remove this? 
 
     # 2. Define audio pipeline:
     @sb.utils.data_pipeline.takes("filepath", "start", "end", "duration")
     @sb.utils.data_pipeline.provides("sig")
     def audio_pipeline(wav, start, end, duration):
-        # if hparams["random_chunk"]: # TODO: we don't want this
-        #     start = random.randint(0, duration - snt_len_sample)
-        #     stop = start + snt_len_sample
+        print(f'duration {duration}')
+        if hparams["random_chunk"]: # 
+            snt_len_sample = int(hparams["sample_rate"] * hparams["sentence_len"]) # Used only if hparams['random_chunk"]
+            start = random.randint(0, duration - snt_len_sample)
+            end = start + snt_len_sample
+
         # else:
         start = int(start)
         end = int(end)
         duration = int(duration)
-        # num_frames = stop - start
         sig, fs = torchaudio.load(
             wav, num_frames=duration, frame_offset=start
         )
@@ -204,19 +205,19 @@ if __name__ == "__main__":
     print(f'hparams_file: {hparams_file}')
     print(f'run_opts: {run_opts}')
 
-    # Initialize ddp (useful only for multi-GPU DDP training)
-    sb.utils.distributed.ddp_init_group(run_opts)
+    # # Initialize ddp (useful only for multi-GPU DDP training)
+    # sb.utils.distributed.ddp_init_group(run_opts)
 
     # Load hyperparameters file with command-line overrides
     with open(hparams_file) as fin:
         hparams = load_hyperpyyaml(fin, overrides)
+    # print(hparams['augment_pipeline'])
 
+    # # Initialize ddp (useful only for multi-GPU DDP training)
+    # sb.utils.distributed.ddp_init_group(run_opts)
 
-    # Initialize ddp (useful only for multi-GPU DDP training)
-    sb.utils.distributed.ddp_init_group(run_opts)
-
-    # Dataset IO prep: creating Dataset objects and proper encodings for phones
-    train_data, valid_data, label_encoder = dataio_prep(hparams) #TODO: is this necessary? Phones!??
+    # Dataset IO prep: creating Dataset objects and proper encodings for phones # TODO: ...phones? 
+    train_data, valid_data, label_encoder = dataio_prep(hparams) 
 
     # Create experiment directory
     sb.core.create_experiment_directory(
