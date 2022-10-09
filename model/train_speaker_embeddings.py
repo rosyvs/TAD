@@ -145,7 +145,7 @@ def dataio_prep(hparams):
         replacements={"data_root": data_folder},# TODO: do we need these data_folder replacements? 
     )
 
-    if hparams["sorting"] == "ascending":
+    if hparams.get("sorting") == "ascending":
         # we sort training data to speed up training and get better results.
         train_data = train_data.filtered_sorted(
             sort_key="duration",
@@ -154,7 +154,7 @@ def dataio_prep(hparams):
         # when sorting do not shuffle in dataloader ! otherwise is pointless
         hparams["dataloader_options"]["shuffle"] = False
 
-    elif hparams["sorting"] == "descending":
+    elif hparams.get("sorting") == "descending":
         train_data = train_data.filtered_sorted(
             sort_key="duration",
             reverse=True,
@@ -177,14 +177,15 @@ def dataio_prep(hparams):
     @sb.utils.data_pipeline.takes("filepath", "start", "end", "duration")
     @sb.utils.data_pipeline.provides("sig")
     def audio_pipeline(wav, start, end, duration):
-        if hparams['sentence_len']:
+        if hparams.get('sentence_len'):
             snt_len_sample = int(hparams["sample_rate"] * hparams["sentence_len"]) # Used only if hparams['random_chunk"]
             
             if hparams["random_chunk"]: # 
                 start = random.randint(0, max([duration - snt_len_sample, 0]))
             end = start + snt_len_sample
+            duration = end-start
             
-        # else:
+    
         start = int(start)
         end = int(end)
         duration = int(duration)
