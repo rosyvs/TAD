@@ -12,8 +12,8 @@ train_log: !ref <output_folder>/train_log.txt
 
 # Data files
 data_folder: /mnt/shared/CORPORA/  # e.g. /path/to/Voxceleb
-train_annotation: !ref <data_folder>/data_manifests/ALL_TRAIN_mindur1.csv
-valid_annotation: !ref <data_folder>/data_manifests/ISAT-SI_DEV.csv
+train_annotation: !ref <data_folder>/data_manifests/ALL_TRAIN_fixlen1.csv
+valid_annotation: !ref <data_folder>/data_manifests/ISAT-SI_DEV_fixlen1.csv
 
 # verification_file: #TODO: make verification pairs from TEST split 
 
