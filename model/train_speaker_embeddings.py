@@ -192,6 +192,7 @@ def dataio_prep(hparams):
             wav, num_frames=duration, frame_offset=start
         )
         sig = sig.transpose(0, 1).squeeze(1)
+        # 0-pad if wav is shorter than sentence_len
         if hparams['sentence_len'] and duration <snt_len_sample:
             zero_sig = torch.zeros_like(sig)
             zero_sig[0 : len(sig)] = sig

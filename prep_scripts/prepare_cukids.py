@@ -15,12 +15,14 @@ from scipy.io import wavfile
 
 # TODO: these are not actual wav files! They are NIST SPHERE which also uses the .wav ext...
 # An easy way to run this over all files under the current directory recursively is find . -name '*.WAV' -exec sph2pipe -f wav {} {}.wav \;. The only drawback is that you end up with files ending with .WAV.wav
-
+VERSTR = '_fixlen1'
 CORPORA_PATH = '/mnt/shared/CORPORA/'
 CORPUS_DIR = 'CuKidsSpeech/train/' 
 SRATE = 16000
-CHUNK_SEC = 10 # segment duration in seconds (3.0 used in speechbrain recipe) 
+FIXED_DUR_SEC = 1.0 # None or float, if float, utterances will be excluded if less than this, and truncated/chunked if more
+CHUNK_SEC = 10.0 # max segment duration in seconds (3.0 used in speechbrain recipe) 
     # None: untrimmed, variable-duration inputs / float: split into segments
+    # overriden by FIXED_DUR_SEC if not None
 CHECK_WAV_VALID = True
 # CUKIDS is futher split into subdirs of different kinds of audio, with different file/dir naming structure 
 # represented by the regexp  in the dict below
@@ -64,7 +66,7 @@ os.makedirs(os.path.join(CORPORA_PATH,'data_manifests'), exist_ok=True)
 
 wav_error_files=[]
 for split, pattern in subdir_patterns.items():
-    csv_file = os.path.join(CORPORA_PATH,'data_manifests',f'cukids_{split}.csv')
+    csv_file = os.path.join(CORPORA_PATH,'data_manifests',f'cukids_{split}{VERSTR}.csv')
 
     wav_lst = glob.glob(os.path.join(CORPORA_PATH,CORPUS_DIR,split,'**/*.wav'), recursive=True)
     print(f'detected {len(wav_lst)} .wav files in split "{split}". Collecting metadata for csv...')
@@ -102,7 +104,23 @@ for split, pattern in subdir_patterns.items():
             
         if srate != SRATE:
             raise ValueError(f'sampling rate is {srate}, but {SRATE} is required. Go back and reformat this corpus.')
-        if duration_sec>CHUNK_SEC:
+
+        if FIXED_DUR_SEC:
+            if duration_sec<FIXED_DUR_SEC:
+                #print(f'file too short ({duration_sec}) for FIXED_DUR_SEC {FIXED_DUR_SEC}, skipping')
+                continue
+            else:
+                chunks = split_to_chunks(FIXED_DUR_SEC, duration_sec, SRATE)
+                csv_line = [[
+                    f'{ID}_chunk{i:03}',
+                    c[0],
+                    c[1],
+                    c[2],
+                    speaker,
+                    wav_file
+                ] for i,c in enumerate(chunks) if c[2]==int(FIXED_DUR_SEC*SRATE)]
+                csv_output.extend(csv_line)
+        elif duration_sec>CHUNK_SEC:
             #print(f'Long file: splitting into {math.ceil(duration_sec/CHUNK_SEC)} segments of <={CHUNK_SEC} seconds')
             chunks = split_to_chunks(CHUNK_SEC, duration_sec, SRATE)
             csv_line = [[

@@ -1,37 +1,40 @@
 # ################################
 # Model: Speaker identification with ECAPA using kids corpora
 # Authors: Rosy Southwell, based on recipe by Hwidong Na & Mirco Ravanelli
+
+# LITE version skips steps that might lead to OOM
 # ################################
 
 # Basic parameters
 seed: 303
 __set_seed: !apply:torch.manual_seed [!ref <seed>]
-output_folder: !ref results/ecapa_kids_anew_LITE/<seed>
+output_folder: !ref results/ecapa_kids_anew_NOAUG/<seed>
 save_folder: !ref <output_folder>/save
 train_log: !ref <output_folder>/train_log.txt
 
 # Data files
 data_folder: /mnt/shared/CORPORA/  # e.g. /path/to/Voxceleb
-train_annotation: !ref <data_folder>/data_manifests/ALL_TRAIN.csv
+train_annotation: !ref <data_folder>/data_manifests/ALL_TRAIN_mindur1.csv
 valid_annotation: !ref <data_folder>/data_manifests/ISAT-SI_DEV.csv
 
 # verification_file: #TODO: make verification pairs from TEST split 
 
 skip_prep: True
-ckpt_interval_minutes: 5 # save checkpoint every N min
+ckpt_interval_minutes: 3 # save checkpoint every N min
 
 # Training parameters
 number_of_epochs: 10
-batch_size: 2 # TODO: changed from 32
-lr: 0.001
+batch_size: 2  # TODO: changed from 32
+lr: 0.0001 # 0.001 orig
 base_lr: 0.00000001
 max_lr: !ref <lr>
 step_size: 65000 # TODO: check this isn't something that should be constrained by input length
 sample_rate: 16000
-#sorting: descending # TODO: not sure if this gets used 
-sentence_len: 3.0 # seconds TODO: how to make it take variable length inputs, check where this param is used 
+#sentence_len: 3.0 # seconds TODO: how to make it take variable length inputs, check where this param is used 
 shuffle: False # TODO: rather sort by duration than shuffle for batches? 
-random_chunk: True
+random_chunk: False 
+sorting: descending
+avoid_if_longer_than: !ref <sample_rate> * 30
 
 # Feature parameters
 n_mels: 80
@@ -40,12 +43,13 @@ right_frames: 0
 deltas: False
 
 # Number of speakers
-out_n_neurons: 4590 # this is the n speakers in the training data 
+out_n_neurons: 4589 # this is the n speakers in the training data 
 
 dataloader_options:
     batch_size: !ref <batch_size>
     shuffle: !ref <shuffle>
     num_workers: 2
+
 
 # Functions
 compute_features: !new:speechbrain.lobes.features.Fbank
@@ -70,54 +74,54 @@ classifier: !new:speechbrain.lobes.models.ECAPA_TDNN.Classifier
 epoch_counter: !new:speechbrain.utils.epoch_loop.EpochCounter
     limit: !ref <number_of_epochs>
 
-# Data augmentation
-augment_wavedrop: !new:speechbrain.lobes.augment.TimeDomainSpecAugment
-    sample_rate: !ref <sample_rate>
-    speeds: [100]
+# # Data augmentation
+# augment_wavedrop: !new:speechbrain.lobes.augment.TimeDomainSpecAugment
+#     sample_rate: !ref <sample_rate>
+#     speeds: [100]
 
-augment_speed: !new:speechbrain.lobes.augment.TimeDomainSpecAugment
-    sample_rate: !ref <sample_rate>
-    speeds: [95, 100, 105]
+# augment_speed: !new:speechbrain.lobes.augment.TimeDomainSpecAugment
+#     sample_rate: !ref <sample_rate>
+#     speeds: [95, 100, 105]
 
-add_rev: !new:speechbrain.lobes.augment.EnvCorrupt
-    noise_csv: !ref <data_folder>/data_manifests/musan_noise.csv #path to noise csv here
-    reverb_csv: !ref <data_folder>/data_manifests/reverb.csv # path to reverb csv here
-    # openrir_max_noise_len: 3.0  # seconds
-    reverb_prob: 1.0
-    noise_prob: 0.0
-    noise_snr_low: 0
-    noise_snr_high: 15
-    rir_scale_factor: 1.0
+# add_rev: !new:speechbrain.lobes.augment.EnvCorrupt
+#     noise_csv: !ref <data_folder>/data_manifests/musan_noise.csv #path to noise csv here
+#     reverb_csv: !ref <data_folder>/data_manifests/reverb.csv # path to reverb csv here
+#     # openrir_max_noise_len: 3.0  # seconds
+#     reverb_prob: 1.0
+#     noise_prob: 0.0
+#     noise_snr_low: 0
+#     noise_snr_high: 15
+#     rir_scale_factor: 1.0
 
-add_noise: !new:speechbrain.lobes.augment.EnvCorrupt #TODO: add speechbrain noise data to this 
-    noise_csv: !ref <data_folder>/data_manifests/musan_noise.csv #path to noise csv here
-    reverb_csv: !ref <data_folder>/data_manifests/reverb.csv # path to reverb csv here
-    # openrir_max_noise_len: 3.0  # seconds
-    reverb_prob: 0.0
-    noise_prob: 1.0
-    noise_snr_low: 0
-    noise_snr_high: 15
-    rir_scale_factor: 1.0
+# add_noise: !new:speechbrain.lobes.augment.EnvCorrupt #TODO: add speechbrain noise data to this 
+#     noise_csv: !ref <data_folder>/data_manifests/musan_noise.csv #path to noise csv here
+#     reverb_csv: !ref <data_folder>/data_manifests/reverb.csv # path to reverb csv here
+#     # openrir_max_noise_len: 3.0  # seconds
+#     reverb_prob: 0.0
+#     noise_prob: 1.0
+#     noise_snr_low: 0
+#     noise_snr_high: 15
+#     rir_scale_factor: 1.0
 
-add_rev_noise: !new:speechbrain.lobes.augment.EnvCorrupt
-    noise_csv: !ref <data_folder>/data_manifests/musan_noise.csv #path to noise csv here
-    reverb_csv: !ref <data_folder>/data_manifests/reverb.csv # path to reverb csv here
-    # openrir_max_noise_len: 3.0  # seconds
-    reverb_prob: 1.0
-    noise_prob: 1.0
-    noise_snr_low: 0
-    noise_snr_high: 15
-    rir_scale_factor: 1.0
+# add_rev_noise: !new:speechbrain.lobes.augment.EnvCorrupt
+#     noise_csv: !ref <data_folder>/data_manifests/musan_noise.csv #path to noise csv here
+#     reverb_csv: !ref <data_folder>/data_manifests/reverb.csv # path to reverb csv here
+#     # openrir_max_noise_len: 3.0  # seconds
+#     reverb_prob: 1.0
+#     noise_prob: 1.0
+#     noise_snr_low: 0
+#     noise_snr_high: 15
+#     rir_scale_factor: 1.0
 
-add_isat_noise: !new:speechbrain.lobes.augment.EnvCorrupt # add speechbrain noise data to this 
-    noise_csv: !ref <data_folder>/data_manifests/isat_noise.csv
-    reverb_csv: !ref <data_folder>/data_manifests/reverb.csv
-    # openrir_max_noise_len: 3.0  # seconds
-    reverb_prob: 0.0
-    noise_prob: 1.0
-    noise_snr_low: 0
-    noise_snr_high: 15
-    rir_scale_factor: 1.0
+# add_isat_noise: !new:speechbrain.lobes.augment.EnvCorrupt # add speechbrain noise data to this 
+#     noise_csv: !ref <data_folder>/data_manifests/isat_noise.csv
+#     reverb_csv: !ref <data_folder>/data_manifests/reverb.csv
+#     # openrir_max_noise_len: 3.0  # seconds
+#     reverb_prob: 0.0
+#     noise_prob: 1.0
+#     noise_snr_low: 0
+#     noise_snr_high: 15
+#     rir_scale_factor: 1.0
 
 
 # Definition of the augmentation pipeline.
@@ -126,14 +130,14 @@ add_isat_noise: !new:speechbrain.lobes.augment.EnvCorrupt # add speechbrain nois
 # # are concatenated in a single big batch.
 
 augment_pipeline: [
-    !ref <augment_wavedrop>,
-    !ref <augment_speed>,
-    !ref <add_rev>,
-    !ref <add_noise>,
-    !ref <add_rev_noise>,
-    !ref <add_isat_noise>
+    # !ref <augment_wavedrop>,
+    # !ref <augment_speed>
+    # !ref <add_rev>,
+    # !ref <add_noise>,
+    # !ref <add_rev_noise>,
+    # !ref <add_isat_noise>
 ]
-concat_augment: False #TODO: i set to false to maybe decrese mem usage
+concat_augment: False
 
 mean_var_norm: !new:speechbrain.processing.features.InputNormalization
     norm_type: sentence
@@ -141,12 +145,12 @@ mean_var_norm: !new:speechbrain.processing.features.InputNormalization
 
 modules:
     compute_features: !ref <compute_features>
-    augment_wavedrop: !ref <augment_wavedrop>
-    augment_speed: !ref <augment_speed>
-    add_rev: !ref <add_rev>
-    add_noise: !ref <add_noise>
-    add_rev_noise: !ref <add_rev_noise>
-    add_isat_noise: !ref <add_isat_noise>
+    # augment_wavedrop: !ref <augment_wavedrop>
+    # augment_speed: !ref <augment_speed>
+    # # add_rev: !ref <add_rev>
+    # add_noise: !ref <add_noise>
+    # add_rev_noise: !ref <add_rev_noise>
+    # add_isat_noise: !ref <add_isat_noise>
     embedding_model: !ref <embedding_model>
     classifier: !ref <classifier>
     mean_var_norm: !ref <mean_var_norm>

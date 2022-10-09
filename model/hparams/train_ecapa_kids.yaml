@@ -6,7 +6,7 @@
 # Basic parameters
 seed: 303
 __set_seed: !apply:torch.manual_seed [!ref <seed>]
-output_folder: !ref results/ecapa_kids_anew/<seed>
+output_folder: !ref results/ecapa_kids_anew_fixlen1/<seed>
 save_folder: !ref <output_folder>/save
 train_log: !ref <output_folder>/train_log.txt
 
@@ -28,9 +28,8 @@ base_lr: 0.00000001
 max_lr: !ref <lr>
 step_size: 65000 # TODO: check this isn't something that should be constrained by input length
 sample_rate: 16000
-#sorting: descending # TODO: not sure if this gets used 
 #sentence_len: 3.0 # seconds TODO: how to make it take variable length inputs, check where this param is used 
-shuffle: False # TODO: rather sort by duration than shuffle for batches? 
+shuffle: True # TODO: rather sort by duration than shuffle for batches? 
 random_chunk: False 
 
 # Feature parameters
@@ -40,14 +39,14 @@ right_frames: 0
 deltas: False
 
 # Number of speakers
-out_n_neurons: 4589 # this is the n speakers in the training data 
+out_n_neurons: 4589 # TODO: update for filtered files. this is the n speakers in the training data 
 
 dataloader_options:
     batch_size: !ref <batch_size>
     shuffle: !ref <shuffle>
     num_workers: 2
-    sorting: descending
-    avoid_if_longer_than: !ref <sample_rate> * 30
+
+
 # Functions
 compute_features: !new:speechbrain.lobes.features.Fbank
     n_mels: !ref <n_mels>
@@ -134,7 +133,7 @@ augment_pipeline: [
     !ref <add_rev_noise>,
     !ref <add_isat_noise>
 ]
-concat_augment: False
+concat_augment: False 
 
 mean_var_norm: !new:speechbrain.processing.features.InputNormalization
     norm_type: sentence

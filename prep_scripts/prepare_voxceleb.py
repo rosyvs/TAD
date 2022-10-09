@@ -21,24 +21,26 @@ import numpy as np
 # VoxCeleb1 filestruct is wav/id00000/youtubeID/00000.wav
 # speakerID comes from the subfolder of wav
 
-
+VERSTR = '_fixlen1'
 CORPORA_PATH = '/mnt/shared/CORPORA/'
 CORPUS_DIR = 'VoxCeleb/vox1_dev_wav/' 
 SRATE = 16000
-CHUNK_SEC = 10 # segment duration in seconds (3.0 used in speechbrain recipe) 
+FIXED_DUR_SEC = 1.0 # None or float, if float, utterances will be excluded if less than this, and truncated/chunked if more
+CHUNK_SEC = 10.0 # max segment duration in seconds (3.0 used in speechbrain recipe) 
     # None: untrimmed, variable-duration inputs / float: split into segments
-CHECK_WAV_VALID = True
+    # overriden by FIXED_DUR_SEC if not None
+CHECK_WAV_VALID = False
 
 
 os.makedirs(os.path.join(CORPORA_PATH,'data_manifests'), exist_ok=True)
-csv_file = os.path.join(CORPORA_PATH,'data_manifests','vox1_dev.csv')
+csv_file = os.path.join(CORPORA_PATH,'data_manifests',f'vox1_dev{VERSTR}.csv')
 # below is based on voxceleb_prepare.py in speechbrain recipes
 
 # No split is required, will use all of dev to train the recogniser, tuning and testing will be done with ISAT-SI TEST
 wav_lst = glob.glob(os.path.join(CORPORA_PATH,CORPUS_DIR,'*/*/*.wav'))
 print(f'detected {len(wav_lst)} .wav files. Collecting metadata for csv...')
 csv_output = [["ID", "start", "end", "duration", "speaker", "filepath"]]
-for wav_file in tqdm(wav_lst, dynamic_ncols=True):
+for wav_file in tqdm(wav_lst):
     # Getting sentence and speaker ids
     try:
         [speaker, recordingID, segmentID] = wav_file.split("/")[-3:]
@@ -56,7 +58,22 @@ for wav_file in tqdm(wav_lst, dynamic_ncols=True):
             continue
     if srate != SRATE:
         raise ValueError(f'sampling rate is {srate}, but {SRATE} is required. Go back and reformat this corpus.')
-    if duration_sec>CHUNK_SEC:
+    if FIXED_DUR_SEC:
+        if duration_sec<FIXED_DUR_SEC:
+            print(f'file too short ({duration_sec}) for FIXED_DUR_SEC {FIXED_DUR_SEC}, skipping')
+            continue
+        else:
+            chunks = split_to_chunks(FIXED_DUR_SEC, duration_sec, SRATE)
+            csv_line = [[
+                f'{ID}_chunk{i:03}',
+                c[0],
+                c[1],
+                c[2],
+                speaker,
+                wav_file
+            ] for i,c in enumerate(chunks) if c[2]==int(FIXED_DUR_SEC*SRATE)]
+            csv_output.extend(csv_line)
+    elif duration_sec>CHUNK_SEC:
         #print(f'Long file: splitting into {math.ceil(duration_sec/CHUNK_SEC)} segments of <={CHUNK_SEC} seconds')
         chunks = split_to_chunks(CHUNK_SEC, duration_sec, SRATE)
         csv_line = [[

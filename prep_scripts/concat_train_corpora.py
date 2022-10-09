@@ -5,25 +5,26 @@ import csv
 
 SRATE = 16000
 MIN_DUR_S = 1 # filter to apply to corpora
-APPLY_FILTER = True
+APPLY_FILTER = False
+VERSTR = '_fixlen1'
 
 CORPORA_PATH = '/mnt/shared/CORPORA/'
-csv_out = os.path.join(CORPORA_PATH, 'data_manifests', f'ALL_TRAIN{f"_mindur{MIN_DUR_S}" if APPLY_FILTER else ""}.csv')
+csv_out = os.path.join(CORPORA_PATH, 'data_manifests', f'ALL_TRAIN{VERSTR}.csv')
 
 manifest_dir = os.path.join(CORPORA_PATH, 'data_manifests')
 concat_list = [
-    'ISAT-SI_TRAIN.csv',
-    'myst_train.csv',
-    'myst_test.csv',
-    'myst_development.csv',
-    'cukids_train-part1-cu.csv',
-    'cukids_train-part2-cu-sentences.csv',
-    'cukids_train-part3-cu-stories.csv',
-    'cukids_train-part4-cu-summaries.csv',
-    'cukids_train-part5-ogi-1-5.csv',
-    'vox1_dev.csv',
-    'cslu_scripted.csv',
-    'cslu_spontaneous.csv']
+    f'ISAT-SI_TRAIN{VERSTR}.csv',
+    f'myst_train{VERSTR}.csv',
+    f'myst_test{VERSTR}.csv',
+    f'myst_development{VERSTR}.csv',
+    f'cukids_train-part1-cu{VERSTR}.csv',
+    f'cukids_train-part2-cu-sentences{VERSTR}.csv',
+    f'cukids_train-part3-cu-stories{VERSTR}.csv',
+    f'cukids_train-part4-cu-summaries{VERSTR}.csv',
+    f'cukids_train-part5-ogi-1-5{VERSTR}.csv',
+    f'vox1_dev{VERSTR}.csv',
+    f'cslu_scripted{VERSTR}.csv',
+    f'cslu_spontaneous{VERSTR}.csv']
 
 
 
