@@ -194,10 +194,11 @@ def dataio_prep(hparams):
         )
         sig = sig.transpose(0, 1).squeeze(1)
         # 0-pad if wav is shorter than sentence_len
-        if hparams['sentence_len'] and duration <snt_len_sample:
-            zero_sig = torch.zeros_like(sig)
-            zero_sig[0 : len(sig)] = sig
-            sig = zero_sig
+        if hparams.get('sentence_len'):
+            if duration <snt_len_sample:
+                zero_sig = torch.zeros_like(sig)
+                zero_sig[0 : len(sig)] = sig
+                sig = zero_sig
         return sig
 
     sb.dataio.dataset.add_dynamic_item(datasets, audio_pipeline)
