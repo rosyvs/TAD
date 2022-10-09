@@ -146,13 +146,13 @@ def dataio_prep(hparams):
     )
 
     if hparams["sorting"] == "ascending":
-            # we sort training data to speed up training and get better results.
-            train_data = train_data.filtered_sorted(
-                sort_key="duration",
-                key_max_value={"duration": hparams["avoid_if_longer_than"]},
-            )
-            # when sorting do not shuffle in dataloader ! otherwise is pointless
-            hparams["dataloader_options"]["shuffle"] = False
+        # we sort training data to speed up training and get better results.
+        train_data = train_data.filtered_sorted(
+            sort_key="duration",
+            key_max_value={"duration": hparams["avoid_if_longer_than"]},
+        )
+        # when sorting do not shuffle in dataloader ! otherwise is pointless
+        hparams["dataloader_options"]["shuffle"] = False
 
     elif hparams["sorting"] == "descending":
         train_data = train_data.filtered_sorted(
@@ -162,14 +162,6 @@ def dataio_prep(hparams):
         )
         # when sorting do not shuffle in dataloader ! otherwise is pointless
         hparams["dataloader_options"]["shuffle"] = False
-
-    elif hparams["sorting"] == "random":
-        pass
-
-    else:
-        raise NotImplementedError(
-            "sorting must be random, ascending or descending"
-        )
 
 
     valid_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
@@ -185,11 +177,13 @@ def dataio_prep(hparams):
     @sb.utils.data_pipeline.takes("filepath", "start", "end", "duration")
     @sb.utils.data_pipeline.provides("sig")
     def audio_pipeline(wav, start, end, duration):
-        if hparams["random_chunk"]: # 
+        if hparams['sentence_len']:
             snt_len_sample = int(hparams["sample_rate"] * hparams["sentence_len"]) # Used only if hparams['random_chunk"]
-            start = random.randint(0, duration - snt_len_sample)
+            
+            if hparams["random_chunk"]: # 
+                start = random.randint(0, max([duration - snt_len_sample, 0]))
             end = start + snt_len_sample
-
+            
         # else:
         start = int(start)
         end = int(end)
@@ -198,6 +192,10 @@ def dataio_prep(hparams):
             wav, num_frames=duration, frame_offset=start
         )
         sig = sig.transpose(0, 1).squeeze(1)
+        if hparams['sentence_len'] and duration <snt_len_sample:
+            zero_sig = torch.zeros_like(sig)
+            zero_sig[0 : len(sig)] = sig
+            sig = zero_sig
         return sig
 
     sb.dataio.dataset.add_dynamic_item(datasets, audio_pipeline)
