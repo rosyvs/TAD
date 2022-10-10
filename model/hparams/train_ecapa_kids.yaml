@@ -13,7 +13,7 @@ train_log: !ref <output_folder>/train_log.txt
 # Data files
 data_folder: /mnt/shared/CORPORA/  # e.g. /path/to/Voxceleb
 train_annotation: !ref <data_folder>/data_manifests/ALL_TRAIN_fixlen1.csv
-valid_annotation: !ref <data_folder>/data_manifests/ISAT-SI_DEV_fixlen1.csv
+# valid_annotation: !ref <data_folder>/data_manifests/ISAT-SI_DEV_fixlen1.csv # just to validate speakerID classifier. should contain the SAME speakers as TRAIN
 
 # verification_file: #TODO: make verification pairs from TEST split 
 
@@ -22,8 +22,8 @@ ckpt_interval_minutes: 3 # save checkpoint every N min
 
 # Training parameters
 number_of_epochs: 10
-batch_size: 2  # TODO: changed from 32
-lr: 0.0001 # 0.001 orig
+batch_size: 16  # TODO: changed from 32
+lr: 0.001 # 0.001 orig
 base_lr: 0.00000001
 max_lr: !ref <lr>
 step_size: 65000 # TODO: check this isn't something that should be constrained by input length
@@ -168,6 +168,8 @@ lr_annealing: !new:speechbrain.nnet.schedulers.CyclicLRScheduler
 # Logging + checkpoints
 train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
     save_file: !ref <train_log>
+# tb_logger:  !new:speechbrain.utils.train_logger.TensorboardLogger
+#     save_dir: !ref <output_folder>/TB/
 
 error_stats: !name:speechbrain.utils.metric_stats.MetricStats
     metric: !name:speechbrain.nnet.losses.classification_error

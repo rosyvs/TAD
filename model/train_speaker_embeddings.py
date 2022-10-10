@@ -125,8 +125,8 @@ class SpeakerBrain(sb.core.Brain):
 
             self.hparams.train_logger.log_stats(
                 stats_meta={"epoch": epoch, "lr": old_lr},
-                train_stats=self.train_stats,
-                valid_stats=stage_stats,
+                train_stats=self.train_stats#,
+               # valid_stats=stage_stats,
             )
             self.checkpointer.save_and_keep_only(
                 meta={"ErrorRate": stage_stats["ErrorRate"]},
@@ -164,12 +164,12 @@ def dataio_prep(hparams):
         hparams["dataloader_options"]["shuffle"] = False
 
 
-    valid_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
-        csv_path=hparams["valid_annotation"],
-        replacements={"data_root": data_folder},# TODO: do we need these data_folder replacements? 
-    )
+    # valid_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+    #     csv_path=hparams["valid_annotation"],
+    #     replacements={"data_root": data_folder},# TODO: do we need these data_folder replacements? 
+    # )
 
-    datasets = [train_data, valid_data]
+    datasets = [train_data]#, valid_data]
     label_encoder = sb.dataio.encoder.CategoricalEncoder()
 
 
@@ -223,7 +223,8 @@ def dataio_prep(hparams):
     # 4. Set output:
     sb.dataio.dataset.set_output_keys(datasets, ["id", "sig", "spk_id_encoded"])
 
-    return train_data, valid_data, label_encoder
+    # return train_data, valid_data, label_encoder
+    return train_data, label_encoder
 
 
 if __name__ == "__main__":
@@ -245,7 +246,8 @@ if __name__ == "__main__":
     # sb.utils.distributed.ddp_init_group(run_opts)
 
     # Dataset IO prep: creating Dataset objects and proper encodings for phones # TODO: ...phones? 
-    train_data, valid_data, label_encoder = dataio_prep(hparams) 
+    # train_data, valid_data, label_encoder = dataio_prep(hparams) 
+    train_data, label_encoder = dataio_prep(hparams) 
 
     # Create experiment directory
     sb.core.create_experiment_directory(
@@ -270,9 +272,9 @@ if __name__ == "__main__":
         speaker_brain.fit(
         speaker_brain.hparams.epoch_counter,
         train_data,
-        valid_data,
-        train_loader_kwargs=hparams["dataloader_options"],
-        valid_loader_kwargs=hparams["dataloader_options"],
+        # valid_data,
+        train_loader_kwargs=hparams["dataloader_options"]#,
+        # valid_loader_kwargs=hparams["dataloader_options"],
     )
     except RuntimeError: # Out of memory
         oom = True
@@ -281,7 +283,7 @@ if __name__ == "__main__":
         speaker_brain.fit(
             speaker_brain.hparams.epoch_counter,
             train_data,
-            valid_data,
-            train_loader_kwargs=hparams["dataloader_options"],
-            valid_loader_kwargs=hparams["dataloader_options"],
+           # valid_data,
+            train_loader_kwargs=hparams["dataloader_options"]#,
+          #  valid_loader_kwargs=hparams["dataloader_options"],
         )
