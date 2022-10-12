@@ -21,15 +21,16 @@ import contextlib
 # 1017 files containing approximately 8-10 minutes of speech per speaker.
 # Scripted speech:  60 items from a total list of 319 phonetically-balanced but simple words, sentences or digit strings. 
 # Each utterance of spontaneous speech begins with a recitation of the alphabet and contains a monologue of about one minute in duration.
-VERSTR = '_fixlen1'
+VERSTR = '_fixlen3'
 CORPORA_PATH = '/mnt/shared/CORPORA/'
 CORPUS_DIR = 'cslu_kids/speech/' 
 SRATE = 16000
-FIXED_DUR_SEC = 1.0 # None or float, if float, utterances will be excluded if less than this, and truncated/chunked if more
+FIXED_DUR_SEC = 3.0 # None or float, if float, utterances will be excluded if less than this, and truncated/chunked if more
+KEEP_SHORTER = True # If False, segs shorter than FIXED_DUR_SEC are skipped. Otherwise kept, will be 0-padded in model.
 CHUNK_SEC = 10.0 # max segment duration in seconds (3.0 used in speechbrain recipe) 
     # None: untrimmed, variable-duration inputs / float: split into segments
     # overriden by FIXED_DUR_SEC if not None
-CHECK_WAV_VALID = True
+CHECK_WAV_VALID = False
 splits = ['scripted','spontaneous']
 
 
@@ -64,7 +65,21 @@ for split in splits:
 
         if FIXED_DUR_SEC:
             if duration_sec<FIXED_DUR_SEC:
-                print(f'file too short ({duration_sec}) for FIXED_DUR_SEC {FIXED_DUR_SEC}, skipping')
+                if KEEP_SHORTER:
+                    start=0
+                    end=duration
+                    # append to csv rows
+                    csv_line = [
+                        ID,
+                        start,
+                        end,
+                        duration,
+                        speaker,
+                        wav_file
+                    ]
+                    csv_output.append(csv_line)
+                else:
+                    print(f'file too short ({duration_sec}) for FIXED_DUR_SEC {FIXED_DUR_SEC}, skipping')
                 continue
             else:
                 chunks = split_to_chunks(FIXED_DUR_SEC, duration_sec, SRATE)

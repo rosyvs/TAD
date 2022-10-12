@@ -21,11 +21,11 @@ import numpy as np
 # VoxCeleb1 filestruct is wav/id00000/youtubeID/00000.wav
 # speakerID comes from the subfolder of wav
 
-VERSTR = '_fixlen1'
+VERSTR = '_fixlen3'
 CORPORA_PATH = '/mnt/shared/CORPORA/'
 CORPUS_DIR = 'VoxCeleb/vox1_dev_wav/' 
 SRATE = 16000
-FIXED_DUR_SEC = 1.0 # None or float, if float, utterances will be excluded if less than this, and truncated/chunked if more
+FIXED_DUR_SEC = 3.0 # None or float, if float, utterances will be excluded if less than this, and truncated/chunked if more
 CHUNK_SEC = 10.0 # max segment duration in seconds (3.0 used in speechbrain recipe) 
     # None: untrimmed, variable-duration inputs / float: split into segments
     # overriden by FIXED_DUR_SEC if not None

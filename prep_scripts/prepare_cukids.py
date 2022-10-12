@@ -15,15 +15,15 @@ from scipy.io import wavfile
 
 # TODO: these are not actual wav files! They are NIST SPHERE which also uses the .wav ext...
 # An easy way to run this over all files under the current directory recursively is find . -name '*.WAV' -exec sph2pipe -f wav {} {}.wav \;. The only drawback is that you end up with files ending with .WAV.wav
-VERSTR = '_fixlen1'
+VERSTR = '_fixlen3'
 CORPORA_PATH = '/mnt/shared/CORPORA/'
 CORPUS_DIR = 'CuKidsSpeech/train/' 
 SRATE = 16000
-FIXED_DUR_SEC = 1.0 # None or float, if float, utterances will be excluded if less than this, and truncated/chunked if more
+FIXED_DUR_SEC = 3.0 # None or float, if float, utterances will be excluded if less than this, and truncated/chunked if more
 CHUNK_SEC = 10.0 # max segment duration in seconds (3.0 used in speechbrain recipe) 
     # None: untrimmed, variable-duration inputs / float: split into segments
     # overriden by FIXED_DUR_SEC if not None
-CHECK_WAV_VALID = True
+CHECK_WAV_VALID = False
 # CUKIDS is futher split into subdirs of different kinds of audio, with different file/dir naming structure 
 # represented by the regexp  in the dict below
 subdir_patterns = {

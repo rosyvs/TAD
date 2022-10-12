@@ -6,15 +6,15 @@ import numpy as np
 import pandas as pd
 import math
 
-VERSTR = '_fixlen1'
+VERSTR = '_fixlen3'
 CORPORA_PATH = '/mnt/shared/CORPORA/'
 CORPUS_DIR = 'ISAT-SI/' 
 SRATE = 16000
-FIXED_DUR_SEC = 1.0 # None or float, if float, utterances will be excluded if less than this, and truncated/chunked if more
+FIXED_DUR_SEC = 3.0 # None or float, if float, utterances will be excluded if less than this, and truncated/chunked if more
 CHUNK_SEC = 10.0 # max segment duration in seconds (3.0 used in speechbrain recipe) 
     # None: untrimmed, variable-duration inputs / float: split into segments
     # overriden by FIXED_DUR_SEC if not None
-CHECK_WAV_VALID = True
+CHECK_WAV_VALID = False
 
 splits = ['DEV','TEST','TRAIN']
 
