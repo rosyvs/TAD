@@ -177,6 +177,8 @@ def dataio_prep(hparams):
     @sb.utils.data_pipeline.takes("filepath", "start", "end", "duration")
     @sb.utils.data_pipeline.provides("sig")
     def audio_pipeline(wav, start, end, duration):
+        start = int(start)
+        end = int(end)
         if hparams.get('sentence_len'):
             snt_len_sample = int(hparams["sample_rate"] * hparams["sentence_len"]) # Used only if hparams['random_chunk"]
             
@@ -185,14 +187,12 @@ def dataio_prep(hparams):
             end = start + snt_len_sample
             duration = end-start
             
-    
-        start = int(start)
-        end = int(end)
         duration = int(duration)
         sig, fs = torchaudio.load(
             wav, num_frames=duration, frame_offset=start
         )
         sig = sig.transpose(0, 1).squeeze(1)
+
         # 0-pad if wav is shorter than sentence_len
         if hparams.get('sentence_len'):
             if duration <snt_len_sample:
