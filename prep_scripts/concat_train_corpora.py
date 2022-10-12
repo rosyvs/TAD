@@ -5,8 +5,8 @@ import csv
 
 SRATE = 16000
 MIN_DUR_S = 1 # filter to apply to corpora
-APPLY_FILTER = False
-VERSTR = '_fixlen1'
+APPLY_FILTER = True
+VERSTR = '_fixlen3'
 
 CORPORA_PATH = '/mnt/shared/CORPORA/'
 csv_out = os.path.join(CORPORA_PATH, 'data_manifests', f'ALL_TRAIN{VERSTR}.csv')
@@ -17,12 +17,11 @@ concat_list = [
     f'myst_train{VERSTR}.csv',
     f'myst_test{VERSTR}.csv',
     f'myst_development{VERSTR}.csv',
-    f'cukids_train-part1-cu{VERSTR}.csv',
-    f'cukids_train-part2-cu-sentences{VERSTR}.csv',
-    f'cukids_train-part3-cu-stories{VERSTR}.csv',
-    f'cukids_train-part4-cu-summaries{VERSTR}.csv',
-    f'cukids_train-part5-ogi-1-5{VERSTR}.csv',
-    f'vox1_dev{VERSTR}.csv',
+    f'cukids_train_part1{VERSTR}.csv',
+    f'cukids_train_part2{VERSTR}.csv',
+    f'cukids_train_part3{VERSTR}.csv',
+    f'cukids_train_part4{VERSTR}.csv',
+    f'cukids_train_part5{VERSTR}.csv',
     f'cslu_scripted{VERSTR}.csv',
     f'cslu_spontaneous{VERSTR}.csv']
 
