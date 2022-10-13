@@ -1,0 +1,1591 @@
+2022-10-11 23:26:06,499 - speechbrain.core - INFO - Beginning experiment!
+2022-10-11 23:26:06,499 - speechbrain.core - INFO - Experiment folder: results/ecapa_kids_anew_3s_noVoxCeleb/303
+2022-10-11 23:26:07,016 - speechbrain.utils.superpowers - DEBUG - absl-py==1.2.0
+appdirs==1.4.4
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+attrs==22.1.0
+autopep8==1.7.0
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+black==19.10b0
+Bottleneck @ file:///opt/conda/conda-bld/bottleneck_1657175564434/work
+brotlipy==0.7.0
+cachetools==5.2.0
+certifi @ file:///opt/conda/conda-bld/certifi_1663615672595/work/certifi
+cffi @ file:///tmp/abs_98z5h56wf8/croots/recipe/cffi_1659598650955/work
+cfgv==3.3.1
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.0.4
+cryptography @ file:///tmp/build/80754af9/cryptography_1652101588893/work
+ctc-segmentation==1.7.3
+Cython @ file:///opt/conda/conda-bld/cython_1656941947712/work
+debugpy @ file:///tmp/build/80754af9/debugpy_1637091799509/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+distlib==0.3.6
+entrypoints @ file:///tmp/build/80754af9/entrypoints_1649926439650/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+filelock==3.8.0
+flake8==3.7.9
+google-auth==2.12.0
+google-auth-oauthlib==0.4.6
+grpcio==1.49.1
+huggingface-hub==0.9.1
+HyperPyYAML==1.0.1
+identify==2.5.5
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+importlib-metadata==5.0.0
+ipykernel @ file:///opt/conda/conda-bld/ipykernel_1662361798230/work
+ipython @ file:///opt/conda/conda-bld/ipython_1657652213665/work
+jedi @ file:///tmp/build/80754af9/jedi_1644297102865/work
+joblib==1.2.0
+jupyter-core @ file:///opt/conda/conda-bld/jupyter_core_1651671229925/work
+jupyter_client @ file:///opt/conda/conda-bld/jupyter_client_1662504365333/work
+Markdown==3.4.1
+MarkupSafe==2.1.1
+matplotlib-inline @ file:///opt/conda/conda-bld/matplotlib-inline_1662014470464/work
+mccabe==0.6.1
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626186066731/work
+mkl-service==2.4.0
+more-itertools==8.14.0
+nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1649847906199/work
+nodeenv==1.7.0
+numexpr @ file:///opt/conda/conda-bld/numexpr_1656940300424/work
+numpy==1.23.3
+oauthlib==3.2.1
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.4.4
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pathspec==0.10.1
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.2.0
+platformdirs==2.5.2
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+protobuf==3.19.6
+psutil @ file:///opt/conda/conda-bld/psutil_1656431268089/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+py==1.11.0
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycodestyle==2.9.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydub==0.25.1
+pyflakes==2.1.1
+Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
+pytest==5.4.1
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///opt/conda/conda-bld/pytz_1654762638606/work
+PyYAML==6.0
+pyzmq @ file:///opt/conda/conda-bld/pyzmq_1657724186960/work
+regex==2022.9.13
+requests @ file:///opt/conda/conda-bld/requests_1657734628632/work
+requests-oauthlib==1.3.1
+rsa==4.9
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scipy==1.8.1
+sentencepiece==0.1.97
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+-e git+https://github.com/speechbrain/speechbrain.git@d78c00eca113c9f013f2eee4d05947adc1b32ccb#egg=speechbrain
+sphfile==1.0.3
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+tensorboard==2.10.1
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+toml==0.10.2
+torch==1.12.1
+torchaudio==0.12.1
+torchvision==0.13.1
+tornado @ file:///opt/conda/conda-bld/tornado_1662061693373/work
+tqdm==4.64.1
+traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+typed-ast==1.5.4
+typing_extensions @ file:///tmp/abs_ben9emwtky/croots/recipe/typing_extensions_1659638822008/work
+urllib3==1.26.12
+virtualenv==20.16.5
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+Werkzeug==2.2.2
+yamllint==1.23.0
+zipp==3.9.0
+
+
+2022-10-11 23:26:07,050 - speechbrain.utils.superpowers - DEBUG - eedfb81
+
+
+2022-10-11 23:26:07,226 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2022-10-11 23:26:08,621 - speechbrain.core - INFO - 6.8M trainable parameters in SpeakerBrain
+2022-10-11 23:26:08,623 - speechbrain.utils.checkpoints - INFO - Would load a checkpoint here, but none found yet.
+2022-10-11 23:26:08,623 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2022-10-11 23:29:08,861 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-29-08+00
+2022-10-11 23:32:09,050 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-32-08+00
+2022-10-11 23:32:09,065 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-29-08+00
+2022-10-11 23:35:09,228 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-35-09+00
+2022-10-11 23:35:09,248 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-32-08+00
+2022-10-11 23:38:09,598 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-38-09+00
+2022-10-11 23:38:09,619 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-35-09+00
+2022-10-11 23:41:09,975 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-41-09+00
+2022-10-11 23:41:09,998 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-38-09+00
+2022-10-11 23:44:10,191 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-44-10+00
+2022-10-11 23:44:10,216 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-41-09+00
+2022-10-11 23:47:10,651 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-47-10+00
+2022-10-11 23:47:10,677 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-44-10+00
+2022-10-11 23:50:11,028 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-50-10+00
+2022-10-11 23:50:11,057 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-47-10+00
+2022-10-11 23:53:11,455 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-53-11+00
+2022-10-11 23:53:11,485 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-50-10+00
+2022-10-11 23:56:11,862 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-56-11+00
+2022-10-11 23:56:11,893 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-53-11+00
+2022-10-11 23:59:12,208 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-59-12+00
+2022-10-11 23:59:12,241 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-56-11+00
+2022-10-12 00:02:12,543 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-02-12+00
+2022-10-12 00:02:12,578 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-11+23-59-12+00
+2022-10-12 00:05:12,957 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-05-12+00
+2022-10-12 00:05:12,994 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-02-12+00
+2022-10-12 00:08:13,355 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-08-13+00
+2022-10-12 00:08:13,395 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-05-12+00
+2022-10-12 00:11:13,880 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-11-13+00
+2022-10-12 00:11:13,922 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-08-13+00
+2022-10-12 00:14:14,453 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-14-14+00
+2022-10-12 00:14:14,496 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-11-13+00
+2022-10-12 00:17:14,874 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-17-14+00
+2022-10-12 00:17:14,920 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-14-14+00
+2022-10-12 00:20:15,223 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-20-15+00
+2022-10-12 00:20:15,271 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-17-14+00
+2022-10-12 00:23:15,687 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-23-15+00
+2022-10-12 00:23:15,736 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-20-15+00
+2022-10-12 00:26:16,035 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-26-15+00
+2022-10-12 00:26:16,086 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-23-15+00
+2022-10-12 00:29:16,310 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-29-16+00
+2022-10-12 00:29:16,364 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-26-15+00
+2022-10-12 00:32:16,706 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-32-16+00
+2022-10-12 00:32:16,761 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-29-16+00
+2022-10-12 00:35:17,147 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-35-16+00
+2022-10-12 00:35:17,203 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-32-16+00
+2022-10-12 00:38:17,529 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-38-17+00
+2022-10-12 00:38:17,588 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-35-16+00
+2022-10-12 00:41:17,928 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-41-17+00
+2022-10-12 00:41:17,989 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-38-17+00
+2022-10-12 00:44:18,370 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-44-18+00
+2022-10-12 00:44:18,433 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-41-17+00
+2022-10-12 00:47:18,744 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-47-18+00
+2022-10-12 00:47:18,808 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-44-18+00
+2022-10-12 00:50:19,440 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-50-19+00
+2022-10-12 00:50:19,506 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-47-18+00
+2022-10-12 00:53:19,811 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-53-19+00
+2022-10-12 00:53:19,879 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-50-19+00
+2022-10-12 00:56:20,325 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-56-20+00
+2022-10-12 00:56:20,396 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-53-19+00
+2022-10-12 00:59:20,726 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-59-20+00
+2022-10-12 00:59:20,799 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-56-20+00
+2022-10-12 01:02:21,108 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-02-20+00
+2022-10-12 01:02:21,181 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+00-59-20+00
+2022-10-12 01:05:21,582 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-05-21+00
+2022-10-12 01:05:21,658 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-02-20+00
+2022-10-12 01:08:22,027 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-08-21+00
+2022-10-12 01:08:22,106 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-05-21+00
+2022-10-12 01:11:22,338 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-11-22+00
+2022-10-12 01:11:22,416 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-08-21+00
+2022-10-12 01:14:23,059 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-14-22+00
+2022-10-12 01:14:23,140 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-11-22+00
+2022-10-12 01:17:23,327 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-17-23+00
+2022-10-12 01:17:23,410 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-14-22+00
+2022-10-12 01:20:23,753 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-20-23+00
+2022-10-12 01:20:23,839 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-17-23+00
+2022-10-12 01:23:24,114 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-23-23+00
+2022-10-12 01:23:24,200 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-20-23+00
+2022-10-12 01:26:24,365 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-26-24+00
+2022-10-12 01:26:24,454 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-23-23+00
+2022-10-12 01:29:24,628 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-29-24+00
+2022-10-12 01:29:24,719 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-26-24+00
+2022-10-12 01:32:25,022 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-32-24+00
+2022-10-12 01:32:25,115 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-29-24+00
+2022-10-12 01:35:25,304 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-35-25+00
+2022-10-12 01:35:25,399 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-32-24+00
+2022-10-12 01:38:25,614 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-38-25+00
+2022-10-12 01:38:25,710 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-35-25+00
+2022-10-12 01:41:26,510 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-41-26+00
+2022-10-12 01:41:26,608 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-38-25+00
+2022-10-12 01:44:26,960 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-44-26+00
+2022-10-12 01:44:27,061 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-41-26+00
+2022-10-12 01:47:27,247 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-47-27+00
+2022-10-12 01:47:27,350 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-44-26+00
+2022-10-12 01:50:27,772 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-50-27+00
+2022-10-12 01:50:27,876 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-47-27+00
+2022-10-12 01:53:28,082 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-53-27+00
+2022-10-12 01:53:28,187 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-50-27+00
+2022-10-12 01:56:28,590 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-56-28+00
+2022-10-12 01:56:28,697 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-53-27+00
+2022-10-12 01:59:29,517 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-59-29+00
+2022-10-12 01:59:29,626 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-56-28+00
+2022-10-12 02:02:30,095 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-02-29+00
+2022-10-12 02:02:30,207 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+01-59-29+00
+2022-10-12 02:05:30,662 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-05-30+00
+2022-10-12 02:05:30,775 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-02-29+00
+2022-10-12 02:08:31,279 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-08-31+00
+2022-10-12 02:08:31,395 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-05-30+00
+2022-10-12 02:11:31,627 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-11-31+00
+2022-10-12 02:11:31,744 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-08-31+00
+2022-10-12 02:14:32,044 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-14-31+00
+2022-10-12 02:14:32,164 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-11-31+00
+2022-10-12 02:17:32,557 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-17-32+00
+2022-10-12 02:17:32,677 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-14-31+00
+2022-10-12 02:20:33,081 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-20-32+00
+2022-10-12 02:20:33,205 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-17-32+00
+2022-10-12 02:23:33,427 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-23-33+00
+2022-10-12 02:23:33,552 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-20-32+00
+2022-10-12 02:26:34,033 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-26-33+00
+2022-10-12 02:26:34,158 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-23-33+00
+2022-10-12 02:29:34,585 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-29-34+00
+2022-10-12 02:29:34,713 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-26-33+00
+2022-10-12 02:32:35,047 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-32-34+00
+2022-10-12 02:32:35,179 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-29-34+00
+2022-10-12 02:35:35,448 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-35-35+00
+2022-10-12 02:35:35,580 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-32-34+00
+2022-10-12 02:38:35,905 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-38-35+00
+2022-10-12 02:38:36,041 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-35-35+00
+2022-10-12 02:41:36,250 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-41-36+00
+2022-10-12 02:41:36,386 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-38-35+00
+2022-10-12 02:44:37,029 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-44-36+00
+2022-10-12 02:44:37,167 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-41-36+00
+2022-10-12 02:47:37,473 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-47-37+00
+2022-10-12 02:47:37,735 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-44-36+00
+2022-10-12 02:50:37,898 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-50-37+00
+2022-10-12 02:50:38,040 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-47-37+00
+2022-10-12 02:53:38,401 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-53-38+00
+2022-10-12 02:53:38,546 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-50-37+00
+2022-10-12 02:56:38,823 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-56-38+00
+2022-10-12 02:56:38,971 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-53-38+00
+2022-10-12 02:59:39,214 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-59-39+00
+2022-10-12 02:59:39,362 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-56-38+00
+2022-10-12 03:02:39,678 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-02-39+00
+2022-10-12 03:02:39,827 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+02-59-39+00
+2022-10-12 03:05:40,434 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-05-40+00
+2022-10-12 03:05:40,603 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-02-39+00
+2022-10-12 03:08:40,945 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-08-40+00
+2022-10-12 03:08:41,099 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-05-40+00
+2022-10-12 03:11:41,399 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-11-41+00
+2022-10-12 03:11:41,555 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-08-40+00
+2022-10-12 03:14:33,545 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 272, in <module>
+    speaker_brain.fit(
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1153, in fit
+    self._fit_train(train_set=train_set, epoch=epoch, enable=enable)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1009, in _fit_train
+    loss = self.fit_batch(batch)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 881, in fit_batch
+    outputs = self.compute_forward(batch, Stage.TRAIN)
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 54, in compute_forward
+    wavs_aug = augment(wavs, lens)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/lobes/augment.py", line 446, in forward
+    waveforms = self.add_noise(waveforms, lengths)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/processing/speech_augmentation.py", line 158, in forward
+    noise_waveform, noise_length = self._load_noise(
+  File "/mnt/shared/speechbrain/speechbrain/processing/speech_augmentation.py", line 205, in _load_noise
+    noise_batch, noise_len = self._load_noise_batch_of_size(batch_size)
+  File "/mnt/shared/speechbrain/speechbrain/processing/speech_augmentation.py", line 252, in _load_noise_batch_of_size
+    noise_batch, noise_lens = AddNoise._concat_batch(
+  File "/mnt/shared/speechbrain/speechbrain/processing/speech_augmentation.py", line 278, in _concat_batch
+    noise_batch = torch.cat((noise_batch, added_noise))
+KeyboardInterrupt
+2022-10-12 03:15:39,486 - speechbrain.core - INFO - Beginning experiment!
+2022-10-12 03:15:39,486 - speechbrain.core - INFO - Experiment folder: results/ecapa_kids_anew_3s_noVoxCeleb/303
+2022-10-12 03:15:40,312 - speechbrain.utils.superpowers - DEBUG - absl-py==1.2.0
+appdirs==1.4.4
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+attrs==22.1.0
+autopep8==1.7.0
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+black==19.10b0
+Bottleneck @ file:///opt/conda/conda-bld/bottleneck_1657175564434/work
+brotlipy==0.7.0
+cachetools==5.2.0
+certifi @ file:///opt/conda/conda-bld/certifi_1663615672595/work/certifi
+cffi @ file:///tmp/abs_98z5h56wf8/croots/recipe/cffi_1659598650955/work
+cfgv==3.3.1
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.0.4
+cryptography @ file:///tmp/build/80754af9/cryptography_1652101588893/work
+ctc-segmentation==1.7.3
+Cython @ file:///opt/conda/conda-bld/cython_1656941947712/work
+debugpy @ file:///tmp/build/80754af9/debugpy_1637091799509/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+distlib==0.3.6
+entrypoints @ file:///tmp/build/80754af9/entrypoints_1649926439650/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+filelock==3.8.0
+flake8==3.7.9
+google-auth==2.12.0
+google-auth-oauthlib==0.4.6
+grpcio==1.49.1
+huggingface-hub==0.9.1
+HyperPyYAML==1.0.1
+identify==2.5.5
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+importlib-metadata==5.0.0
+ipykernel @ file:///opt/conda/conda-bld/ipykernel_1662361798230/work
+ipython @ file:///opt/conda/conda-bld/ipython_1657652213665/work
+jedi @ file:///tmp/build/80754af9/jedi_1644297102865/work
+joblib==1.2.0
+jupyter-core @ file:///opt/conda/conda-bld/jupyter_core_1651671229925/work
+jupyter_client @ file:///opt/conda/conda-bld/jupyter_client_1662504365333/work
+Markdown==3.4.1
+MarkupSafe==2.1.1
+matplotlib-inline @ file:///opt/conda/conda-bld/matplotlib-inline_1662014470464/work
+mccabe==0.6.1
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626186066731/work
+mkl-service==2.4.0
+more-itertools==8.14.0
+nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1649847906199/work
+nodeenv==1.7.0
+numexpr @ file:///opt/conda/conda-bld/numexpr_1656940300424/work
+numpy==1.23.3
+oauthlib==3.2.1
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.4.4
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pathspec==0.10.1
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.2.0
+platformdirs==2.5.2
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+protobuf==3.19.6
+psutil @ file:///opt/conda/conda-bld/psutil_1656431268089/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+py==1.11.0
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycodestyle==2.9.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydub==0.25.1
+pyflakes==2.1.1
+Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
+pytest==5.4.1
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///opt/conda/conda-bld/pytz_1654762638606/work
+PyYAML==6.0
+pyzmq @ file:///opt/conda/conda-bld/pyzmq_1657724186960/work
+regex==2022.9.13
+requests @ file:///opt/conda/conda-bld/requests_1657734628632/work
+requests-oauthlib==1.3.1
+rsa==4.9
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scipy==1.8.1
+sentencepiece==0.1.97
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+-e git+https://github.com/speechbrain/speechbrain.git@d78c00eca113c9f013f2eee4d05947adc1b32ccb#egg=speechbrain
+sphfile==1.0.3
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+tensorboard==2.10.1
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+toml==0.10.2
+torch==1.12.1
+torchaudio==0.12.1
+torchvision==0.13.1
+tornado @ file:///opt/conda/conda-bld/tornado_1662061693373/work
+tqdm==4.64.1
+traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+typed-ast==1.5.4
+typing_extensions @ file:///tmp/abs_ben9emwtky/croots/recipe/typing_extensions_1659638822008/work
+urllib3==1.26.12
+virtualenv==20.16.5
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+Werkzeug==2.2.2
+yamllint==1.23.0
+zipp==3.9.0
+
+
+2022-10-12 03:15:40,351 - speechbrain.utils.superpowers - DEBUG - 7d35491
+
+
+2022-10-12 03:15:40,541 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2022-10-12 03:15:43,190 - speechbrain.core - INFO - 6.8M trainable parameters in SpeakerBrain
+2022-10-12 03:15:43,192 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-11-41+00
+2022-10-12 03:15:43,416 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2022-10-12 03:17:40,383 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 272, in <module>
+    speaker_brain.fit(
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1153, in fit
+    self._fit_train(train_set=train_set, epoch=epoch, enable=enable)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1009, in _fit_train
+    loss = self.fit_batch(batch)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 881, in fit_batch
+    outputs = self.compute_forward(batch, Stage.TRAIN)
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 54, in compute_forward
+    wavs_aug = augment(wavs, lens)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/lobes/augment.py", line 446, in forward
+    waveforms = self.add_noise(waveforms, lengths)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/processing/speech_augmentation.py", line 158, in forward
+    noise_waveform, noise_length = self._load_noise(
+  File "/mnt/shared/speechbrain/speechbrain/processing/speech_augmentation.py", line 205, in _load_noise
+    noise_batch, noise_len = self._load_noise_batch_of_size(batch_size)
+  File "/mnt/shared/speechbrain/speechbrain/processing/speech_augmentation.py", line 247, in _load_noise_batch_of_size
+    noise_batch, noise_lens = self._load_noise_batch()
+  File "/mnt/shared/speechbrain/speechbrain/processing/speech_augmentation.py", line 288, in _load_noise_batch
+    noises, lens = next(self.noise_data).at_position(0)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 721, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/mnt/shared/speechbrain/speechbrain/dataio/dataset.py", line 165, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "/mnt/shared/speechbrain/speechbrain/utils/data_pipeline.py", line 464, in compute_outputs
+    return self._compute(data, self._exec_order, self.output_mapping)
+  File "/mnt/shared/speechbrain/speechbrain/utils/data_pipeline.py", line 496, in _compute
+    values = item(*args)  # Call the DynamicItem to produce output
+  File "/mnt/shared/speechbrain/speechbrain/utils/data_pipeline.py", line 72, in __call__
+    return self.func(*args)
+  File "/mnt/shared/speechbrain/speechbrain/dataio/legacy.py", line 216, in _read_csv_item
+    audio, _ = torchaudio.load(item.data)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torchaudio/backend/sox_io_backend.py", line 222, in load
+    ret = torch.ops.torchaudio.sox_io_load_audio_file(
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/_ops.py", line 143, in __call__
+    return self._op(*args, **kwargs or {})
+KeyboardInterrupt
+2022-10-12 03:18:30,445 - speechbrain.core - INFO - Beginning experiment!
+2022-10-12 03:18:30,446 - speechbrain.core - INFO - Experiment folder: results/ecapa_kids_anew_3s_noVoxCeleb/303
+2022-10-12 03:18:30,963 - speechbrain.utils.superpowers - DEBUG - absl-py==1.2.0
+appdirs==1.4.4
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+attrs==22.1.0
+autopep8==1.7.0
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+black==19.10b0
+Bottleneck @ file:///opt/conda/conda-bld/bottleneck_1657175564434/work
+brotlipy==0.7.0
+cachetools==5.2.0
+certifi @ file:///opt/conda/conda-bld/certifi_1663615672595/work/certifi
+cffi @ file:///tmp/abs_98z5h56wf8/croots/recipe/cffi_1659598650955/work
+cfgv==3.3.1
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.0.4
+cryptography @ file:///tmp/build/80754af9/cryptography_1652101588893/work
+ctc-segmentation==1.7.3
+Cython @ file:///opt/conda/conda-bld/cython_1656941947712/work
+debugpy @ file:///tmp/build/80754af9/debugpy_1637091799509/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+distlib==0.3.6
+entrypoints @ file:///tmp/build/80754af9/entrypoints_1649926439650/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+filelock==3.8.0
+flake8==3.7.9
+google-auth==2.12.0
+google-auth-oauthlib==0.4.6
+grpcio==1.49.1
+huggingface-hub==0.9.1
+HyperPyYAML==1.0.1
+identify==2.5.5
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+importlib-metadata==5.0.0
+ipykernel @ file:///opt/conda/conda-bld/ipykernel_1662361798230/work
+ipython @ file:///opt/conda/conda-bld/ipython_1657652213665/work
+jedi @ file:///tmp/build/80754af9/jedi_1644297102865/work
+joblib==1.2.0
+jupyter-core @ file:///opt/conda/conda-bld/jupyter_core_1651671229925/work
+jupyter_client @ file:///opt/conda/conda-bld/jupyter_client_1662504365333/work
+Markdown==3.4.1
+MarkupSafe==2.1.1
+matplotlib-inline @ file:///opt/conda/conda-bld/matplotlib-inline_1662014470464/work
+mccabe==0.6.1
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626186066731/work
+mkl-service==2.4.0
+more-itertools==8.14.0
+nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1649847906199/work
+nodeenv==1.7.0
+numexpr @ file:///opt/conda/conda-bld/numexpr_1656940300424/work
+numpy==1.23.3
+oauthlib==3.2.1
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.4.4
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pathspec==0.10.1
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.2.0
+platformdirs==2.5.2
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+protobuf==3.19.6
+psutil @ file:///opt/conda/conda-bld/psutil_1656431268089/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+py==1.11.0
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycodestyle==2.9.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydub==0.25.1
+pyflakes==2.1.1
+Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
+pytest==5.4.1
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///opt/conda/conda-bld/pytz_1654762638606/work
+PyYAML==6.0
+pyzmq @ file:///opt/conda/conda-bld/pyzmq_1657724186960/work
+regex==2022.9.13
+requests @ file:///opt/conda/conda-bld/requests_1657734628632/work
+requests-oauthlib==1.3.1
+rsa==4.9
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scipy==1.8.1
+sentencepiece==0.1.97
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+-e git+https://github.com/speechbrain/speechbrain.git@d78c00eca113c9f013f2eee4d05947adc1b32ccb#egg=speechbrain
+sphfile==1.0.3
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+tensorboard==2.10.1
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+toml==0.10.2
+torch==1.12.1
+torchaudio==0.12.1
+torchvision==0.13.1
+tornado @ file:///opt/conda/conda-bld/tornado_1662061693373/work
+tqdm==4.64.1
+traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+typed-ast==1.5.4
+typing_extensions @ file:///tmp/abs_ben9emwtky/croots/recipe/typing_extensions_1659638822008/work
+urllib3==1.26.12
+virtualenv==20.16.5
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+Werkzeug==2.2.2
+yamllint==1.23.0
+zipp==3.9.0
+
+
+2022-10-12 03:18:31,005 - speechbrain.utils.superpowers - DEBUG - 7d35491
+
+
+2022-10-12 03:18:31,183 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2022-10-12 03:18:32,571 - speechbrain.core - INFO - 6.8M trainable parameters in SpeakerBrain
+2022-10-12 03:18:32,573 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-11-41+00
+2022-10-12 03:18:32,792 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2022-10-12 03:18:33,222 - speechbrain.utils.epoch_loop - INFO - Going into epoch 2
+2022-10-12 03:19:48,773 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 272, in <module>
+    speaker_brain.fit(
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1153, in fit
+    self._fit_train(train_set=train_set, epoch=epoch, enable=enable)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1009, in _fit_train
+    loss = self.fit_batch(batch)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 881, in fit_batch
+    outputs = self.compute_forward(batch, Stage.TRAIN)
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 54, in compute_forward
+    wavs_aug = augment(wavs, lens)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/lobes/augment.py", line 446, in forward
+    waveforms = self.add_noise(waveforms, lengths)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/processing/speech_augmentation.py", line 158, in forward
+    noise_waveform, noise_length = self._load_noise(
+  File "/mnt/shared/speechbrain/speechbrain/processing/speech_augmentation.py", line 205, in _load_noise
+    noise_batch, noise_len = self._load_noise_batch_of_size(batch_size)
+  File "/mnt/shared/speechbrain/speechbrain/processing/speech_augmentation.py", line 247, in _load_noise_batch_of_size
+    noise_batch, noise_lens = self._load_noise_batch()
+  File "/mnt/shared/speechbrain/speechbrain/processing/speech_augmentation.py", line 288, in _load_noise_batch
+    noises, lens = next(self.noise_data).at_position(0)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 721, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    return self.collate_fn(data)
+  File "/mnt/shared/speechbrain/speechbrain/dataio/batch.py", line 125, in __init__
+    padded = PaddedData(*padding_func(values, **padding_kwargs))
+  File "/mnt/shared/speechbrain/speechbrain/utils/data_utils.py", line 448, in batch_pad_right
+    batched = torch.stack(batched)
+KeyboardInterrupt
+2022-10-12 03:20:07,826 - speechbrain.core - INFO - Beginning experiment!
+2022-10-12 03:20:07,826 - speechbrain.core - INFO - Experiment folder: results/ecapa_kids_anew_3s_noVoxCeleb/303
+2022-10-12 03:20:08,344 - speechbrain.utils.superpowers - DEBUG - absl-py==1.2.0
+appdirs==1.4.4
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+attrs==22.1.0
+autopep8==1.7.0
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+black==19.10b0
+Bottleneck @ file:///opt/conda/conda-bld/bottleneck_1657175564434/work
+brotlipy==0.7.0
+cachetools==5.2.0
+certifi @ file:///opt/conda/conda-bld/certifi_1663615672595/work/certifi
+cffi @ file:///tmp/abs_98z5h56wf8/croots/recipe/cffi_1659598650955/work
+cfgv==3.3.1
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.0.4
+cryptography @ file:///tmp/build/80754af9/cryptography_1652101588893/work
+ctc-segmentation==1.7.3
+Cython @ file:///opt/conda/conda-bld/cython_1656941947712/work
+debugpy @ file:///tmp/build/80754af9/debugpy_1637091799509/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+distlib==0.3.6
+entrypoints @ file:///tmp/build/80754af9/entrypoints_1649926439650/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+filelock==3.8.0
+flake8==3.7.9
+google-auth==2.12.0
+google-auth-oauthlib==0.4.6
+grpcio==1.49.1
+huggingface-hub==0.9.1
+HyperPyYAML==1.0.1
+identify==2.5.5
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+importlib-metadata==5.0.0
+ipykernel @ file:///opt/conda/conda-bld/ipykernel_1662361798230/work
+ipython @ file:///opt/conda/conda-bld/ipython_1657652213665/work
+jedi @ file:///tmp/build/80754af9/jedi_1644297102865/work
+joblib==1.2.0
+jupyter-core @ file:///opt/conda/conda-bld/jupyter_core_1651671229925/work
+jupyter_client @ file:///opt/conda/conda-bld/jupyter_client_1662504365333/work
+Markdown==3.4.1
+MarkupSafe==2.1.1
+matplotlib-inline @ file:///opt/conda/conda-bld/matplotlib-inline_1662014470464/work
+mccabe==0.6.1
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626186066731/work
+mkl-service==2.4.0
+more-itertools==8.14.0
+nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1649847906199/work
+nodeenv==1.7.0
+numexpr @ file:///opt/conda/conda-bld/numexpr_1656940300424/work
+numpy==1.23.3
+oauthlib==3.2.1
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.4.4
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pathspec==0.10.1
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.2.0
+platformdirs==2.5.2
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+protobuf==3.19.6
+psutil @ file:///opt/conda/conda-bld/psutil_1656431268089/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+py==1.11.0
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycodestyle==2.9.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydub==0.25.1
+pyflakes==2.1.1
+Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
+pytest==5.4.1
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///opt/conda/conda-bld/pytz_1654762638606/work
+PyYAML==6.0
+pyzmq @ file:///opt/conda/conda-bld/pyzmq_1657724186960/work
+regex==2022.9.13
+requests @ file:///opt/conda/conda-bld/requests_1657734628632/work
+requests-oauthlib==1.3.1
+rsa==4.9
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scipy==1.8.1
+sentencepiece==0.1.97
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+-e git+https://github.com/speechbrain/speechbrain.git@d78c00eca113c9f013f2eee4d05947adc1b32ccb#egg=speechbrain
+sphfile==1.0.3
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+tensorboard==2.10.1
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+toml==0.10.2
+torch==1.12.1
+torchaudio==0.12.1
+torchvision==0.13.1
+tornado @ file:///opt/conda/conda-bld/tornado_1662061693373/work
+tqdm==4.64.1
+traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+typed-ast==1.5.4
+typing_extensions @ file:///tmp/abs_ben9emwtky/croots/recipe/typing_extensions_1659638822008/work
+urllib3==1.26.12
+virtualenv==20.16.5
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+Werkzeug==2.2.2
+yamllint==1.23.0
+zipp==3.9.0
+
+
+2022-10-12 03:20:08,386 - speechbrain.utils.superpowers - DEBUG - 7d35491
+
+
+2022-10-12 03:20:08,567 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2022-10-12 03:20:09,972 - speechbrain.core - INFO - 6.8M trainable parameters in SpeakerBrain
+2022-10-12 03:20:09,975 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-11-41+00
+2022-10-12 03:20:10,190 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2022-10-12 03:23:10,392 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-23-10+00
+2022-10-12 03:23:10,408 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-11-41+00
+2022-10-12 03:26:11,017 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-26-10+00
+2022-10-12 03:26:11,034 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-23-10+00
+2022-10-12 03:29:12,341 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-29-12+00
+2022-10-12 03:29:12,360 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-26-10+00
+2022-10-12 03:32:12,545 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-32-12+00
+2022-10-12 03:32:12,566 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-29-12+00
+2022-10-12 03:35:13,380 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-35-13+00
+2022-10-12 03:35:13,402 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-32-12+00
+2022-10-12 03:38:14,435 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-38-14+00
+2022-10-12 03:38:14,460 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-35-13+00
+2022-10-12 03:41:15,025 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-41-14+00
+2022-10-12 03:41:15,053 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-38-14+00
+2022-10-12 03:44:15,787 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-44-15+00
+2022-10-12 03:44:15,817 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-41-14+00
+2022-10-12 03:47:16,645 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-47-16+00
+2022-10-12 03:47:16,676 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-44-15+00
+2022-10-12 03:50:16,956 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-50-16+00
+2022-10-12 03:50:16,989 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-47-16+00
+2022-10-12 03:53:17,207 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-53-17+00
+2022-10-12 03:53:17,242 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-50-16+00
+2022-10-12 03:56:17,668 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-56-17+00
+2022-10-12 03:56:17,705 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-53-17+00
+2022-10-12 03:59:17,997 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-59-17+00
+2022-10-12 03:59:18,036 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-56-17+00
+2022-10-12 04:02:18,738 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-02-18+00
+2022-10-12 04:02:18,780 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+03-59-17+00
+2022-10-12 04:05:19,074 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-05-18+00
+2022-10-12 04:05:19,117 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-02-18+00
+2022-10-12 04:08:19,729 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-08-19+00
+2022-10-12 04:08:19,774 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-05-18+00
+2022-10-12 04:11:20,782 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-11-20+00
+2022-10-12 04:11:20,828 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-08-19+00
+2022-10-12 04:14:21,520 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-14-21+00
+2022-10-12 04:14:21,569 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-11-20+00
+2022-10-12 04:17:21,953 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-17-21+00
+2022-10-12 04:17:22,004 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-14-21+00
+2022-10-12 04:20:23,198 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-20-23+00
+2022-10-12 04:20:23,251 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-17-21+00
+2022-10-12 04:23:23,539 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-23-23+00
+2022-10-12 04:23:23,594 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-20-23+00
+2022-10-12 04:26:24,932 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-26-24+00
+2022-10-12 04:26:24,988 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-23-23+00
+2022-10-12 04:29:25,908 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-29-25+00
+2022-10-12 04:29:25,966 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-26-24+00
+2022-10-12 04:32:26,491 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-32-26+00
+2022-10-12 04:32:26,550 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-29-25+00
+2022-10-12 04:35:27,766 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-35-27+00
+2022-10-12 04:35:27,828 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-32-26+00
+2022-10-12 04:38:28,868 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-38-28+00
+2022-10-12 04:38:28,933 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-35-27+00
+2022-10-12 04:41:30,126 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-41-29+00
+2022-10-12 04:41:30,191 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-38-28+00
+2022-10-12 04:44:31,438 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-44-31+00
+2022-10-12 04:44:31,506 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-41-29+00
+2022-10-12 04:47:31,663 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-47-31+00
+2022-10-12 04:47:31,733 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-44-31+00
+2022-10-12 04:50:32,185 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-50-32+00
+2022-10-12 04:50:32,257 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-47-31+00
+2022-10-12 04:53:33,114 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-53-32+00
+2022-10-12 04:53:33,188 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-50-32+00
+2022-10-12 04:56:34,303 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-56-34+00
+2022-10-12 04:56:34,379 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-53-32+00
+2022-10-12 04:59:35,671 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-59-35+00
+2022-10-12 04:59:35,748 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-56-34+00
+2022-10-12 05:02:37,052 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-02-36+00
+2022-10-12 05:02:37,131 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+04-59-35+00
+2022-10-12 05:05:37,764 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-05-37+00
+2022-10-12 05:05:37,846 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-02-36+00
+2022-10-12 05:08:38,294 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-08-38+00
+2022-10-12 05:08:38,377 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-05-37+00
+2022-10-12 05:11:38,708 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-11-38+00
+2022-10-12 05:11:38,793 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-08-38+00
+2022-10-12 05:14:39,497 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-14-39+00
+2022-10-12 05:14:39,585 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-11-38+00
+2022-10-12 05:17:39,946 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-17-39+00
+2022-10-12 05:17:40,035 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-14-39+00
+2022-10-12 05:20:41,265 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-20-41+00
+2022-10-12 05:20:41,356 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-17-39+00
+2022-10-12 05:23:41,834 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-23-41+00
+2022-10-12 05:23:41,926 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-20-41+00
+2022-10-12 05:26:42,216 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-26-42+00
+2022-10-12 05:26:42,310 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-23-41+00
+2022-10-12 05:29:42,621 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-29-42+00
+2022-10-12 05:29:42,716 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-26-42+00
+2022-10-12 05:32:42,972 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-32-42+00
+2022-10-12 05:32:43,070 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-29-42+00
+2022-10-12 05:35:43,984 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-35-43+00
+2022-10-12 05:35:44,083 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-32-42+00
+2022-10-12 05:38:45,366 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-38-45+00
+2022-10-12 05:38:45,468 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-35-43+00
+2022-10-12 05:41:45,698 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-41-45+00
+2022-10-12 05:41:45,803 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-38-45+00
+2022-10-12 05:44:46,284 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-44-46+00
+2022-10-12 05:44:46,390 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-41-45+00
+2022-10-12 05:47:47,459 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-47-47+00
+2022-10-12 05:47:47,567 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-44-46+00
+2022-10-12 05:50:48,131 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-50-47+00
+2022-10-12 05:50:48,242 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-47-47+00
+2022-10-12 05:53:49,151 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-53-48+00
+2022-10-12 05:53:49,262 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-50-47+00
+2022-10-12 05:56:49,581 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-56-49+00
+2022-10-12 05:56:49,694 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-53-48+00
+2022-10-12 05:59:50,333 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-59-50+00
+2022-10-12 05:59:50,448 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-56-49+00
+2022-10-12 06:02:51,015 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-02-50+00
+2022-10-12 06:02:51,132 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+05-59-50+00
+2022-10-12 06:05:52,546 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-05-52+00
+2022-10-12 06:05:52,665 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-02-50+00
+2022-10-12 06:08:53,187 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-08-53+00
+2022-10-12 06:08:53,309 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-05-52+00
+2022-10-12 06:11:54,142 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-11-53+00
+2022-10-12 06:11:54,266 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-08-53+00
+2022-10-12 06:14:54,629 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-14-54+00
+2022-10-12 06:14:54,755 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-11-53+00
+2022-10-12 06:17:55,594 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-17-55+00
+2022-10-12 06:17:55,721 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-14-54+00
+2022-10-12 06:20:55,952 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-20-55+00
+2022-10-12 06:20:56,081 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-17-55+00
+2022-10-12 06:23:56,387 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-23-56+00
+2022-10-12 06:23:56,519 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-20-55+00
+2022-10-12 06:26:57,509 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-26-57+00
+2022-10-12 06:26:57,643 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-23-56+00
+2022-10-12 06:29:58,240 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-29-58+00
+2022-10-12 06:29:58,374 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-26-57+00
+2022-10-12 06:32:58,915 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-32-58+00
+2022-10-12 06:32:59,052 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-29-58+00
+2022-10-12 06:35:59,410 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-35-59+00
+2022-10-12 06:35:59,548 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-32-58+00
+2022-10-12 06:39:00,194 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-39-00+00
+2022-10-12 06:39:00,337 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-35-59+00
+2022-10-12 06:42:00,668 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-42-00+00
+2022-10-12 06:42:00,810 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-39-00+00
+2022-10-12 06:45:01,098 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-45-00+00
+2022-10-12 06:45:01,243 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-42-00+00
+2022-10-12 06:48:01,514 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-48-01+00
+2022-10-12 06:48:01,662 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-45-00+00
+2022-10-12 06:51:02,214 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-51-02+00
+2022-10-12 06:51:02,362 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-48-01+00
+2022-10-12 06:54:03,238 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-54-03+00
+2022-10-12 06:54:03,389 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-51-02+00
+2022-10-12 06:57:04,650 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-57-04+00
+2022-10-12 06:57:04,803 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-54-03+00
+2022-10-12 07:00:04,966 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-00-04+00
+2022-10-12 07:00:05,120 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+06-57-04+00
+2022-10-12 07:03:05,459 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-03-05+00
+2022-10-12 07:03:05,616 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-00-04+00
+2022-10-12 07:06:05,967 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-06-05+00
+2022-10-12 07:06:06,127 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-03-05+00
+2022-10-12 07:09:06,987 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-09-06+00
+2022-10-12 07:09:07,148 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-06-05+00
+2022-10-12 07:12:07,603 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-12-07+00
+2022-10-12 07:12:07,765 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-09-06+00
+2022-10-12 07:15:08,191 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-15-08+00
+2022-10-12 07:15:08,355 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-12-07+00
+2022-10-12 07:18:09,101 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-18-08+00
+2022-10-12 07:18:09,266 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-15-08+00
+2022-10-12 07:21:09,851 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-21-09+00
+2022-10-12 07:21:10,019 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-18-08+00
+2022-10-12 07:24:10,220 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-24-10+00
+2022-10-12 07:24:10,388 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-21-09+00
+2022-10-12 07:27:10,811 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-27-10+00
+2022-10-12 07:27:10,983 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-24-10+00
+2022-10-12 07:30:11,196 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-30-11+00
+2022-10-12 07:30:11,371 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-27-10+00
+2022-10-12 07:33:11,958 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-33-11+00
+2022-10-12 07:33:12,133 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-30-11+00
+2022-10-12 07:36:12,759 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-36-12+00
+2022-10-12 07:36:12,936 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-33-11+00
+2022-10-12 07:39:13,447 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-39-13+00
+2022-10-12 07:39:13,626 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-36-12+00
+2022-10-12 07:42:14,357 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-42-14+00
+2022-10-12 07:42:14,539 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-39-13+00
+2022-10-12 07:45:15,200 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-45-15+00
+2022-10-12 07:45:15,383 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-42-14+00
+2022-10-12 07:48:16,625 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-48-16+00
+2022-10-12 07:48:16,810 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-45-15+00
+2022-10-12 07:51:16,986 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-51-16+00
+2022-10-12 07:51:17,185 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-48-16+00
+2022-10-12 07:54:17,868 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-54-17+00
+2022-10-12 07:54:18,058 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-51-16+00
+2022-10-12 07:57:18,953 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-57-18+00
+2022-10-12 07:57:19,146 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-54-17+00
+2022-10-12 08:00:19,535 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-00-19+00
+2022-10-12 08:00:19,728 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+07-57-18+00
+2022-10-12 08:03:20,532 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-03-20+00
+2022-10-12 08:03:20,727 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-00-19+00
+2022-10-12 08:06:21,073 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-06-20+00
+2022-10-12 08:06:21,270 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-03-20+00
+2022-10-12 08:09:21,708 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-09-21+00
+2022-10-12 08:09:21,906 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-06-20+00
+2022-10-12 08:12:22,690 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-12-22+00
+2022-10-12 08:12:22,891 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-09-21+00
+2022-10-12 08:15:23,299 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-15-23+00
+2022-10-12 08:15:23,501 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-12-22+00
+2022-10-12 08:18:23,667 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-18-23+00
+2022-10-12 08:18:23,870 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-15-23+00
+2022-10-12 08:21:24,298 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-21-24+00
+2022-10-12 08:21:24,505 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-18-23+00
+2022-10-12 08:24:25,277 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-24-25+00
+2022-10-12 08:24:25,486 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-21-24+00
+2022-10-12 08:27:25,797 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-27-25+00
+2022-10-12 08:27:26,006 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-24-25+00
+2022-10-12 08:30:26,472 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-30-26+00
+2022-10-12 08:30:26,683 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-27-25+00
+2022-10-12 08:33:27,835 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-33-27+00
+2022-10-12 08:33:28,050 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-30-26+00
+2022-10-12 08:33:47,009 - speechbrain.utils.epoch_loop - INFO - Going into epoch 2
+2022-10-12 08:36:47,746 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-36-47+00
+2022-10-12 08:36:47,964 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-33-27+00
+2022-10-12 08:39:48,226 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-39-48+00
+2022-10-12 08:39:48,441 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-36-47+00
+2022-10-12 08:42:48,635 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-42-48+00
+2022-10-12 08:42:48,855 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-39-48+00
+2022-10-12 08:45:49,613 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-45-49+00
+2022-10-12 08:45:49,834 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-42-48+00
+2022-10-12 08:48:50,954 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-48-50+00
+2022-10-12 08:48:51,179 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-45-49+00
+2022-10-12 08:51:52,171 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-51-52+00
+2022-10-12 08:51:52,398 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-48-50+00
+2022-10-12 08:54:52,680 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-54-52+00
+2022-10-12 08:54:52,905 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-51-52+00
+2022-10-12 08:57:53,627 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-57-53+00
+2022-10-12 08:57:53,858 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-54-52+00
+2022-10-12 09:00:54,189 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-00-54+00
+2022-10-12 09:00:54,420 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+08-57-53+00
+2022-10-12 09:03:55,661 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-03-55+00
+2022-10-12 09:03:55,892 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-00-54+00
+2022-10-12 09:06:56,570 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-06-56+00
+2022-10-12 09:06:56,804 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-03-55+00
+2022-10-12 09:09:57,586 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-09-57+00
+2022-10-12 09:09:57,823 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-06-56+00
+2022-10-12 09:12:58,518 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-12-58+00
+2022-10-12 09:12:58,756 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-09-57+00
+2022-10-12 09:15:59,773 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-15-59+00
+2022-10-12 09:16:00,015 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-12-58+00
+2022-10-12 09:19:00,550 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-19-00+00
+2022-10-12 09:19:00,792 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-15-59+00
+2022-10-12 09:22:01,002 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-22-00+00
+2022-10-12 09:22:01,248 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-19-00+00
+2022-10-12 09:25:02,360 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-25-02+00
+2022-10-12 09:25:02,607 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-22-00+00
+2022-10-12 09:28:02,961 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-28-02+00
+2022-10-12 09:28:03,210 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-25-02+00
+2022-10-12 09:31:03,668 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-31-03+00
+2022-10-12 09:31:03,916 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-28-02+00
+2022-10-12 09:34:04,979 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-34-04+00
+2022-10-12 09:34:05,231 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-31-03+00
+2022-10-12 09:37:05,882 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-37-05+00
+2022-10-12 09:37:06,135 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-34-04+00
+2022-10-12 09:40:06,853 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-40-06+00
+2022-10-12 09:40:07,110 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-37-05+00
+2022-10-12 09:43:07,663 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-43-07+00
+2022-10-12 09:43:07,922 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-40-06+00
+2022-10-12 09:46:09,045 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-46-08+00
+2022-10-12 09:46:09,305 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-43-07+00
+2022-10-12 09:49:09,541 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-49-09+00
+2022-10-12 09:49:09,803 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-46-08+00
+2022-10-12 09:52:10,086 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-52-09+00
+2022-10-12 09:52:10,349 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-49-09+00
+2022-10-12 09:55:11,454 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-55-11+00
+2022-10-12 09:55:11,719 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-52-09+00
+2022-10-12 09:58:12,032 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-58-11+00
+2022-10-12 09:58:12,300 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-55-11+00
+2022-10-12 10:01:12,768 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-01-12+00
+2022-10-12 10:01:13,035 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+09-58-11+00
+2022-10-12 10:04:13,292 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-04-13+00
+2022-10-12 10:04:13,563 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-01-12+00
+2022-10-12 10:07:13,890 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-07-13+00
+2022-10-12 10:07:14,163 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-04-13+00
+2022-10-12 10:10:15,078 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-10-14+00
+2022-10-12 10:10:15,352 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-07-13+00
+2022-10-12 10:13:15,667 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-13-15+00
+2022-10-12 10:13:15,944 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-10-14+00
+2022-10-12 10:16:16,627 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-16-16+00
+2022-10-12 10:16:16,907 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-13-15+00
+2022-10-12 10:19:18,260 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-19-18+00
+2022-10-12 10:19:18,539 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-16-16+00
+2022-10-12 10:22:19,265 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-22-19+00
+2022-10-12 10:22:19,551 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-19-18+00
+2022-10-12 10:25:20,530 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-25-20+00
+2022-10-12 10:25:20,813 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-22-19+00
+2022-10-12 10:28:21,499 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-28-21+00
+2022-10-12 10:28:21,785 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-25-20+00
+2022-10-12 10:31:23,024 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-31-22+00
+2022-10-12 10:31:23,312 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-28-21+00
+2022-10-12 10:34:23,491 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-34-23+00
+2022-10-12 10:34:23,781 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-31-22+00
+2022-10-12 10:37:24,449 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-37-24+00
+2022-10-12 10:37:24,740 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-34-23+00
+2022-10-12 10:40:25,183 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-40-25+00
+2022-10-12 10:40:25,479 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-37-24+00
+2022-10-12 10:43:25,790 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-43-25+00
+2022-10-12 10:43:26,086 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-40-25+00
+2022-10-12 10:46:26,428 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-46-26+00
+2022-10-12 10:46:26,725 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-43-25+00
+2022-10-12 10:49:27,739 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-49-27+00
+2022-10-12 10:49:28,039 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-46-26+00
+2022-10-12 10:52:28,536 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-52-28+00
+2022-10-12 10:52:28,837 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-49-27+00
+2022-10-12 10:55:29,082 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-55-28+00
+2022-10-12 10:55:29,386 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-52-28+00
+2022-10-12 10:58:29,595 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-58-29+00
+2022-10-12 10:58:29,901 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-55-28+00
+2022-10-12 11:01:30,845 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-01-30+00
+2022-10-12 11:01:31,150 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+10-58-29+00
+2022-10-12 11:04:31,639 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-04-31+00
+2022-10-12 11:04:31,944 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-01-30+00
+2022-10-12 11:07:32,472 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-07-32+00
+2022-10-12 11:07:32,782 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-04-31+00
+2022-10-12 11:10:32,961 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-10-32+00
+2022-10-12 11:10:33,274 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-07-32+00
+2022-10-12 11:13:33,959 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-13-33+00
+2022-10-12 11:13:34,273 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-10-32+00
+2022-10-12 11:16:34,863 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-16-34+00
+2022-10-12 11:16:35,176 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-13-33+00
+2022-10-12 11:19:35,812 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-19-35+00
+2022-10-12 11:19:36,132 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-16-34+00
+2022-10-12 11:22:37,138 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-22-36+00
+2022-10-12 11:22:37,458 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-19-35+00
+2022-10-12 11:25:38,071 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-25-37+00
+2022-10-12 11:25:38,396 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-22-36+00
+2022-10-12 11:28:39,686 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-28-39+00
+2022-10-12 11:28:40,011 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-25-37+00
+2022-10-12 11:31:40,348 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-31-40+00
+2022-10-12 11:31:40,675 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-28-39+00
+2022-10-12 11:34:40,942 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-34-40+00
+2022-10-12 11:34:41,270 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-31-40+00
+2022-10-12 11:37:41,625 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-37-41+00
+2022-10-12 11:37:41,957 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-34-40+00
+2022-10-12 11:40:42,301 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-40-42+00
+2022-10-12 11:40:42,632 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-37-41+00
+2022-10-12 11:43:42,809 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-43-42+00
+2022-10-12 11:43:43,142 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-40-42+00
+2022-10-12 11:46:43,411 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-46-43+00
+2022-10-12 11:46:43,748 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-43-42+00
+2022-10-12 11:49:44,114 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-49-43+00
+2022-10-12 11:49:44,452 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-46-43+00
+2022-10-12 11:52:44,978 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-52-44+00
+2022-10-12 11:52:45,316 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-49-43+00
+2022-10-12 11:55:45,842 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-55-45+00
+2022-10-12 11:55:46,187 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-52-44+00
+2022-10-12 11:58:46,845 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-58-46+00
+2022-10-12 11:58:47,189 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-55-45+00
+2022-10-12 12:01:47,877 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-01-47+00
+2022-10-12 12:01:48,223 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+11-58-46+00
+2022-10-12 12:04:48,434 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-04-48+00
+2022-10-12 12:04:48,783 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-01-47+00
+2022-10-12 12:07:49,123 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-07-48+00
+2022-10-12 12:07:49,473 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-04-48+00
+2022-10-12 12:10:50,157 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-10-50+00
+2022-10-12 12:10:50,507 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-07-48+00
+2022-10-12 12:13:51,127 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-13-50+00
+2022-10-12 12:13:51,480 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-10-50+00
+2022-10-12 12:16:52,116 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-16-51+00
+2022-10-12 12:16:52,470 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-13-50+00
+2022-10-12 12:19:52,631 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-19-52+00
+2022-10-12 12:19:52,987 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-16-51+00
+2022-10-12 12:22:53,338 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-22-53+00
+2022-10-12 12:22:53,695 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-19-52+00
+2022-10-12 12:25:54,303 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-25-54+00
+2022-10-12 12:25:54,665 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-22-53+00
+2022-10-12 12:28:54,930 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-28-54+00
+2022-10-12 12:28:55,289 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-25-54+00
+2022-10-12 12:31:55,904 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-31-55+00
+2022-10-12 12:31:56,269 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-28-54+00
+2022-10-12 12:34:56,708 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-34-56+00
+2022-10-12 12:34:57,073 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-31-55+00
+2022-10-12 12:37:58,500 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-37-58+00
+2022-10-12 12:37:58,869 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-34-56+00
+2022-10-12 12:40:59,558 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-40-59+00
+2022-10-12 12:40:59,930 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-37-58+00
+2022-10-12 12:44:00,368 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-44-00+00
+2022-10-12 12:44:00,741 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-40-59+00
+2022-10-12 12:47:01,185 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-47-01+00
+2022-10-12 12:47:01,561 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-44-00+00
+2022-10-12 12:50:02,100 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-50-01+00
+2022-10-12 12:50:02,475 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-47-01+00
+2022-10-12 12:53:03,069 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-53-02+00
+2022-10-12 12:53:03,447 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-50-01+00
+2022-10-12 12:56:03,808 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-56-03+00
+2022-10-12 12:56:04,185 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-53-02+00
+2022-10-12 12:59:04,823 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-59-04+00
+2022-10-12 12:59:05,201 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-56-03+00
+2022-10-12 13:02:05,834 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-02-05+00
+2022-10-12 13:02:06,218 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+12-59-04+00
+2022-10-12 13:05:06,495 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-05-06+00
+2022-10-12 13:05:06,881 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-02-05+00
+2022-10-12 13:08:07,653 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-08-07+00
+2022-10-12 13:08:08,042 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-05-06+00
+2022-10-12 13:11:08,824 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-11-08+00
+2022-10-12 13:11:09,216 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-08-07+00
+2022-10-12 13:14:09,407 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-14-09+00
+2022-10-12 13:14:09,799 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-11-08+00
+2022-10-12 13:17:10,528 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-17-10+00
+2022-10-12 13:17:10,920 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-14-09+00
+2022-10-12 13:20:11,781 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-20-11+00
+2022-10-12 13:20:12,177 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-17-10+00
+2022-10-12 13:23:12,944 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-23-12+00
+2022-10-12 13:23:13,342 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-20-11+00
+2022-10-12 13:26:13,587 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-26-13+00
+2022-10-12 13:26:13,987 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-23-12+00
+2022-10-12 13:29:14,558 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-29-14+00
+2022-10-12 13:29:14,956 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-26-13+00
+2022-10-12 13:32:15,413 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-32-15+00
+2022-10-12 13:32:15,811 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-29-14+00
+2022-10-12 13:35:16,506 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-35-16+00
+2022-10-12 13:35:16,910 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-32-15+00
+2022-10-12 13:38:17,277 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-38-17+00
+2022-10-12 13:38:17,685 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-35-16+00
+2022-10-12 13:41:17,908 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-41-17+00
+2022-10-12 13:41:18,316 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-38-17+00
+2022-10-12 13:44:18,865 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-44-18+00
+2022-10-12 13:44:19,279 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-41-17+00
+2022-10-12 13:47:19,692 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-47-19+00
+2022-10-12 13:47:20,106 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-44-18+00
+2022-10-12 13:50:21,361 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-50-21+00
+2022-10-12 13:50:21,778 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-47-19+00
+2022-10-12 13:53:23,091 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-53-22+00
+2022-10-12 13:53:23,508 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-50-21+00
+2022-10-12 13:56:24,836 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-56-24+00
+2022-10-12 13:56:25,254 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-53-22+00
+2022-10-12 13:59:26,509 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-59-26+00
+2022-10-12 13:59:26,928 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-56-24+00
+2022-10-12 14:02:27,706 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-02-27+00
+2022-10-12 14:02:28,127 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+13-59-26+00
+2022-10-12 14:05:28,980 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-05-28+00
+2022-10-12 14:05:29,404 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-02-27+00
+2022-10-12 14:08:30,102 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-08-29+00
+2022-10-12 14:08:30,531 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-05-28+00
+2022-10-12 14:11:31,538 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-11-31+00
+2022-10-12 14:11:31,965 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-08-29+00
+2022-10-12 14:14:32,951 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-14-32+00
+2022-10-12 14:14:33,381 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-11-31+00
+2022-10-12 14:17:34,287 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-17-34+00
+2022-10-12 14:17:34,721 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-14-32+00
+2022-10-12 14:20:35,451 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-20-35+00
+2022-10-12 14:20:35,888 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-17-34+00
+2022-10-12 14:23:36,288 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-23-36+00
+2022-10-12 14:23:36,724 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-20-35+00
+2022-10-12 14:26:37,078 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-26-36+00
+2022-10-12 14:26:37,518 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-23-36+00
+2022-10-12 14:29:37,893 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-29-37+00
+2022-10-12 14:29:38,333 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-26-36+00
+2022-10-12 14:32:38,966 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-32-38+00
+2022-10-12 14:32:39,409 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-29-37+00
+2022-10-12 14:35:40,142 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-35-39+00
+2022-10-12 14:35:40,587 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-32-38+00
+2022-10-12 14:38:41,610 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-38-41+00
+2022-10-12 14:38:42,056 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-35-39+00
+2022-10-12 14:41:42,708 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-41-42+00
+2022-10-12 14:41:43,155 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-38-41+00
+2022-10-12 14:44:43,422 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-44-43+00
+2022-10-12 14:44:43,873 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-41-42+00
+2022-10-12 14:47:44,235 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-47-44+00
+2022-10-12 14:47:44,688 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-44-43+00
+2022-10-12 14:50:45,235 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-50-45+00
+2022-10-12 14:50:45,692 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-47-44+00
+2022-10-12 14:53:46,464 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-53-46+00
+2022-10-12 14:53:46,918 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-50-45+00
+2022-10-12 14:56:47,498 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-56-47+00
+2022-10-12 14:56:47,956 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-53-46+00
+2022-10-12 14:59:48,413 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-59-48+00
+2022-10-12 14:59:48,874 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-56-47+00
+2022-10-12 15:02:49,100 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-02-48+00
+2022-10-12 15:02:49,561 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+14-59-48+00
+2022-10-12 15:05:49,726 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-05-49+00
+2022-10-12 15:05:50,187 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-02-48+00
+2022-10-12 15:08:50,850 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-08-50+00
+2022-10-12 15:08:51,314 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-05-49+00
+2022-10-12 15:11:52,045 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-11-51+00
+2022-10-12 15:11:52,515 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-08-50+00
+2022-10-12 15:14:53,351 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-14-53+00
+2022-10-12 15:14:53,818 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-11-51+00
+2022-10-12 15:17:54,797 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-17-54+00
+2022-10-12 15:17:55,268 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-14-53+00
+2022-10-12 15:20:56,217 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-20-56+00
+2022-10-12 15:20:56,693 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-17-54+00
+2022-10-12 15:23:58,100 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-23-57+00
+2022-10-12 15:23:58,583 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-20-56+00
+2022-10-12 15:26:58,820 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-26-58+00
+2022-10-12 15:26:59,350 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-23-57+00
+2022-10-12 15:30:00,132 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-29-59+00
+2022-10-12 15:30:00,615 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-26-58+00
+2022-10-12 15:33:01,126 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-33-00+00
+2022-10-12 15:33:01,613 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-29-59+00
+2022-10-12 15:36:02,050 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-36-01+00
+2022-10-12 15:36:02,540 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-33-00+00
+2022-10-12 15:39:03,855 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-39-03+00
+2022-10-12 15:39:04,344 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-36-01+00
+2022-10-12 15:42:04,756 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-42-04+00
+2022-10-12 15:42:05,249 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-39-03+00
+2022-10-12 15:45:06,030 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-45-05+00
+2022-10-12 15:45:06,521 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-42-04+00
+2022-10-12 15:48:07,001 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-48-06+00
+2022-10-12 15:48:07,489 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-45-05+00
+2022-10-12 15:51:08,631 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-51-08+00
+2022-10-12 15:51:09,122 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-48-06+00
+2022-10-12 15:54:10,271 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-54-10+00
+2022-10-12 15:54:10,764 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-51-08+00
+2022-10-12 15:57:11,317 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-57-11+00
+2022-10-12 15:57:11,816 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-54-10+00
+2022-10-12 16:00:11,984 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-00-11+00
+2022-10-12 16:00:12,486 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+15-57-11+00
+2022-10-12 16:03:13,168 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-03-13+00
+2022-10-12 16:03:13,671 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-00-11+00
+2022-10-12 16:06:14,519 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-06-14+00
+2022-10-12 16:06:15,021 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-03-13+00
+2022-10-12 16:09:16,108 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-09-15+00
+2022-10-12 16:09:16,612 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-06-14+00
+2022-10-12 16:12:17,084 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-12-16+00
+2022-10-12 16:12:17,591 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-09-15+00
+2022-10-12 16:15:18,366 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-15-18+00
+2022-10-12 16:15:18,871 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-12-16+00
+2022-10-12 16:18:19,133 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-18-18+00
+2022-10-12 16:18:19,645 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-15-18+00
+2022-10-12 16:21:20,101 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-21-19+00
+2022-10-12 16:21:20,615 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-18-18+00
+2022-10-12 16:24:20,795 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-24-20+00
+2022-10-12 16:24:21,312 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-21-19+00
+2022-10-12 16:27:21,987 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-27-21+00
+2022-10-12 16:27:22,507 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-24-20+00
+2022-10-12 16:30:22,788 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-30-22+00
+2022-10-12 16:30:23,306 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-27-21+00
+2022-10-12 16:33:23,538 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-33-23+00
+2022-10-12 16:33:24,062 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-30-22+00
+2022-10-12 16:36:24,724 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-36-24+00
+2022-10-12 16:36:25,245 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-33-23+00
+2022-10-12 16:39:26,274 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-39-26+00
+2022-10-12 16:39:26,800 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-36-24+00
+2022-10-12 16:42:27,771 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-42-27+00
+2022-10-12 16:42:28,298 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-39-26+00
+2022-10-12 16:45:28,759 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-45-28+00
+2022-10-12 16:45:29,285 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-42-27+00
+2022-10-12 16:48:29,503 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-48-29+00
+2022-10-12 16:48:30,030 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-45-28+00
+2022-10-12 16:51:30,792 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-51-30+00
+2022-10-12 16:51:31,323 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-48-29+00
+2022-10-12 16:54:32,470 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-54-32+00
+2022-10-12 16:54:33,002 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-51-30+00
+2022-10-12 16:57:33,748 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-57-33+00
+2022-10-12 16:57:34,284 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-54-32+00
+2022-10-12 17:00:34,819 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-00-34+00
+2022-10-12 17:00:35,351 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+16-57-33+00
+2022-10-12 17:03:35,692 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-03-35+00
+2022-10-12 17:03:36,231 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-00-34+00
+2022-10-12 17:06:37,147 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-06-36+00
+2022-10-12 17:06:37,689 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-03-35+00
+2022-10-12 17:09:38,655 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-09-38+00
+2022-10-12 17:09:39,199 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-06-36+00
+2022-10-12 17:12:40,459 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-12-40+00
+2022-10-12 17:12:41,001 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-09-38+00
+2022-10-12 17:15:41,931 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-15-41+00
+2022-10-12 17:15:42,475 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-12-40+00
+2022-10-12 17:18:43,846 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-18-43+00
+2022-10-12 17:18:44,391 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-15-41+00
+2022-10-12 17:21:45,246 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-21-45+00
+2022-10-12 17:21:45,793 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-18-43+00
+2022-10-12 17:24:46,076 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-24-45+00
+2022-10-12 17:24:46,625 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-21-45+00
+2022-10-12 17:27:47,080 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-27-46+00
+2022-10-12 17:27:47,635 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-24-45+00
+2022-10-12 17:30:48,403 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-30-48+00
+2022-10-12 17:30:48,966 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-27-46+00
+2022-10-12 17:33:49,378 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-33-49+00
+2022-10-12 17:33:49,934 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-30-48+00
+2022-10-12 17:36:50,201 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-36-50+00
+2022-10-12 17:36:50,757 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-33-49+00
+2022-10-12 17:39:52,021 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-39-51+00
+2022-10-12 17:39:52,583 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-36-50+00
+2022-10-12 17:42:53,723 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-42-53+00
+2022-10-12 17:42:54,289 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-39-51+00
+2022-10-12 17:45:55,246 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-45-54+00
+2022-10-12 17:45:55,811 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-42-53+00
+2022-10-12 17:48:56,570 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-48-56+00
+2022-10-12 17:48:57,139 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-45-54+00
+2022-10-12 17:51:57,618 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-51-57+00
+2022-10-12 17:51:58,186 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-48-56+00
+2022-10-12 17:54:58,667 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-54-58+00
+2022-10-12 17:54:59,237 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-51-57+00
+2022-10-12 17:57:59,786 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-57-59+00
+2022-10-12 17:58:00,360 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-54-58+00
+2022-10-12 18:01:01,082 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-01-00+00
+2022-10-12 18:01:01,660 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+17-57-59+00
+2022-10-12 18:04:02,952 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-04-02+00
+2022-10-12 18:04:03,529 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-01-00+00
+2022-10-12 18:07:04,548 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-07-04+00
+2022-10-12 18:07:05,126 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-04-02+00
+2022-10-12 18:10:06,543 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-10-06+00
+2022-10-12 18:10:07,123 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-07-04+00
+2022-10-12 18:13:08,380 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-13-08+00
+2022-10-12 18:13:08,961 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-10-06+00
+2022-10-12 18:16:10,064 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-16-09+00
+2022-10-12 18:16:10,650 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-13-08+00
+2022-10-12 18:19:11,443 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-19-11+00
+2022-10-12 18:19:12,032 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-16-09+00
+2022-10-12 18:22:12,985 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-22-12+00
+2022-10-12 18:22:13,572 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-19-11+00
+2022-10-12 18:25:14,321 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-25-14+00
+2022-10-12 18:25:14,911 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-22-12+00
+2022-10-12 18:28:15,538 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-28-15+00
+2022-10-12 18:28:16,130 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-25-14+00
+2022-10-12 18:31:17,259 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-31-17+00
+2022-10-12 18:31:17,853 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-28-15+00
+2022-10-12 18:34:18,772 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-34-18+00
+2022-10-12 18:34:19,371 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-31-17+00
+2022-10-12 18:37:20,368 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-37-20+00
+2022-10-12 18:37:20,964 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-34-18+00
+2022-10-12 18:40:21,719 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-40-21+00
+2022-10-12 18:40:22,317 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-37-20+00
+2022-10-12 18:43:23,360 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-43-23+00
+2022-10-12 18:43:23,960 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-40-21+00
+2022-10-12 18:46:24,920 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-46-24+00
+2022-10-12 18:46:25,525 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-43-23+00
+2022-10-12 18:49:25,686 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-49-25+00
+2022-10-12 18:49:26,290 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-46-24+00
+2022-10-12 18:52:27,018 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-52-26+00
+2022-10-12 18:52:27,627 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-49-25+00
+2022-10-12 18:55:28,995 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-55-28+00
+2022-10-12 18:55:29,606 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-52-26+00
+2022-10-12 18:58:30,788 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-58-30+00
+2022-10-12 18:58:31,401 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-55-28+00
+2022-10-12 19:01:32,667 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-01-32+00
+2022-10-12 19:01:33,284 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+18-58-30+00
+2022-10-12 19:04:33,460 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-04-33+00
+2022-10-12 19:04:34,077 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-01-32+00
+2022-10-12 19:07:34,583 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-07-34+00
+2022-10-12 19:07:35,202 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-04-33+00
+2022-10-12 19:10:35,885 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-10-35+00
+2022-10-12 19:10:36,506 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-07-34+00
+2022-10-12 19:13:36,946 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-13-36+00
+2022-10-12 19:13:37,569 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-10-35+00
+2022-10-12 19:16:37,972 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-16-37+00
+2022-10-12 19:16:38,598 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-13-36+00
+2022-10-12 19:19:39,377 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-19-39+00
+2022-10-12 19:19:40,006 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-16-37+00
+2022-10-12 19:22:40,822 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-22-40+00
+2022-10-12 19:22:41,452 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-19-39+00
+2022-10-12 19:25:42,419 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-25-42+00
+2022-10-12 19:25:43,050 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-22-40+00
+2022-10-12 19:28:44,044 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-28-43+00
+2022-10-12 19:28:44,670 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-25-42+00
+2022-10-12 19:31:45,886 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-31-45+00
+2022-10-12 19:31:46,519 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-28-43+00
+2022-10-12 19:34:47,478 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-34-47+00
+2022-10-12 19:34:48,120 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-31-45+00
+2022-10-12 19:37:48,403 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-37-48+00
+2022-10-12 19:37:49,045 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-34-47+00
+2022-10-12 19:40:49,595 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-40-49+00
+2022-10-12 19:40:50,234 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-37-48+00
+2022-10-12 19:43:51,039 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-43-50+00
+2022-10-12 19:43:51,678 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-40-49+00
+2022-10-12 19:46:52,700 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-46-52+00
+2022-10-12 19:46:53,341 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-43-50+00
+2022-10-12 19:49:54,207 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-49-54+00
+2022-10-12 19:49:54,856 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-46-52+00
+2022-10-12 19:52:55,876 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-52-55+00
+2022-10-12 19:52:56,525 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-49-54+00
+2022-10-12 19:55:57,293 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-55-57+00
+2022-10-12 19:55:57,944 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-52-55+00
+2022-10-12 19:58:58,547 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-58-58+00
+2022-10-12 19:58:59,199 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-55-57+00
+2022-10-12 20:02:00,024 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-01-59+00
+2022-10-12 20:02:00,672 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+19-58-58+00
+2022-10-12 20:05:01,771 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-05-01+00
+2022-10-12 20:05:02,417 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-01-59+00
+2022-10-12 20:08:03,210 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-08-03+00
+2022-10-12 20:08:03,864 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-05-01+00
+2022-10-12 20:11:05,070 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-11-04+00
+2022-10-12 20:11:05,729 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-08-03+00
+2022-10-12 20:14:06,826 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-14-06+00
+2022-10-12 20:14:07,483 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-11-04+00
+2022-10-12 20:17:08,397 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-17-08+00
+2022-10-12 20:17:09,054 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-14-06+00
+2022-10-12 20:20:10,326 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-20-10+00
+2022-10-12 20:20:10,988 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-17-08+00
+2022-10-12 20:23:12,143 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-23-11+00
+2022-10-12 20:23:12,810 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-20-10+00
+2022-10-12 20:26:13,591 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-26-13+00
+2022-10-12 20:26:14,260 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-23-11+00
+2022-10-12 20:29:14,461 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-29-14+00
+2022-10-12 20:29:15,131 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-26-13+00
+2022-10-12 20:32:15,434 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-32-15+00
+2022-10-12 20:32:16,103 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-29-14+00
+2022-10-12 20:35:17,365 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-35-17+00
+2022-10-12 20:35:18,040 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-32-15+00
+2022-10-12 20:38:18,584 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-38-18+00
+2022-10-12 20:38:19,258 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-35-17+00
+2022-10-12 20:41:20,505 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-41-20+00
+2022-10-12 20:41:21,182 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-38-18+00
+2022-10-12 20:44:22,545 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-44-22+00
+2022-10-12 20:44:23,223 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-41-20+00
+2022-10-12 20:47:24,120 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-47-23+00
+2022-10-12 20:47:24,800 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-44-22+00
+2022-10-12 20:50:25,203 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-50-25+00
+2022-10-12 20:50:25,887 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-47-23+00
+2022-10-12 20:53:26,959 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-53-26+00
+2022-10-12 20:53:27,640 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-50-25+00
+2022-10-12 20:56:28,366 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-56-28+00
+2022-10-12 20:56:29,052 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-53-26+00
+2022-10-12 20:59:29,831 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-59-29+00
+2022-10-12 20:59:30,518 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-56-28+00
+2022-10-12 21:02:31,525 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-02-31+00
+2022-10-12 21:02:32,213 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+20-59-29+00
+2022-10-12 21:05:32,877 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-05-32+00
+2022-10-12 21:05:33,569 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-02-31+00
+2022-10-12 21:08:34,281 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-08-34+00
+2022-10-12 21:08:34,978 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-05-32+00
+2022-10-12 21:11:35,822 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-11-35+00
+2022-10-12 21:11:36,521 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-08-34+00
+2022-10-12 21:14:36,985 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-14-36+00
+2022-10-12 21:14:37,681 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-11-35+00
+2022-10-12 21:17:38,032 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-17-37+00
+2022-10-12 21:17:38,737 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-14-36+00
+2022-10-12 21:20:39,910 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-20-39+00
+2022-10-12 21:20:40,617 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-17-37+00
+2022-10-12 21:23:41,699 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-23-41+00
+2022-10-12 21:23:42,404 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-20-39+00
+2022-10-12 21:26:42,768 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-26-42+00
+2022-10-12 21:26:43,472 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-23-41+00
+2022-10-12 21:29:43,670 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-29-43+00
+2022-10-12 21:29:44,376 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-26-42+00
+2022-10-12 21:32:44,816 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-32-44+00
+2022-10-12 21:32:45,526 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-29-43+00
+2022-10-12 21:35:45,781 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-35-45+00
+2022-10-12 21:35:46,490 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-32-44+00
+2022-10-12 21:38:46,797 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-38-46+00
+2022-10-12 21:38:47,506 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-35-45+00
+2022-10-12 21:41:47,803 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-41-47+00
+2022-10-12 21:41:48,519 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-38-46+00
+2022-10-12 21:44:49,139 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-44-48+00
+2022-10-12 21:44:49,854 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-41-47+00
+2022-10-12 21:47:50,489 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-47-50+00
+2022-10-12 21:47:51,207 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-44-48+00
+2022-10-12 21:50:52,576 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-50-52+00
+2022-10-12 21:50:53,295 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-47-50+00
+2022-10-12 21:53:53,703 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-53-53+00
+2022-10-12 21:53:54,432 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-50-52+00
+2022-10-12 21:56:54,787 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-56-54+00
+2022-10-12 21:56:55,516 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-53-53+00
+2022-10-12 21:59:56,189 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-59-56+00
+2022-10-12 21:59:56,910 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-56-54+00
+2022-10-12 22:02:57,275 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-02-57+00
+2022-10-12 22:02:57,996 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+21-59-56+00
+2022-10-12 22:04:03,847 - speechbrain.utils.epoch_loop - INFO - Going into epoch 3
+2022-10-12 22:07:04,027 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-07-03+00
+2022-10-12 22:07:04,763 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-02-57+00
+2022-10-12 22:10:05,271 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-10-05+00
+2022-10-12 22:10:06,003 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-07-03+00
+2022-10-12 22:13:06,177 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-13-06+00
+2022-10-12 22:13:06,910 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-10-05+00
+2022-10-12 22:16:07,078 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-16-06+00
+2022-10-12 22:16:07,813 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-13-06+00
+2022-10-12 22:19:08,260 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-19-08+00
+2022-10-12 22:19:08,997 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-16-06+00
+2022-10-12 22:22:09,181 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-22-09+00
+2022-10-12 22:22:09,921 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-19-08+00
+2022-10-12 22:25:10,315 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-25-10+00
+2022-10-12 22:25:11,059 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-22-09+00
+2022-10-12 22:28:11,800 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-28-11+00
+2022-10-12 22:28:12,547 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-25-10+00
+2022-10-12 22:31:13,602 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-31-13+00
+2022-10-12 22:31:14,346 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-28-11+00
+2022-10-12 22:34:14,538 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-34-14+00
+2022-10-12 22:34:15,281 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-31-13+00
+2022-10-12 22:37:15,652 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-37-15+00
+2022-10-12 22:37:16,397 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-34-14+00
+2022-10-12 22:40:16,750 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-40-16+00
+2022-10-12 22:40:17,504 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-37-15+00
+2022-10-12 22:43:17,966 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-43-17+00
+2022-10-12 22:43:18,722 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-40-16+00
+2022-10-12 22:46:20,086 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-46-19+00
+2022-10-12 22:46:20,834 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-43-17+00
+2022-10-12 22:49:21,194 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-49-21+00
+2022-10-12 22:49:21,946 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-46-19+00
+2022-10-12 22:52:22,577 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-52-22+00
+2022-10-12 22:52:23,323 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-49-21+00
+2022-10-12 22:55:24,108 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-55-23+00
+2022-10-12 22:55:24,858 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-52-22+00
+2022-10-12 22:58:26,075 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-58-25+00
+2022-10-12 22:58:26,824 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-55-23+00
+2022-10-12 23:01:27,053 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-01-26+00
+2022-10-12 23:01:27,811 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+22-58-25+00
+2022-10-12 23:04:28,067 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-04-27+00
+2022-10-12 23:04:28,823 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-01-26+00
+2022-10-12 23:07:30,041 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-07-29+00
+2022-10-12 23:07:30,800 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-04-27+00
+2022-10-12 23:10:32,213 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-10-32+00
+2022-10-12 23:10:32,975 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-07-29+00
+2022-10-12 23:13:33,662 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-13-33+00
+2022-10-12 23:13:34,422 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-10-32+00
+2022-10-12 23:16:35,343 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-16-35+00
+2022-10-12 23:16:36,111 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-13-33+00
+2022-10-12 23:19:36,815 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-19-36+00
+2022-10-12 23:19:37,584 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-16-35+00
+2022-10-12 23:22:38,013 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-22-37+00
+2022-10-12 23:22:38,784 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-19-36+00
+2022-10-12 23:25:39,327 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-25-39+00
+2022-10-12 23:25:40,106 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-22-37+00
+2022-10-12 23:28:40,522 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-28-40+00
+2022-10-12 23:28:41,303 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-25-39+00
+2022-10-12 23:31:41,841 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-31-41+00
+2022-10-12 23:31:42,625 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-28-40+00
+2022-10-12 23:34:43,507 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-34-43+00
+2022-10-12 23:34:44,279 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-31-41+00
+2022-10-12 23:37:44,493 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-37-44+00
+2022-10-12 23:37:45,272 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-34-43+00
+2022-10-12 23:40:45,488 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-40-45+00
+2022-10-12 23:40:46,264 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-37-44+00
+2022-10-12 23:43:46,502 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-43-46+00
+2022-10-12 23:43:47,282 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-40-45+00
+2022-10-12 23:46:47,616 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-46-47+00
+2022-10-12 23:46:48,406 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-43-46+00
+2022-10-12 23:49:48,845 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-49-48+00
+2022-10-12 23:49:49,632 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-46-47+00
+2022-10-12 23:52:50,223 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-52-50+00
+2022-10-12 23:52:51,009 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-49-48+00
+2022-10-12 23:55:51,390 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-55-51+00
+2022-10-12 23:55:52,187 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-52-50+00
+2022-10-12 23:58:52,864 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-58-52+00
+2022-10-12 23:58:53,650 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-55-51+00
+2022-10-13 00:01:54,685 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-13+00-01-54+00
+2022-10-13 00:01:55,479 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-12+23-58-52+00
+2022-10-13 00:04:55,849 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-13+00-04-55+00
+2022-10-13 00:04:56,641 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-13+00-01-54+00
+2022-10-13 00:07:57,294 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-13+00-07-57+00
+2022-10-13 00:07:58,091 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-13+00-04-55+00
+2022-10-13 00:10:59,407 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-13+00-10-59+00
+2022-10-13 00:11:00,211 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-13+00-07-57+00
+2022-10-13 00:14:00,703 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-13+00-14-00+00
+2022-10-13 00:14:01,515 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-13+00-10-59+00

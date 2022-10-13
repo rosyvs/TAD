@@ -1,0 +1,683 @@
+2022-10-08 13:39:38,355 - speechbrain.core - INFO - Beginning experiment!
+2022-10-08 13:39:38,356 - speechbrain.core - INFO - Experiment folder: results/ecapa_kids_anew/303
+2022-10-08 13:39:39,119 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+attrs==22.1.0
+autopep8==1.7.0
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+black==19.10b0
+Bottleneck @ file:///opt/conda/conda-bld/bottleneck_1657175564434/work
+brotlipy==0.7.0
+certifi @ file:///opt/conda/conda-bld/certifi_1663615672595/work/certifi
+cffi @ file:///tmp/abs_98z5h56wf8/croots/recipe/cffi_1659598650955/work
+cfgv==3.3.1
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.0.4
+cryptography @ file:///tmp/build/80754af9/cryptography_1652101588893/work
+ctc-segmentation==1.7.3
+Cython @ file:///opt/conda/conda-bld/cython_1656941947712/work
+debugpy @ file:///tmp/build/80754af9/debugpy_1637091799509/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+distlib==0.3.6
+entrypoints @ file:///tmp/build/80754af9/entrypoints_1649926439650/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+filelock==3.8.0
+flake8==3.7.9
+huggingface-hub==0.9.1
+HyperPyYAML==1.0.1
+identify==2.5.5
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+ipykernel @ file:///opt/conda/conda-bld/ipykernel_1662361798230/work
+ipython @ file:///opt/conda/conda-bld/ipython_1657652213665/work
+jedi @ file:///tmp/build/80754af9/jedi_1644297102865/work
+joblib==1.2.0
+jupyter-core @ file:///opt/conda/conda-bld/jupyter_core_1651671229925/work
+jupyter_client @ file:///opt/conda/conda-bld/jupyter_client_1662504365333/work
+matplotlib-inline @ file:///opt/conda/conda-bld/matplotlib-inline_1662014470464/work
+mccabe==0.6.1
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626186066731/work
+mkl-service==2.4.0
+more-itertools==8.14.0
+nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1649847906199/work
+nodeenv==1.7.0
+numexpr @ file:///opt/conda/conda-bld/numexpr_1656940300424/work
+numpy==1.23.3
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.4.4
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pathspec==0.10.1
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.2.0
+platformdirs==2.5.2
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+psutil @ file:///opt/conda/conda-bld/psutil_1656431268089/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+py==1.11.0
+pycodestyle==2.9.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydub==0.25.1
+pyflakes==2.1.1
+Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
+pytest==5.4.1
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///opt/conda/conda-bld/pytz_1654762638606/work
+PyYAML==6.0
+pyzmq @ file:///opt/conda/conda-bld/pyzmq_1657724186960/work
+regex==2022.9.13
+requests @ file:///opt/conda/conda-bld/requests_1657734628632/work
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scipy==1.8.1
+sentencepiece==0.1.97
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+-e git+https://github.com/speechbrain/speechbrain.git@d78c00eca113c9f013f2eee4d05947adc1b32ccb#egg=speechbrain
+sphfile==1.0.3
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+toml==0.10.2
+torch==1.12.1
+torchaudio==0.12.1
+torchvision==0.13.1
+tornado @ file:///opt/conda/conda-bld/tornado_1662061693373/work
+tqdm==4.64.1
+traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+typed-ast==1.5.4
+typing_extensions @ file:///tmp/abs_ben9emwtky/croots/recipe/typing_extensions_1659638822008/work
+urllib3==1.26.12
+virtualenv==20.16.5
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+yamllint==1.23.0
+
+
+2022-10-08 13:39:39,138 - speechbrain.utils.superpowers - DEBUG - d2ed66e
+
+
+2022-10-08 13:39:39,348 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2022-10-08 13:39:42,031 - speechbrain.core - INFO - 7.1M trainable parameters in SpeakerBrain
+2022-10-08 13:39:42,033 - speechbrain.utils.checkpoints - INFO - Would load a checkpoint here, but none found yet.
+2022-10-08 13:39:42,033 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2022-10-08 13:42:42,331 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+13-42-42+00
+2022-10-08 13:45:42,567 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+13-45-42+00
+2022-10-08 13:45:42,582 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+13-42-42+00
+2022-10-08 13:48:17,633 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 239, in <module>
+    speaker_brain.fit(
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1153, in fit
+    self._fit_train(train_set=train_set, epoch=epoch, enable=enable)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1009, in _fit_train
+    loss = self.fit_batch(batch)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 884, in fit_batch
+    (loss / self.grad_accumulation_factor).backward()
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/_tensor.py", line 396, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: CUDA out of memory. Tried to allocate 264.00 MiB (GPU 0; 14.62 GiB total capacity; 201.95 MiB already allocated; 265.94 MiB free; 416.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+2022-10-08 14:03:50,412 - speechbrain.core - INFO - Beginning experiment!
+2022-10-08 14:03:50,412 - speechbrain.core - INFO - Experiment folder: results/ecapa_kids_anew/303
+2022-10-08 14:03:50,899 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+attrs==22.1.0
+autopep8==1.7.0
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+black==19.10b0
+Bottleneck @ file:///opt/conda/conda-bld/bottleneck_1657175564434/work
+brotlipy==0.7.0
+certifi @ file:///opt/conda/conda-bld/certifi_1663615672595/work/certifi
+cffi @ file:///tmp/abs_98z5h56wf8/croots/recipe/cffi_1659598650955/work
+cfgv==3.3.1
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.0.4
+cryptography @ file:///tmp/build/80754af9/cryptography_1652101588893/work
+ctc-segmentation==1.7.3
+Cython @ file:///opt/conda/conda-bld/cython_1656941947712/work
+debugpy @ file:///tmp/build/80754af9/debugpy_1637091799509/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+distlib==0.3.6
+entrypoints @ file:///tmp/build/80754af9/entrypoints_1649926439650/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+filelock==3.8.0
+flake8==3.7.9
+huggingface-hub==0.9.1
+HyperPyYAML==1.0.1
+identify==2.5.5
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+ipykernel @ file:///opt/conda/conda-bld/ipykernel_1662361798230/work
+ipython @ file:///opt/conda/conda-bld/ipython_1657652213665/work
+jedi @ file:///tmp/build/80754af9/jedi_1644297102865/work
+joblib==1.2.0
+jupyter-core @ file:///opt/conda/conda-bld/jupyter_core_1651671229925/work
+jupyter_client @ file:///opt/conda/conda-bld/jupyter_client_1662504365333/work
+matplotlib-inline @ file:///opt/conda/conda-bld/matplotlib-inline_1662014470464/work
+mccabe==0.6.1
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626186066731/work
+mkl-service==2.4.0
+more-itertools==8.14.0
+nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1649847906199/work
+nodeenv==1.7.0
+numexpr @ file:///opt/conda/conda-bld/numexpr_1656940300424/work
+numpy==1.23.3
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.4.4
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pathspec==0.10.1
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.2.0
+platformdirs==2.5.2
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+psutil @ file:///opt/conda/conda-bld/psutil_1656431268089/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+py==1.11.0
+pycodestyle==2.9.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydub==0.25.1
+pyflakes==2.1.1
+Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
+pytest==5.4.1
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///opt/conda/conda-bld/pytz_1654762638606/work
+PyYAML==6.0
+pyzmq @ file:///opt/conda/conda-bld/pyzmq_1657724186960/work
+regex==2022.9.13
+requests @ file:///opt/conda/conda-bld/requests_1657734628632/work
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scipy==1.8.1
+sentencepiece==0.1.97
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+-e git+https://github.com/speechbrain/speechbrain.git@d78c00eca113c9f013f2eee4d05947adc1b32ccb#egg=speechbrain
+sphfile==1.0.3
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+toml==0.10.2
+torch==1.12.1
+torchaudio==0.12.1
+torchvision==0.13.1
+tornado @ file:///opt/conda/conda-bld/tornado_1662061693373/work
+tqdm==4.64.1
+traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+typed-ast==1.5.4
+typing_extensions @ file:///tmp/abs_ben9emwtky/croots/recipe/typing_extensions_1659638822008/work
+urllib3==1.26.12
+virtualenv==20.16.5
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+yamllint==1.23.0
+
+
+2022-10-08 14:03:50,918 - speechbrain.utils.superpowers - DEBUG - d2ed66e
+
+
+2022-10-08 14:03:51,084 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2022-10-08 14:03:52,481 - speechbrain.core - INFO - 7.1M trainable parameters in SpeakerBrain
+2022-10-08 14:03:52,484 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/ecapa_kids_anew/303/save/CKPT+2022-10-08+13-45-42+00
+2022-10-08 14:03:52,699 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2022-10-08 14:06:52,864 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-06-52+00
+2022-10-08 14:06:52,878 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+13-45-42+00
+2022-10-08 14:09:53,125 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-09-52+00
+2022-10-08 14:09:53,140 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-06-52+00
+2022-10-08 14:12:43,748 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 239, in <module>
+    speaker_brain.fit(
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1153, in fit
+    self._fit_train(train_set=train_set, epoch=epoch, enable=enable)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1009, in _fit_train
+    loss = self.fit_batch(batch)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 881, in fit_batch
+    outputs = self.compute_forward(batch, Stage.TRAIN)
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 75, in compute_forward
+    embeddings = self.modules.embedding_model(feats)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/lobes/models/ECAPA_TDNN.py", line 498, in forward
+    x = self.asp(x, lengths=lengths)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/lobes/models/ECAPA_TDNN.py", line 271, in forward
+    attn = self.conv(self.tanh(self.tdnn(attn)))
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/activation.py", line 354, in forward
+    return torch.tanh(input)
+RuntimeError: CUDA out of memory. Tried to allocate 2.00 MiB (GPU 0; 14.62 GiB total capacity; 400.89 MiB already allocated; 3.94 MiB free; 492.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+2022-10-08 14:13:10,837 - speechbrain.core - INFO - Beginning experiment!
+2022-10-08 14:13:10,837 - speechbrain.core - INFO - Experiment folder: results/ecapa_kids_anew/303
+2022-10-08 14:13:11,322 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+attrs==22.1.0
+autopep8==1.7.0
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+black==19.10b0
+Bottleneck @ file:///opt/conda/conda-bld/bottleneck_1657175564434/work
+brotlipy==0.7.0
+certifi @ file:///opt/conda/conda-bld/certifi_1663615672595/work/certifi
+cffi @ file:///tmp/abs_98z5h56wf8/croots/recipe/cffi_1659598650955/work
+cfgv==3.3.1
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.0.4
+cryptography @ file:///tmp/build/80754af9/cryptography_1652101588893/work
+ctc-segmentation==1.7.3
+Cython @ file:///opt/conda/conda-bld/cython_1656941947712/work
+debugpy @ file:///tmp/build/80754af9/debugpy_1637091799509/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+distlib==0.3.6
+entrypoints @ file:///tmp/build/80754af9/entrypoints_1649926439650/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+filelock==3.8.0
+flake8==3.7.9
+huggingface-hub==0.9.1
+HyperPyYAML==1.0.1
+identify==2.5.5
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+ipykernel @ file:///opt/conda/conda-bld/ipykernel_1662361798230/work
+ipython @ file:///opt/conda/conda-bld/ipython_1657652213665/work
+jedi @ file:///tmp/build/80754af9/jedi_1644297102865/work
+joblib==1.2.0
+jupyter-core @ file:///opt/conda/conda-bld/jupyter_core_1651671229925/work
+jupyter_client @ file:///opt/conda/conda-bld/jupyter_client_1662504365333/work
+matplotlib-inline @ file:///opt/conda/conda-bld/matplotlib-inline_1662014470464/work
+mccabe==0.6.1
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626186066731/work
+mkl-service==2.4.0
+more-itertools==8.14.0
+nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1649847906199/work
+nodeenv==1.7.0
+numexpr @ file:///opt/conda/conda-bld/numexpr_1656940300424/work
+numpy==1.23.3
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.4.4
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pathspec==0.10.1
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.2.0
+platformdirs==2.5.2
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+psutil @ file:///opt/conda/conda-bld/psutil_1656431268089/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+py==1.11.0
+pycodestyle==2.9.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydub==0.25.1
+pyflakes==2.1.1
+Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
+pytest==5.4.1
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///opt/conda/conda-bld/pytz_1654762638606/work
+PyYAML==6.0
+pyzmq @ file:///opt/conda/conda-bld/pyzmq_1657724186960/work
+regex==2022.9.13
+requests @ file:///opt/conda/conda-bld/requests_1657734628632/work
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scipy==1.8.1
+sentencepiece==0.1.97
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+-e git+https://github.com/speechbrain/speechbrain.git@d78c00eca113c9f013f2eee4d05947adc1b32ccb#egg=speechbrain
+sphfile==1.0.3
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+toml==0.10.2
+torch==1.12.1
+torchaudio==0.12.1
+torchvision==0.13.1
+tornado @ file:///opt/conda/conda-bld/tornado_1662061693373/work
+tqdm==4.64.1
+traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+typed-ast==1.5.4
+typing_extensions @ file:///tmp/abs_ben9emwtky/croots/recipe/typing_extensions_1659638822008/work
+urllib3==1.26.12
+virtualenv==20.16.5
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+yamllint==1.23.0
+
+
+2022-10-08 14:13:11,344 - speechbrain.utils.superpowers - DEBUG - d2ed66e
+
+
+2022-10-08 14:13:11,525 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2022-10-08 14:13:12,917 - speechbrain.core - INFO - 7.1M trainable parameters in SpeakerBrain
+2022-10-08 14:13:12,919 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-09-52+00
+2022-10-08 14:13:13,140 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2022-10-08 14:16:13,403 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-16-13+00
+2022-10-08 14:16:13,416 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-09-52+00
+2022-10-08 14:19:13,773 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-19-13+00
+2022-10-08 14:19:13,788 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-16-13+00
+2022-10-08 14:20:54,644 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 239, in <module>
+    # Training
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1153, in fit
+    self._fit_train(train_set=train_set, epoch=epoch, enable=enable)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1009, in _fit_train
+    loss = self.fit_batch(batch)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 881, in fit_batch
+    outputs = self.compute_forward(batch, Stage.TRAIN)
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 75, in compute_forward
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/lobes/models/ECAPA_TDNN.py", line 488, in forward
+    x = layer(x, lengths=lengths)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/lobes/models/ECAPA_TDNN.py", line 361, in forward
+    x = self.tdnn1(x)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/lobes/models/ECAPA_TDNN.py", line 81, in forward
+    return self.norm(self.activation(self.conv(x)))
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/nnet/CNN.py", line 437, in forward
+    wx = self.conv(x)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 307, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 303, in _conv_forward
+    return F.conv1d(input, weight, bias, self.stride,
+RuntimeError: CUDA out of memory. Tried to allocate 264.00 MiB (GPU 0; 14.62 GiB total capacity; 124.49 MiB already allocated; 263.94 MiB free; 286.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+2022-10-08 14:23:53,010 - speechbrain.core - INFO - Beginning experiment!
+2022-10-08 14:23:53,011 - speechbrain.core - INFO - Experiment folder: results/ecapa_kids_anew/303
+2022-10-08 14:23:53,480 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+attrs==22.1.0
+autopep8==1.7.0
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+black==19.10b0
+Bottleneck @ file:///opt/conda/conda-bld/bottleneck_1657175564434/work
+brotlipy==0.7.0
+certifi @ file:///opt/conda/conda-bld/certifi_1663615672595/work/certifi
+cffi @ file:///tmp/abs_98z5h56wf8/croots/recipe/cffi_1659598650955/work
+cfgv==3.3.1
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.0.4
+cryptography @ file:///tmp/build/80754af9/cryptography_1652101588893/work
+ctc-segmentation==1.7.3
+Cython @ file:///opt/conda/conda-bld/cython_1656941947712/work
+debugpy @ file:///tmp/build/80754af9/debugpy_1637091799509/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+distlib==0.3.6
+entrypoints @ file:///tmp/build/80754af9/entrypoints_1649926439650/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+filelock==3.8.0
+flake8==3.7.9
+huggingface-hub==0.9.1
+HyperPyYAML==1.0.1
+identify==2.5.5
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+ipykernel @ file:///opt/conda/conda-bld/ipykernel_1662361798230/work
+ipython @ file:///opt/conda/conda-bld/ipython_1657652213665/work
+jedi @ file:///tmp/build/80754af9/jedi_1644297102865/work
+joblib==1.2.0
+jupyter-core @ file:///opt/conda/conda-bld/jupyter_core_1651671229925/work
+jupyter_client @ file:///opt/conda/conda-bld/jupyter_client_1662504365333/work
+matplotlib-inline @ file:///opt/conda/conda-bld/matplotlib-inline_1662014470464/work
+mccabe==0.6.1
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626186066731/work
+mkl-service==2.4.0
+more-itertools==8.14.0
+nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1649847906199/work
+nodeenv==1.7.0
+numexpr @ file:///opt/conda/conda-bld/numexpr_1656940300424/work
+numpy==1.23.3
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.4.4
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pathspec==0.10.1
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.2.0
+platformdirs==2.5.2
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+psutil @ file:///opt/conda/conda-bld/psutil_1656431268089/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+py==1.11.0
+pycodestyle==2.9.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydub==0.25.1
+pyflakes==2.1.1
+Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
+pytest==5.4.1
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///opt/conda/conda-bld/pytz_1654762638606/work
+PyYAML==6.0
+pyzmq @ file:///opt/conda/conda-bld/pyzmq_1657724186960/work
+regex==2022.9.13
+requests @ file:///opt/conda/conda-bld/requests_1657734628632/work
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scipy==1.8.1
+sentencepiece==0.1.97
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+-e git+https://github.com/speechbrain/speechbrain.git@d78c00eca113c9f013f2eee4d05947adc1b32ccb#egg=speechbrain
+sphfile==1.0.3
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+toml==0.10.2
+torch==1.12.1
+torchaudio==0.12.1
+torchvision==0.13.1
+tornado @ file:///opt/conda/conda-bld/tornado_1662061693373/work
+tqdm==4.64.1
+traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+typed-ast==1.5.4
+typing_extensions @ file:///tmp/abs_ben9emwtky/croots/recipe/typing_extensions_1659638822008/work
+urllib3==1.26.12
+virtualenv==20.16.5
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+yamllint==1.23.0
+
+
+2022-10-08 14:23:53,502 - speechbrain.utils.superpowers - DEBUG - d2ed66e
+
+
+2022-10-08 14:23:53,688 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2022-10-08 14:23:55,070 - speechbrain.core - INFO - 7.1M trainable parameters in SpeakerBrain
+2022-10-08 14:23:55,073 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-19-13+00
+2022-10-08 14:23:55,291 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2022-10-08 14:26:55,530 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-26-55+00
+2022-10-08 14:26:55,543 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-19-13+00
+2022-10-08 14:29:55,766 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-29-55+00
+2022-10-08 14:29:55,781 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-26-55+00
+2022-10-08 14:30:58,185 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 240, in <module>
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1153, in fit
+    self._fit_train(train_set=train_set, epoch=epoch, enable=enable)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1009, in _fit_train
+    loss = self.fit_batch(batch)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 881, in fit_batch
+    outputs = self.compute_forward(batch, Stage.TRAIN)
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 76, in compute_forward
+    feats = self.modules.mean_var_norm(feats, lens)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/lobes/models/ECAPA_TDNN.py", line 498, in forward
+    x = self.asp(x, lengths=lengths)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/lobes/models/ECAPA_TDNN.py", line 271, in forward
+    attn = self.conv(self.tanh(self.tdnn(attn)))
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/activation.py", line 354, in forward
+    return torch.tanh(input)
+RuntimeError: CUDA out of memory. Tried to allocate 2.00 MiB (GPU 0; 14.62 GiB total capacity; 272.33 MiB already allocated; 3.94 MiB free; 602.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+2022-10-08 14:38:36,504 - speechbrain.core - INFO - Beginning experiment!
+2022-10-08 14:38:36,504 - speechbrain.core - INFO - Experiment folder: results/ecapa_kids_anew/303
+2022-10-08 14:38:36,990 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+attrs==22.1.0
+autopep8==1.7.0
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+black==19.10b0
+Bottleneck @ file:///opt/conda/conda-bld/bottleneck_1657175564434/work
+brotlipy==0.7.0
+certifi @ file:///opt/conda/conda-bld/certifi_1663615672595/work/certifi
+cffi @ file:///tmp/abs_98z5h56wf8/croots/recipe/cffi_1659598650955/work
+cfgv==3.3.1
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.0.4
+cryptography @ file:///tmp/build/80754af9/cryptography_1652101588893/work
+ctc-segmentation==1.7.3
+Cython @ file:///opt/conda/conda-bld/cython_1656941947712/work
+debugpy @ file:///tmp/build/80754af9/debugpy_1637091799509/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+distlib==0.3.6
+entrypoints @ file:///tmp/build/80754af9/entrypoints_1649926439650/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+filelock==3.8.0
+flake8==3.7.9
+huggingface-hub==0.9.1
+HyperPyYAML==1.0.1
+identify==2.5.5
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+ipykernel @ file:///opt/conda/conda-bld/ipykernel_1662361798230/work
+ipython @ file:///opt/conda/conda-bld/ipython_1657652213665/work
+jedi @ file:///tmp/build/80754af9/jedi_1644297102865/work
+joblib==1.2.0
+jupyter-core @ file:///opt/conda/conda-bld/jupyter_core_1651671229925/work
+jupyter_client @ file:///opt/conda/conda-bld/jupyter_client_1662504365333/work
+matplotlib-inline @ file:///opt/conda/conda-bld/matplotlib-inline_1662014470464/work
+mccabe==0.6.1
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626186066731/work
+mkl-service==2.4.0
+more-itertools==8.14.0
+nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1649847906199/work
+nodeenv==1.7.0
+numexpr @ file:///opt/conda/conda-bld/numexpr_1656940300424/work
+numpy==1.23.3
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.4.4
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pathspec==0.10.1
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.2.0
+platformdirs==2.5.2
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+psutil @ file:///opt/conda/conda-bld/psutil_1656431268089/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+py==1.11.0
+pycodestyle==2.9.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydub==0.25.1
+pyflakes==2.1.1
+Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
+pytest==5.4.1
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///opt/conda/conda-bld/pytz_1654762638606/work
+PyYAML==6.0
+pyzmq @ file:///opt/conda/conda-bld/pyzmq_1657724186960/work
+regex==2022.9.13
+requests @ file:///opt/conda/conda-bld/requests_1657734628632/work
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scipy==1.8.1
+sentencepiece==0.1.97
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+-e git+https://github.com/speechbrain/speechbrain.git@d78c00eca113c9f013f2eee4d05947adc1b32ccb#egg=speechbrain
+sphfile==1.0.3
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+toml==0.10.2
+torch==1.12.1
+torchaudio==0.12.1
+torchvision==0.13.1
+tornado @ file:///opt/conda/conda-bld/tornado_1662061693373/work
+tqdm==4.64.1
+traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+typed-ast==1.5.4
+typing_extensions @ file:///tmp/abs_ben9emwtky/croots/recipe/typing_extensions_1659638822008/work
+urllib3==1.26.12
+virtualenv==20.16.5
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+yamllint==1.23.0
+
+
+2022-10-08 14:38:37,015 - speechbrain.utils.superpowers - DEBUG - d2ed66e
+
+
+2022-10-08 14:38:37,196 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2022-10-08 14:38:38,581 - speechbrain.core - INFO - 7.1M trainable parameters in SpeakerBrain
+2022-10-08 14:38:38,583 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-29-55+00
+2022-10-08 14:38:38,802 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2022-10-08 14:41:39,127 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-41-38+00
+2022-10-08 14:41:39,141 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-29-55+00
+2022-10-08 14:44:39,306 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-44-39+00
+2022-10-08 14:44:39,321 - speechbrain.utils.checkpoints - DEBUG - Deleted checkpoint in results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-41-38+00
+2022-10-08 14:45:09,241 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/ecapa_kids_anew/303/save/CKPT+2022-10-08+14-44-39+00
+2022-10-08 14:45:09,460 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2022-10-08 14:45:35,139 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 253, in <module>
+    overrides=overrides,
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1153, in fit
+    self._fit_train(train_set=train_set, epoch=epoch, enable=enable)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 1009, in _fit_train
+    loss = self.fit_batch(batch)
+  File "/mnt/shared/speechbrain/speechbrain/core.py", line 881, in fit_batch
+    outputs = self.compute_forward(batch, Stage.TRAIN)
+  File "/home/rosy/TAD/model/train_speaker_embeddings.py", line 79, in compute_forward
+    embeddings = self.modules.embedding_model(feats)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/lobes/models/ECAPA_TDNN.py", line 488, in forward
+    x = layer(x, lengths=lengths)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/lobes/models/ECAPA_TDNN.py", line 362, in forward
+    x = self.res2net_block(x)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/lobes/models/ECAPA_TDNN.py", line 141, in forward
+    y_i = self.blocks[i - 1](x_i + y_i)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/lobes/models/ECAPA_TDNN.py", line 81, in forward
+    return self.norm(self.activation(self.conv(x)))
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/shared/speechbrain/speechbrain/nnet/CNN.py", line 437, in forward
+    wx = self.conv(x)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 307, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/rosy/miniconda3/envs/sb/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 303, in _conv_forward
+    return F.conv1d(input, weight, bias, self.stride,
+RuntimeError: CUDA out of memory. Tried to allocate 2.00 MiB (GPU 0; 14.62 GiB total capacity; 163.43 MiB already allocated; 3.94 MiB free; 580.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

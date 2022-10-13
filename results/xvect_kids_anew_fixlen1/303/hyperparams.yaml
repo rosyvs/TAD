@@ -1,0 +1,179 @@
+# Generated 2022-10-11 from:
+# /home/rosy/TAD/model/hparams/train_xvect_kids.yaml
+# yamllint disable
+# ################################
+# Model: Speaker identification with ECAPA using kids corpora
+# Authors: Rosy Southwell, based on recipe by Hwidong Na & Mirco Ravanelli
+# ################################
+
+# Basic parameters
+seed: 303
+__set_seed: !apply:torch.manual_seed [303]
+output_folder: results/xvect_kids_anew_fixlen1/303
+save_folder: results/xvect_kids_anew_fixlen1/303/save
+train_log: results/xvect_kids_anew_fixlen1/303/train_log.txt
+
+# Data files
+data_folder: /mnt/shared/CORPORA/  # e.g. /path/to/Voxceleb
+train_annotation: /mnt/shared/CORPORA//data_manifests/ALL_TRAIN_fixlen1.csv
+# valid_annotation: !ref <data_folder>/data_manifests/ISAT-SI_DEV_fixlen1.csv # just to validate speakerID classifier. should contain the SAME speakers as TRAIN
+
+# verification_file: #TODO: make verification pairs from TEST split 
+
+skip_prep: true
+ckpt_interval_minutes: 3 # save checkpoint every N min
+
+# Training parameters
+number_of_epochs: 20
+batch_size: 4
+lr: 0.001
+lr_final: 0.0001
+
+sample_rate: 16000
+# sentence_len: 3.0 # seconds
+shuffle: true
+random_chunk: false
+
+# Feature parameters
+n_mels: 24
+left_frames: 0
+right_frames: 0
+deltas: false
+
+# Number of speakers
+out_n_neurons: 4589 #1211 for vox1  # 5994 for vox2, 7205 for vox1+vox2
+
+dataloader_options:
+  batch_size: 4
+  shuffle: true
+  num_workers: 4
+
+# Functions
+compute_features: &id007 !new:speechbrain.lobes.features.Fbank
+  n_mels: 24
+  left_frames: 0
+  right_frames: 0
+  deltas: false
+
+embedding_model: &id008 !new:speechbrain.lobes.models.Xvector.Xvector
+  in_channels: 24
+  activation: !name:torch.nn.LeakyReLU
+  tdnn_blocks: 5
+  tdnn_channels: [512, 512, 512, 512, 1500]
+  tdnn_kernel_sizes: [5, 3, 3, 1, 1]
+  tdnn_dilations: [1, 2, 3, 1, 1]
+  lin_neurons: 512
+
+classifier: &id009 !new:speechbrain.lobes.models.Xvector.Classifier
+  input_shape: [null, null, 512]
+  activation: !name:torch.nn.LeakyReLU
+  lin_blocks: 1
+  lin_neurons: 512
+  out_neurons: 4589
+
+epoch_counter: &id011 !new:speechbrain.utils.epoch_loop.EpochCounter
+  limit: 20
+
+
+# Data augmentation
+augment_wavedrop: &id001 !new:speechbrain.lobes.augment.TimeDomainSpecAugment
+  sample_rate: 16000
+  speeds: [100]
+
+augment_speed: &id002 !new:speechbrain.lobes.augment.TimeDomainSpecAugment
+  sample_rate: 16000
+  speeds: [95, 100, 105]
+
+add_rev: &id003 !new:speechbrain.lobes.augment.EnvCorrupt
+  noise_csv: /mnt/shared/CORPORA//data_manifests/musan_noise.csv #path to noise csv here
+  reverb_csv: /mnt/shared/CORPORA//data_manifests/reverb.csv # path to reverb csv here
+    # openrir_max_noise_len: 3.0  # seconds
+  reverb_prob: 1.0
+  noise_prob: 0.0
+  noise_snr_low: 0
+  noise_snr_high: 15
+  rir_scale_factor: 1.0
+
+add_noise: &id004 !new:speechbrain.lobes.augment.EnvCorrupt
+                                                     #TODO: add speechbrain noise data to this 
+  noise_csv: /mnt/shared/CORPORA//data_manifests/musan_noise.csv #path to noise csv here
+  reverb_csv: /mnt/shared/CORPORA//data_manifests/reverb.csv # path to reverb csv here
+    # openrir_max_noise_len: 3.0  # seconds
+  reverb_prob: 0.0
+  noise_prob: 1.0
+  noise_snr_low: 0
+  noise_snr_high: 15
+  rir_scale_factor: 1.0
+
+add_rev_noise: &id005 !new:speechbrain.lobes.augment.EnvCorrupt
+  noise_csv: /mnt/shared/CORPORA//data_manifests/musan_noise.csv #path to noise csv here
+  reverb_csv: /mnt/shared/CORPORA//data_manifests/reverb.csv # path to reverb csv here
+    # openrir_max_noise_len: 3.0  # seconds
+  reverb_prob: 1.0
+  noise_prob: 1.0
+  noise_snr_low: 0
+  noise_snr_high: 15
+  rir_scale_factor: 1.0
+
+add_isat_noise: &id006 !new:speechbrain.lobes.augment.EnvCorrupt
+                                                          # add speechbrain noise data to this 
+  noise_csv: /mnt/shared/CORPORA//data_manifests/isat_noise.csv
+  reverb_csv: /mnt/shared/CORPORA//data_manifests/reverb.csv
+    # openrir_max_noise_len: 3.0  # seconds
+  reverb_prob: 0.0
+  noise_prob: 1.0
+  noise_snr_low: 0
+  noise_snr_high: 15
+  rir_scale_factor: 1.0
+
+# Definition of the augmentation pipeline.
+# If concat_augment = False, the augmentation techniques are applied
+# in sequence. If concat_augment = True, all the augmented signals
+# are concatenated in a single big batch.
+augment_pipeline: [*id001, *id002, *id003, *id004, *id005, *id006]
+concat_augment: false
+
+mean_var_norm: &id010 !new:speechbrain.processing.features.InputNormalization
+
+# Cost + optimization
+  norm_type: sentence
+  std_norm: false
+
+modules:
+  compute_features: *id007
+  augment_wavedrop: *id001
+  augment_speed: *id002
+  add_rev: *id003
+  add_noise: *id004
+  add_rev_noise: *id005
+  add_isat_noise: *id006
+  embedding_model: *id008
+  classifier: *id009
+  mean_var_norm: *id010
+compute_cost: !name:speechbrain.nnet.losses.nll_loss
+# compute_error: !name:speechbrain.nnet.losses.classification_error
+
+opt_class: !name:torch.optim.Adam
+  lr: 0.001
+  weight_decay: 0.000002
+
+lr_annealing: !new:speechbrain.nnet.schedulers.LinearScheduler
+  initial_value: 0.001
+  final_value: 0.0001
+  epoch_count: 20
+
+# Logging + checkpoints
+train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
+  save_file: results/xvect_kids_anew_fixlen1/303/train_log.txt
+
+error_stats: !name:speechbrain.utils.metric_stats.MetricStats
+  metric: !name:speechbrain.nnet.losses.classification_error
+    reduction: batch
+
+checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
+  checkpoints_dir: results/xvect_kids_anew_fixlen1/303/save
+  recoverables:
+    embedding_model: *id008
+    classifier: *id009
+    normalizer: *id010
+    counter: *id011
