@@ -1,0 +1,63 @@
+# run tad evaluation
+# output to results dir
+
+mode=TEST
+data=../data/ISAT-SI/${mode}/full
+sbasr=tadscripts
+
+# window size, 16000 = 1 sec
+WINSIZE=16000
+
+dotad='y'
+doalign='y'
+targets='all'
+
+# run TAD for each ecapa cutoff
+for crit in 0.05 0.1; do
+    segdir=results/${mode}/tad/${crit}/segments
+    mkdir -p results/${mode}
+    mkdir -p results/${mode}/tad
+    mkdir -p results/${mode}/tad/${crit}
+    mkdir -p $segdir
+
+    echo $crit
+
+    # generate segments for each wav file
+    if [ $dotad = 'y' ]; then
+        for wav in ${data}/WAVs/*; do
+            file=$(basename $wav)
+            name="${file%.*}"
+
+            # identify segs containing at least one of speakers
+            # output csv file with startsecs,endsecs speaker
+            python ${sbasr}/tad.py $wav --targets $targets\
+              --crit $crit --outdir $segdir --win $WINSIZE
+        done
+    fi
+
+    # generate alignments for each boundary tolerance
+    if [ $doalign = 'y' ]; then
+        for btol in 0.0 0.5; do
+            for csv in ${segdir}/*; do
+                file=$(basename $csv)
+                name="${file%.*}"
+
+                # compare generated segment timings to transcript
+                python ${sbasr}/align_tad.py --seg $csv \
+                        --sessdir $data --targets $targets --btol $btol
+            done
+            mv results/${mode}/tad/${crit}/alignments \
+               results/${mode}/tad/${crit}/alignments_${btol}
+        done
+    fi
+
+    for btol in 0.0 0.5; do
+        # compute and print stats
+        python ${sbasr}/stat_tad.py \
+           --aligned results/${mode}/tad/${crit}/alignments_${btol}
+        mv results/${mode}/tad/${crit}/summary \
+           results/${mode}/tad/${crit}/summary_${btol}
+        mv results/${mode}/tad/${crit}/stats.csv \
+           results/${mode}/tad/${crit}/stats_${btol}.csv
+    done
+done

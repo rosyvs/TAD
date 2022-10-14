@@ -1,0 +1,2 @@
+﻿x1path,x1start_s,x1end_s,x1speaker,x2path,x2start_s,x2end_s,x2speaker,match
+mnt/shared/CORPORA/ISAT-SI/TEST/eg1.wav,0,3,student000,mnt/shared/CORPORA/ISAT-SI/TEST/eg2.wav,0,4.5,student000,TRUE
