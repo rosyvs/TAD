@@ -1,9 +1,11 @@
 # run tad evaluation
 # output to results dir
+# -- author: Wayne Ward
 
-mode=TEST
-data=../data/ISAT-SI/${mode}/full
-sbasr=tadscripts
+mode=TEST # which split of data to use
+data=/mnt/shared/CORPORA/ISAT-SI/${mode}/full # point this to ISAT-SI corpus
+enrdir=/mnt/shared/CORPORA/ISAT-SI/enrollments
+sbasr=. #TODO: ? 
 
 # window size, 16000 = 1 sec
 WINSIZE=16000
@@ -31,6 +33,7 @@ for crit in 0.05 0.1; do
             # identify segs containing at least one of speakers
             # output csv file with startsecs,endsecs speaker
             python ${sbasr}/tad.py $wav --targets $targets\
+              --enrollments $enrdir\
               --crit $crit --outdir $segdir --win $WINSIZE
         done
     fi

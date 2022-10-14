@@ -1,0 +1,80 @@
+# ################################
+# Model: Speaker identification with ECAPA using kids corpora, load from model checkpoint
+# Authors: Rosy Southwell, based on recipe by Hwidong Na & Mirco Ravanelli
+# ################################
+
+# yaml for loading a user-trained model
+
+# path to model save dir
+pretrain_path: results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-14+17-51-32+00/
+save_folder: results/inference_ecapa_kids/
+
+# Feature parameters
+n_mels: 80
+left_frames: 0
+right_frames: 0
+deltas: False
+
+# # Number of speakers
+# out_n_neurons: 3378 # this is the n speakers in the training data 
+
+# dataloader_options:
+#     batch_size: !ref <batch_size>
+#     shuffle: !ref <shuffle>
+#     num_workers: 4
+
+# Functions
+compute_features: !new:speechbrain.lobes.features.Fbank
+    n_mels: !ref <n_mels>
+    left_frames: !ref <left_frames>
+    right_frames: !ref <right_frames>
+    deltas: !ref <deltas>
+
+embedding_model: !new:speechbrain.lobes.models.ECAPA_TDNN.ECAPA_TDNN
+    input_size: !ref <n_mels>
+    channels: [512, 512, 512, 512, 1536] # use fewer channels in CNN. Was [1024, 1024, 1024, 1024, 3072]
+    kernel_sizes: [5, 3, 3, 3, 1]
+    dilations: [1, 2, 3, 4, 1]
+    groups: [1, 1, 1, 1, 1]
+    attention_channels: 128
+    lin_neurons: 192
+
+# classifier: !new:speechbrain.lobes.models.ECAPA_TDNN.Classifier
+#     input_size: 192
+#     out_neurons: !ref <out_n_neurons>
+
+mean_var_norm: !new:speechbrain.processing.features.InputNormalization
+    norm_type: sentence
+    std_norm: False
+
+mean_var_norm_emb: !ref <mean_var_norm>
+
+modules:
+    compute_features: !ref <compute_features>
+    embedding_model: !ref <embedding_model>
+    # classifier: !ref <classifier>
+    mean_var_norm: !ref <mean_var_norm>
+
+# loading trained model
+pretrainer: !new:speechbrain.utils.parameter_transfer.Pretrainer
+    collect_in: !ref <save_folder>
+    loadables:
+        embedding_model: !ref <embedding_model>
+    paths:
+        embedding_model: !ref <pretrain_path>/embedding_model.ckpt
+
+# EncoderCLassifier:
+    # MODULES_NEEDED = [
+    #     "compute_features",
+    #     "mean_var_norm",
+    #     "embedding_model",
+    #     "classifier",
+    # ]
+
+# Speaker Recognition
+    # MODULES_NEEDED = [
+    #     "compute_features",
+    #     "mean_var_norm",
+    #     "embedding_model",
+    #     "mean_var_norm_emb",
+    # ]

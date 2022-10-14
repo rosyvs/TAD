@@ -4,6 +4,7 @@ import os
 import re
 from speechbrain.pretrained import EncoderClassifier, SpeakerRecognition
 import csv
+# Wayne Ward / Rosy Southwell
 
 # arguments and defaults
 import argparse
@@ -15,7 +16,6 @@ parser.add_argument('--frame_rate', default='16000',help='frames/sec')
 parser.add_argument('--win', default='16000',help='window len frames')
 parser.add_argument('--shift', default='4000',help='shift len frames')
 parser.add_argument('--sbdir', default='../speechbrain/',help='sb dir')
-parser.add_argument('--model', default='ecapa',help='ecapa or xvect')
 parser.add_argument('--crit', default='0.1',help='threshold')
 parser.add_argument('--minseg', default='8000',help='num frames to start seg')
 parser.add_argument('--minsil', default='8000',help='num frames to start sil')
@@ -24,34 +24,27 @@ args = parser.parse_args()
 
 #####
 speechbrain_dir = args.sbdir
-src_ecapa = "speechbrain/spkrec-ecapa-voxceleb"
-models_ecapa = f"{speechbrain_dir}/pretrained_models/spkrec-ecapa-voxceleb"
-src_xvect = "speechbrain/spkrec-xvect-voxceleb"
-src_xvectv = "speechbrain/spkrec-xvect-voxcelebTEST"
-models_xvect = f"{speechbrain_dir}/pretrained_models/spkrec-xvect-voxceleb"
+# # # default ECAPA:
+# model_src = "speechbrain/spkrec-ecapa-voxceleb"
+# model_save = f"{speechbrain_dir}/pretrained_models/spkrec-ecapa-voxceleb"
+# model_hparams = None 
+# our ECAPA:
+model_src = "./model/trained/"
+model_save = "./model/trained/save/"
+model_hparams = "./model/trained/hyperparams.yaml"
 #####
 
 FRAME_DUR = float(1.0)/float(args.frame_rate)
 WIN_SIZE = int(args.win)
 SHIFT_LEN = int(args.shift)
 CRIT = float(args.crit)
-model_type = args.model
 minseg = int(args.minseg)
 minsil = int(args.minsil)
 clip = os.path.splitext(os.path.basename(args.wav))[0]
 
 # load models
-if model_type == 'ecapa':
-    encoder = EncoderClassifier.from_hparams(source=src_ecapa, 
-              savedir=models_ecapa)
-    verifier = SpeakerRecognition.from_hparams(source=src_ecapa, 
-              savedir=models_ecapa)
-if model_type == 'xvect':
-    encoder = EncoderClassifier.from_hparams(source=src_xvect, 
-        savedir=models_xvect)
-    verifier = SpeakerRecognition.from_hparams(source=src_xvectv, 
-        savedir=models_xvect)
-
+encoder = EncoderClassifier.from_hparams(source=model_src)
+verifier = SpeakerRecognition.from_hparams(source=model_src)
 
 # get list of target files
 if args.targets == 'all':

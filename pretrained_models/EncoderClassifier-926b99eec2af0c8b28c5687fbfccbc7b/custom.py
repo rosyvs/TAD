@@ -1,0 +1,1 @@
+/home/rosy/TAD/results/ecapa_kids_anew_3s_noVoxCeleb/303/save/CKPT+2022-10-14+17-51-32+00/custom.py
