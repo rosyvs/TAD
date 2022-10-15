@@ -120,6 +120,7 @@ for win_st in range(0,last_win_st,SHIFT_LEN):
     scores = []
     for t in target_embeddings:
         score = verifier.similarity(target_embeddings[t], xv_samp)
+        # print(f'ECAPA score: {score.item():.3f}')
         scores.append(score.item())
 
     # set sample score to 1 if any target score > CRIT

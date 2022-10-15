@@ -15,7 +15,7 @@ doalign='y'
 targets='all'
 
 # run TAD for each ecapa cutoff
-for crit in 0.05 0.1; do
+for crit in 0.995; do
     segdir=results/${mode}/tad/${crit}/segments
     mkdir -p results/${mode}
     mkdir -p results/${mode}/tad
