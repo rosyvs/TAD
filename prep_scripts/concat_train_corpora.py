@@ -32,6 +32,13 @@ concat_list = [
 combined_csv = pd.concat(
     [pd.read_csv(os.path.join(manifest_dir, f)) for f in concat_list]).reset_index(drop=True)
 
+DFlist=[]
+for f in concat_list:
+    DF= pd.read_csv(os.path.join(manifest_dir, f))
+    DF['corpus']= f[0:4]
+    DFlist.append(DF)
+combined_csv = pd.concat(DFlist)
+
 # apply filter conditions
 if APPLY_FILTER:
     b4=len(combined_csv)
@@ -69,3 +76,9 @@ durs = [row['duration'] for i, row in combined_csv.iterrows()]
 spkrs = [row['speaker'] for i, row in combined_csv.iterrows()]
 
 print(f'{len(combined_csv)} utterances, mean duration {np.mean(durs)/SRATE:.2f} sec, {len(set(spkrs))} speakers')
+
+# stats for table on corpora
+hours = (combined_csv.groupby('corpus')['duration'].sum()/60/60/SRATE).round(3)
+speakers = combined_csv.groupby('corpus')['speaker'].nunique()
+print(hours)
+print(speakers)
